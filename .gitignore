@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# never commit kcli-gw / API credentials
+credentials.json
+*.credentials
+.env
+kiro_stats.json

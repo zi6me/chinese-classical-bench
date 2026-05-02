@@ -1,0 +1,100 @@
+{"id": "fill-in#1", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "知而不已，谁___然矣", "reference": "昔", "metadata": {"source": "诗经·国风", "context": "知而不已，谁昔然矣"}}
+{"id": "fill-in#2", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "朝廷莫如爵，乡党莫如___，辅世长民莫如德", "reference": "齿", "metadata": {"source": "孟子·公孙丑下", "context": "朝廷莫如爵，乡党莫如齿，辅世长民莫如德"}}
+{"id": "fill-in#3", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《诗》云：「邦畿___里，惟民所止", "reference": "千", "metadata": {"source": "大学·大学", "context": "《诗》云：「邦畿千里，惟民所止"}}
+{"id": "fill-in#4", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "天降丧乱，___馑荐臻", "reference": "饥", "metadata": {"source": "诗经·大雅", "context": "天降丧乱，饥馑荐臻"}}
+{"id": "fill-in#5", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”请问之，曰：“天子崩，大庙火，___食，后夫人之丧，雨沾服失容，则废", "reference": "日", "metadata": {"source": "礼记·曾子问", "context": "”请问之，曰：“天子崩，大庙火，日食，后夫人之丧，雨沾服失容，则废"}}
+{"id": "fill-in#6", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "其有中士下士者，数___居其上之三分", "reference": "各", "metadata": {"source": "礼记·王制", "context": "其有中士下士者，数各居其上之三分"}}
+{"id": "fill-in#7", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "孔子蚤作，负手曳杖，___摇于门，歌曰：“泰山其颓乎", "reference": "消", "metadata": {"source": "礼记·檀弓", "context": "孔子蚤作，负手曳杖，消摇于门，歌曰：“泰山其颓乎"}}
+{"id": "fill-in#8", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "男女授受不亲，礼也；___溺援之以手者，权也", "reference": "嫂", "metadata": {"source": "孟子·离娄上", "context": "男女授受不亲，礼也；嫂溺援之以手者，权也"}}
+{"id": "fill-in#9", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "相在尔室，___不愧于屋漏", "reference": "尚", "metadata": {"source": "诗经·大雅", "context": "相在尔室，尚不愧于屋漏"}}
+{"id": "fill-in#10", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "不受于褐宽博，___不受于万乘之君", "reference": "亦", "metadata": {"source": "孟子·公孙丑上", "context": "不受于褐宽博，亦不受于万乘之君"}}
+{"id": "fill-in#11", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "悠悠我里，___孔之痗", "reference": "亦", "metadata": {"source": "诗经·小雅", "context": "悠悠我里，亦孔之痗"}}
+{"id": "fill-in#12", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "维彼不顺，___以中垢", "reference": "征", "metadata": {"source": "诗经·大雅", "context": "维彼不顺，征以中垢"}}
+{"id": "fill-in#13", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "王若曰：“明___命于妹邦", "reference": "大", "metadata": {"source": "尚书·周书 酒诰第十二", "context": "王若曰：“明大命于妹邦"}}
+{"id": "fill-in#14", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "仲尼曰：『始___俑者，其无后乎", "reference": "作", "metadata": {"source": "孟子·梁惠王上", "context": "仲尼曰：『始作俑者，其无后乎"}}
+{"id": "fill-in#15", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "蔽芾甘棠，勿___勿败，召伯所憩", "reference": "翦", "metadata": {"source": "诗经·国风", "context": "蔽芾甘棠，勿翦勿败，召伯所憩"}}
+{"id": "fill-in#16", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "尔以为必行缀兆、兴羽钥、___钟鼓然后谓之乐乎", "reference": "作", "metadata": {"source": "礼记·仲尼燕居", "context": "尔以为必行缀兆、兴羽钥、作钟鼓然后谓之乐乎"}}
+{"id": "fill-in#17", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”子曰：“临之以庄，则敬；孝___，则忠；举善而教不能，则劝", "reference": "慈", "metadata": {"source": "论语·为政", "context": "”子曰：“临之以庄，则敬；孝慈，则忠；举善而教不能，则劝"}}
+{"id": "fill-in#18", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "因不失其亲，___可宗也", "reference": "亦", "metadata": {"source": "论语·学而", "context": "因不失其亲，亦可宗也"}}
+{"id": "fill-in#19", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《书》曰：『天___下民，作之君，作之师", "reference": "降", "metadata": {"source": "孟子·梁惠王下", "context": "《书》曰：『天降下民，作之君，作之师"}}
+{"id": "fill-in#20", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "故君子有终___之忧，而无一朝之患", "reference": "身", "metadata": {"source": "礼记·檀弓", "context": "故君子有终身之忧，而无一朝之患"}}
+{"id": "fill-in#21", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”帷殡，非古也，自敬___之哭穆伯始也", "reference": "姜", "metadata": {"source": "礼记·檀弓", "context": "”帷殡，非古也，自敬姜之哭穆伯始也"}}
+{"id": "fill-in#22", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "厥田惟中上，厥___错上中", "reference": "赋", "metadata": {"source": "尚书·虞书 皋陶谟第四", "context": "厥田惟中上，厥赋错上中"}}
+{"id": "fill-in#23", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "新台有泚，___水弥弥", "reference": "河", "metadata": {"source": "诗经·国风", "context": "新台有泚，河水弥弥"}}
+{"id": "fill-in#24", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "此谓治___在齐其家", "reference": "国", "metadata": {"source": "大学·大学", "context": "此谓治国在齐其家"}}
+{"id": "fill-in#25", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "尚尔事，有___在大僚", "reference": "服", "metadata": {"source": "尚书·周书 多方第二十", "context": "尚尔事，有服在大僚"}}
+{"id": "fill-in#26", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "」盖___天之所以为天也", "reference": "曰", "metadata": {"source": "中庸·中庸", "context": "」盖曰天之所以为天也"}}
+{"id": "fill-in#27", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "混夷駾矣，___其喙矣", "reference": "维", "metadata": {"source": "诗经·大雅", "context": "混夷駾矣，维其喙矣"}}
+{"id": "fill-in#28", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "是用作歌，___母来谂", "reference": "将", "metadata": {"source": "诗经·小雅", "context": "是用作歌，将母来谂"}}
+{"id": "fill-in#29", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "钟鼓既___，举酬逸逸", "reference": "设", "metadata": {"source": "诗经·小雅", "context": "钟鼓既设，举酬逸逸"}}
+{"id": "fill-in#30", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "今惟民不静，未戾厥心，迪___未同，爽惟天其罚殛我，我其不怨", "reference": "屡", "metadata": {"source": "尚书·周书 康诰第十一", "context": "今惟民不静，未戾厥心，迪屡未同，爽惟天其罚殛我，我其不怨"}}
+{"id": "fill-in#31", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "不能乐___，不能成其身", "reference": "天", "metadata": {"source": "礼记·哀公问", "context": "不能乐天，不能成其身"}}
+{"id": "fill-in#32", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”孟献子禫，县而不乐，比御而不___，夫子曰：“献子加于人一等矣", "reference": "入", "metadata": {"source": "礼记·檀弓", "context": "”孟献子禫，县而不乐，比御而不入，夫子曰：“献子加于人一等矣"}}
+{"id": "fill-in#33", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”子曰：“事君可贵可___，可富可贫，可生可杀，而不可使为乱", "reference": "贱", "metadata": {"source": "礼记·表记", "context": "”子曰：“事君可贵可贱，可富可贫，可生可杀，而不可使为乱"}}
+{"id": "fill-in#34", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "麟之定，振振公___，于嗟麟兮", "reference": "姓", "metadata": {"source": "诗经·国风", "context": "麟之定，振振公姓，于嗟麟兮"}}
+{"id": "fill-in#35", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”曾子问曰：“葬___至于堩，日有食之，则有变乎，且不乎", "reference": "引", "metadata": {"source": "礼记·曾子问", "context": "”曾子问曰：“葬引至于堩，日有食之，则有变乎，且不乎"}}
+{"id": "fill-in#36", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《彖》曰：家___，女正位乎内，男正位乎外", "reference": "人", "metadata": {"source": "周易·37. 家人（卦三十七）", "context": "《彖》曰：家人，女正位乎内，男正位乎外"}}
+{"id": "fill-in#37", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "母之晜弟，为舅；母之从___晜弟，为从舅", "reference": "父", "metadata": {"source": "尔雅·释亲第四", "context": "母之晜弟，为舅；母之从父晜弟，为从舅"}}
+{"id": "fill-in#38", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "允文文王，克___厥后", "reference": "开", "metadata": {"source": "诗经·周颂", "context": "允文文王，克开厥后"}}
+{"id": "fill-in#39", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "初六，遯尾，___，勿用有攸往", "reference": "厉", "metadata": {"source": "周易·33. 遯（卦三十三）", "context": "初六，遯尾，厉，勿用有攸往"}}
+{"id": "fill-in#40", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "孔子之仕于鲁也，鲁___猎较，孔子亦猎较", "reference": "人", "metadata": {"source": "孟子·万章下", "context": "孔子之仕于鲁也，鲁人猎较，孔子亦猎较"}}
+{"id": "fill-in#41", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "裳裳者华，或___或白", "reference": "黄", "metadata": {"source": "诗经·小雅", "context": "裳裳者华，或黄或白"}}
+{"id": "fill-in#42", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”子夏曰：“___则大矣美矣盛矣", "reference": "言", "metadata": {"source": "礼记·孔子闲居", "context": "”子夏曰：“言则大矣美矣盛矣"}}
+{"id": "fill-in#43", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "诗云：“不显不___，无斁于人斯", "reference": "承", "metadata": {"source": "礼记·大传", "context": "诗云：“不显不承，无斁于人斯"}}
+{"id": "fill-in#44", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "祭殇必厌，___弗成也", "reference": "盖", "metadata": {"source": "礼记·曾子问", "context": "祭殇必厌，盖弗成也"}}
+{"id": "fill-in#45", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "』孔子进以礼，___以义，得之不得曰『有命』", "reference": "退", "metadata": {"source": "孟子·万章上", "context": "』孔子进以礼，退以义，得之不得曰『有命』"}}
+{"id": "fill-in#46", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "问天子之年，对曰：“___之始服衣若干尺矣", "reference": "闻", "metadata": {"source": "礼记·曲礼", "context": "问天子之年，对曰：“闻之始服衣若干尺矣"}}
+{"id": "fill-in#47", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "载色载笑，___怒伊教", "reference": "匪", "metadata": {"source": "诗经·鲁颂", "context": "载色载笑，匪怒伊教"}}
+{"id": "fill-in#48", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "所吊虽已___，主人必免", "reference": "葬", "metadata": {"source": "礼记·丧服小记", "context": "所吊虽已葬，主人必免"}}
+{"id": "fill-in#49", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "』当今之时，万乘之国行___政，民之悦之，犹解倒悬也", "reference": "仁", "metadata": {"source": "孟子·公孙丑上", "context": "』当今之时，万乘之国行仁政，民之悦之，犹解倒悬也"}}
+{"id": "fill-in#50", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "」曰：「文王之囿方七十___，刍荛者往焉，雉兔者往焉，与民同之", "reference": "里", "metadata": {"source": "孟子·梁惠王下", "context": "」曰：「文王之囿方七十里，刍荛者往焉，雉兔者往焉，与民同之"}}
+{"id": "fill-in#51", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "’管仲死，___公使为之服", "reference": "桓", "metadata": {"source": "礼记·杂记", "context": "’管仲死，桓公使为之服"}}
+{"id": "fill-in#52", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "」王曰：「吾___以识其不才而舍之", "reference": "何", "metadata": {"source": "孟子·梁惠王下", "context": "」王曰：「吾何以识其不才而舍之"}}
+{"id": "fill-in#53", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "是故先王有上有下，有先有后，___后可以有制于天下也", "reference": "然", "metadata": {"source": "礼记·乐记", "context": "是故先王有上有下，有先有后，然后可以有制于天下也"}}
+{"id": "fill-in#54", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "其初难知，其上___知，本末也", "reference": "易", "metadata": {"source": "周易·系辞下", "context": "其初难知，其上易知，本末也"}}
+{"id": "fill-in#55", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "军旅思___，隐情以虞", "reference": "险", "metadata": {"source": "礼记·少仪", "context": "军旅思险，隐情以虞"}}
+{"id": "fill-in#56", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "瑳兮瑳兮，其之___也", "reference": "展", "metadata": {"source": "诗经·国风", "context": "瑳兮瑳兮，其之展也"}}
+{"id": "fill-in#57", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "行夏令，则国多火灾，___热不节，民多疟疾", "reference": "寒", "metadata": {"source": "礼记·月令", "context": "行夏令，则国多火灾，寒热不节，民多疟疾"}}
+{"id": "fill-in#58", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《象》曰：“藩___不羸”，尚往也", "reference": "决", "metadata": {"source": "周易·34. 大壮（卦三十四）", "context": "《象》曰：“藩决不羸”，尚往也"}}
+{"id": "fill-in#59", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "子谓颜渊曰：“用之则___，舍之则藏，惟我与尔有是夫", "reference": "行", "metadata": {"source": "论语·述而", "context": "子谓颜渊曰：“用之则行，舍之则藏，惟我与尔有是夫"}}
+{"id": "fill-in#60", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "岂弟君___，四方为则", "reference": "子", "metadata": {"source": "诗经·大雅", "context": "岂弟君子，四方为则"}}
+{"id": "fill-in#61", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "于三哭，犹___发袒成踊", "reference": "括", "metadata": {"source": "礼记·奔丧", "context": "于三哭，犹括发袒成踊"}}
+{"id": "fill-in#62", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "曰时五者来备，___以其叙，庶草蕃庑", "reference": "各", "metadata": {"source": "尚书·周书 洪范第六", "context": "曰时五者来备，各以其叙，庶草蕃庑"}}
+{"id": "fill-in#63", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "」曰：「夫物之不齐，物之情也；或相倍___，或相什伯，或相千万", "reference": "蓰", "metadata": {"source": "孟子·滕文公上", "context": "」曰：「夫物之不齐，物之情也；或相倍蓰，或相什伯，或相千万"}}
+{"id": "fill-in#64", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "升正柩，诸侯执綍___百人，四綍，皆衔枚", "reference": "五", "metadata": {"source": "礼记·杂记", "context": "升正柩，诸侯执綍五百人，四綍，皆衔枚"}}
+{"id": "fill-in#65", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”以季、孟之间待之，曰：“___老矣，不能用也", "reference": "吾", "metadata": {"source": "论语·微子", "context": "”以季、孟之间待之，曰：“吾老矣，不能用也"}}
+{"id": "fill-in#66", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "’考朕昭子___，乃单文祖德", "reference": "刑", "metadata": {"source": "尚书·周书 洛诰第十五", "context": "’考朕昭子刑，乃单文祖德"}}
+{"id": "fill-in#67", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "故物无不怀仁，___神飨德", "reference": "鬼", "metadata": {"source": "礼记·礼器", "context": "故物无不怀仁，鬼神飨德"}}
+{"id": "fill-in#68", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《象》曰：“纷若之___”，得中也", "reference": "吉", "metadata": {"source": "周易·57. 巽（卦五十七）", "context": "《象》曰：“纷若之吉”，得中也"}}
+{"id": "fill-in#69", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "乐国乐国，爰___我直", "reference": "得", "metadata": {"source": "诗经·国风", "context": "乐国乐国，爰得我直"}}
+{"id": "fill-in#70", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "有女同车，___如舜华", "reference": "颜", "metadata": {"source": "诗经·国风", "context": "有女同车，颜如舜华"}}
+{"id": "fill-in#71", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "圣人以此洗心，退___于密，吉凶与民同患", "reference": "藏", "metadata": {"source": "周易·系辞上", "context": "圣人以此洗心，退藏于密，吉凶与民同患"}}
+{"id": "fill-in#72", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”“武坐致___宪左，何也", "reference": "右", "metadata": {"source": "礼记·乐记", "context": "”“武坐致右宪左，何也"}}
+{"id": "fill-in#73", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "汝多修，扞___于艰，若汝，予嘉", "reference": "我", "metadata": {"source": "尚书·周书 文侯之命第三十", "context": "汝多修，扞我于艰，若汝，予嘉"}}
+{"id": "fill-in#74", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "是故君子戒___乎其所不睹，恐惧乎其所不闻", "reference": "慎", "metadata": {"source": "中庸·中庸", "context": "是故君子戒慎乎其所不睹，恐惧乎其所不闻"}}
+{"id": "fill-in#75", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "乐只君子，___子葵之", "reference": "天", "metadata": {"source": "诗经·小雅", "context": "乐只君子，天子葵之"}}
+{"id": "fill-in#76", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”子曰：“上好___，则民易使也", "reference": "礼", "metadata": {"source": "论语·宪问", "context": "”子曰：“上好礼，则民易使也"}}
+{"id": "fill-in#77", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "躬行君___，则吾未之有得", "reference": "子", "metadata": {"source": "论语·述而", "context": "躬行君子，则吾未之有得"}}
+{"id": "fill-in#78", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "王于出征，以___天子", "reference": "佐", "metadata": {"source": "诗经·小雅", "context": "王于出征，以佐天子"}}
+{"id": "fill-in#79", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”仲梁子曰：“夫妇方___，故帷堂，小敛而彻帷", "reference": "乱", "metadata": {"source": "礼记·檀弓", "context": "”仲梁子曰：“夫妇方乱，故帷堂，小敛而彻帷"}}
+{"id": "fill-in#80", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "“用九”，___德不可为首也", "reference": "天", "metadata": {"source": "周易·01. 乾（卦一）", "context": "“用九”，天德不可为首也"}}
+{"id": "fill-in#81", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "故用人之知去其诈，用人之___去其怒，用人之仁去其贪", "reference": "勇", "metadata": {"source": "礼记·礼运", "context": "故用人之知去其诈，用人之勇去其怒，用人之仁去其贪"}}
+{"id": "fill-in#82", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”植其杖而芸，___路拱而立", "reference": "子", "metadata": {"source": "论语·微子", "context": "”植其杖而芸，子路拱而立"}}
+{"id": "fill-in#83", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "六二：屯如邅如，___马班如", "reference": "乘", "metadata": {"source": "周易·03. 屯（卦三）", "context": "六二：屯如邅如，乘马班如"}}
+{"id": "fill-in#84", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "望反诸幽，求诸___神之道也", "reference": "鬼", "metadata": {"source": "礼记·檀弓", "context": "望反诸幽，求诸鬼神之道也"}}
+{"id": "fill-in#85", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "公孙丑问曰：「夫子当路于___，管仲、晏子之功，可复许乎", "reference": "齐", "metadata": {"source": "孟子·公孙丑上", "context": "公孙丑问曰：「夫子当路于齐，管仲、晏子之功，可复许乎"}}
+{"id": "fill-in#86", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "内乱不与焉，外___弗辟也", "reference": "患", "metadata": {"source": "礼记·杂记", "context": "内乱不与焉，外患弗辟也"}}
+{"id": "fill-in#87", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”孔子___：“有阴厌，有阳厌", "reference": "曰", "metadata": {"source": "礼记·曾子问", "context": "”孔子曰：“有阴厌，有阳厌"}}
+{"id": "fill-in#88", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "’小雅曰：‘匪其___共，惟王之邛", "reference": "止", "metadata": {"source": "礼记·缁衣", "context": "’小雅曰：‘匪其止共，惟王之邛"}}
+{"id": "fill-in#89", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "溯洄从之，___阻且右", "reference": "道", "metadata": {"source": "诗经·国风", "context": "溯洄从之，道阻且右"}}
+{"id": "fill-in#90", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "弗过遇之，往厉___戒，勿用永贞", "reference": "必", "metadata": {"source": "周易·62. 小过（卦六十二）", "context": "弗过遇之，往厉必戒，勿用永贞"}}
+{"id": "fill-in#91", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "肆直而慈爱，商之遗___也，商人识之，故谓之商", "reference": "声", "metadata": {"source": "礼记·乐记", "context": "肆直而慈爱，商之遗声也，商人识之，故谓之商"}}
+{"id": "fill-in#92", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《诗》云：『周道如砥，其直如___；君子所履，小人所视", "reference": "矢", "metadata": {"source": "孟子·万章下", "context": "《诗》云：『周道如砥，其直如矢；君子所履，小人所视"}}
+{"id": "fill-in#93", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "吊者即位于门___，东面，其介在其东南", "reference": "西", "metadata": {"source": "礼记·杂记", "context": "吊者即位于门西，东面，其介在其东南"}}
+{"id": "fill-in#94", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "乐著大始而___居成物", "reference": "礼", "metadata": {"source": "礼记·乐记", "context": "乐著大始而礼居成物"}}
+{"id": "fill-in#95", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "故曰：“疑而___之，则弗非也", "reference": "筮", "metadata": {"source": "礼记·曲礼", "context": "故曰：“疑而筮之，则弗非也"}}
+{"id": "fill-in#96", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "尔羊来___，其角濈濈", "reference": "思", "metadata": {"source": "诗经·小雅", "context": "尔羊来思，其角濈濈"}}
+{"id": "fill-in#97", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "水始冰，地始冻，雉___大水为蜃，虹藏不见", "reference": "入", "metadata": {"source": "礼记·月令", "context": "水始冰，地始冻，雉入大水为蜃，虹藏不见"}}
+{"id": "fill-in#98", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "其湛曰乐，___奏尔能", "reference": "各", "metadata": {"source": "诗经·小雅", "context": "其湛曰乐，各奏尔能"}}
+{"id": "fill-in#99", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "往来行___，心焉数之", "reference": "言", "metadata": {"source": "诗经·小雅", "context": "往来行言，心焉数之"}}
+{"id": "fill-in#100", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "我觏之子，___豆有践", "reference": "笾", "metadata": {"source": "诗经·国风", "context": "我觏之子，笾豆有践"}}
