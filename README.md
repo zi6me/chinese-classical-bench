@@ -66,10 +66,14 @@ docs/tasks.md          # 任务详细说明
 
 | Model | translate (chrF) | punctuate (Punct F1) | char-gloss (chrF) | idiom-source (Book EM) | fill-in (Exact) | Avg |
 |---|---|---|---|---|---|---|
+| Qwen3.5-35B-A3B | 0.225 | 0.753 | 0.175 | 0.500 | 0.380 | **0.407** |
 | claude-haiku-4-5 | 0.204 | 0.729 | 0.128 | 0.320 | 0.350 | **0.346** |
 
-> 仅 1 个模型的 baseline。Sonnet/Opus 与开源 Qwen/DeepSeek 等正在补充中。
+**初步发现**：开源 Qwen3.5-35B-A3B（35B MoE，3B 激活）在 5 个任务上**全面超过** Claude Haiku 4.5。
+最大差距在 `idiom-source`（书名识别 0.50 vs 0.32），符合中文母语模型在中国典故记忆上的训练优势。
+
 > 欢迎提交其他模型结果（开 PR 把 `results/<model>.json` 加进来即可）。
+> Sonnet/Opus、DeepSeek、Llama、ChatGLM 等正在补充中。
 
 ### 关于分数
 

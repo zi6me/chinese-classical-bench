@@ -59,9 +59,10 @@ def chat_completion(
     api_key: str,
     model: str,
     prompt: str,
-    timeout: int = 60,
-    max_tokens: int = 512,
+    timeout: int = 120,
+    max_tokens: int = 1024,
     extra_headers: dict | None = None,
+    extra_body: dict | None = None,
 ) -> str:
     """Call OpenAI-compatible /chat/completions, return assistant content."""
     url = base_url.rstrip("/") + "/chat/completions"
@@ -74,6 +75,8 @@ def chat_completion(
         "temperature": 0.0,
         "max_tokens": max_tokens,
     }
+    if extra_body:
+        payload.update(extra_body)
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {api_key}",
@@ -98,6 +101,7 @@ def run_task(
     concurrency: int,
     limit: int | None,
     extra_headers: dict | None = None,
+    extra_body: dict | None = None,
 ) -> dict:
     records = load_task(task)
     if limit:
@@ -114,6 +118,7 @@ def run_task(
             return i, chat_completion(
                 base_url, api_key, model, prompt,
                 extra_headers=extra_headers,
+                extra_body=extra_body,
             ), None
         except Exception as e:
             return i, "", str(e)
@@ -179,6 +184,9 @@ def main() -> None:
     ap.add_argument("--out", type=str, default=None)
     ap.add_argument("--header", action="append", default=[],
                     help="extra header K:V (repeat). e.g. --header 'x-skip-sanitize:true'")
+    ap.add_argument("--extra-body", type=str, default=None,
+                    help="JSON merged into request payload, e.g. "
+                    "'{\"chat_template_kwargs\": {\"enable_thinking\": false}}'")
     args = ap.parse_args()
 
     extra_headers = {}
@@ -186,6 +194,8 @@ def main() -> None:
         k, _, v = h.partition(":")
         if k.strip() and v.strip():
             extra_headers[k.strip()] = v.strip()
+
+    extra_body = json.loads(args.extra_body) if args.extra_body else None
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     safe_name = args.model.replace("/", "_")
@@ -207,6 +217,7 @@ def main() -> None:
             concurrency=args.concurrency,
             limit=args.limit,
             extra_headers=extra_headers or None,
+            extra_body=extra_body,
         )
         all_results["tasks"][task] = result
         print(f"  ⇒ {task} summary: {result['summary']}")

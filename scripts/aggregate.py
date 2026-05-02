@@ -68,8 +68,13 @@ def main() -> None:
     md = "\n".join(lines)
     print(md)
     if args.out:
-        args.out.write_text(md + "\n", encoding="utf-8")
-        print(f"\nwrote → {args.out.relative_to(REPO)}")
+        out_path = args.out if args.out.is_absolute() else (Path.cwd() / args.out)
+        out_path.write_text(md + "\n", encoding="utf-8")
+        try:
+            shown = out_path.relative_to(REPO)
+        except ValueError:
+            shown = out_path
+        print(f"\nwrote → {shown}")
 
 
 if __name__ == "__main__":
