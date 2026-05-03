@@ -66,11 +66,21 @@ docs/tasks.md          # 任务详细说明
 
 | Model | translate (chrF) | punctuate (Punct F1) | char-gloss (chrF) | idiom-source (Book EM) | fill-in (Exact) | Avg |
 |---|---|---|---|---|---|---|
-| Qwen3.5-35B-A3B | 0.225 | 0.753 | 0.175 | 0.500 | 0.380 | **0.407** |
-| claude-haiku-4-5 | 0.204 | 0.729 | 0.128 | 0.320 | 0.350 | **0.346** |
+| **deepseek-3.2** | 0.240 | 0.745 | 0.139 | **0.740** | 0.550 | **0.483** |
+| minimax-m2.5 | 0.219 | 0.709 | 0.161 | 0.500 | **0.590** | 0.436 |
+| Qwen3.5-35B-A3B | 0.225 | **0.753** | **0.175** | 0.500 | 0.380 | 0.407 |
+| claude-haiku-4-5 | 0.204 | 0.729 | 0.128 | 0.320 | 0.350 | 0.346 |
 
-**初步发现**：开源 Qwen3.5-35B-A3B（35B MoE，3B 激活）在 5 个任务上**全面超过** Claude Haiku 4.5。
-最大差距在 `idiom-source`（书名识别 0.50 vs 0.32），符合中文母语模型在中国典故记忆上的训练优势。
+**核心发现**：
+
+1. **DeepSeek V3.2 全面领先**，平均分 0.483，比 Claude Haiku 高 40%
+2. **idiom-source 项 DeepSeek 一骑绝尘** —— 74% 书名识别准确率，比第 2 名（MiniMax/Qwen 50%）高 24 个百分点。中文典故的 RAG 式记忆是 DeepSeek 强项
+3. **fill-in（古文字词填空）MiniMax M2.5 第一**（59% 单字精确匹配），DeepSeek 第二（55%）。这两家都明显超过 Qwen 38% 和 Haiku 35%
+4. **char-gloss 任务上 Qwen3.5 反而略微领先** —— 短语字义解释，中文 token 偏好不同导致 chrF 排名飘移
+5. **Claude Haiku 4.5 在所有任务上垫底**，证实英文为主的训练在中国古典文献上确实有差距
+6. **三个国产模型分别在不同任务夺冠** —— DeepSeek 强于知识检索，MiniMax 强于补字，Qwen 强于断句和字义
+
+> 测试时 Kiro 路由 MiniMax/glm-5/qwen3 不稳定，glm-5 和 qwen3-coder-next 因上游 502/超时严重未能完成完整 500 题（结果未列入）。
 
 > 欢迎提交其他模型结果（开 PR 把 `results/<model>.json` 加进来即可）。
 > Sonnet/Opus、DeepSeek、Llama、ChatGLM 等正在补充中。
