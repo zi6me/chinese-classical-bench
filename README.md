@@ -1,5 +1,7 @@
 # Chinese Classical Bench
 
+[![license](https://img.shields.io/badge/code-MIT-yellow)](LICENSE) [![data](https://img.shields.io/badge/questions-from%20CC0%20corpus-lightgrey)](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) [![HF dataset](https://img.shields.io/badge/%F0%9F%A4%97-dataset-blue)](https://huggingface.co/datasets/gujilab/chinese-classical-bench) [![HF leaderboard](https://img.shields.io/badge/%F0%9F%A4%97-leaderboard-orange)](https://huggingface.co/spaces/gujilab/chinese-classical-bench-leaderboard)
+
 中国古典语言能力评测基准 (Classical Chinese benchmark) — **5 个任务 × 100 题 = 500 道**，覆盖翻译、断句、字义、典故、续写填空。
 
 > 📊 在线排行榜: [🤗 Space — chinese-classical-bench-leaderboard](https://huggingface.co/spaces/gujilab/chinese-classical-bench-leaderboard)
@@ -104,6 +106,10 @@ docs/tasks.md          # 任务详细说明
 - 5 个 task 题目均从配套 corpus 抽样，可能与某些模型的训练数据有重合污染（开源模型大多训练过《十三经》《史记》）
 - 100 题/task 是 trade-off：太少噪声大，太多跑评测贵 — 后续可能扩到 200/task
 
+## Contributing
+
+想让你的模型上榜：跑 `scripts/eval_runner.py` → 把 `results/<model>.json` + 重新生成的 `leaderboard.md` 一起开 PR。CI 会自动校验 schema 并核对 `leaderboard.md`。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。也欢迎改进打分器（chrF 对同义改写偏严、典故书名匹配可以更聪明）—— 结果文件里存了每题原始 prediction，打分器改了能对所有已有模型回溯重打分。
+
 ## License
 
-题目和评分代码：**MIT**。源数据来自 [chinese-classical-corpus](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) (CC0)。
+题目和评分代码：**MIT**（见 [LICENSE](LICENSE)）。源数据来自 [chinese-classical-corpus](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) (CC0)。
