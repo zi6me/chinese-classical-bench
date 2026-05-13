@@ -19,6 +19,7 @@ HEADLINE = {
     "char-gloss":    ("chrf",      "chrF"),
     "idiom-source":  ("book_em",   "Book EM"),
     "fill-in":       ("exact_match", "Exact"),
+    "compress":      ("efficiency", "Compress Eff"),
 }
 TASK_ORDER = list(HEADLINE.keys())
 

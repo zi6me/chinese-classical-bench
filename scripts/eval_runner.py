@@ -37,6 +37,7 @@ TASK_FILES = {
     "char-gloss": "char_gloss.jsonl",
     "idiom-source": "idiom_source.jsonl",
     "fill-in": "fill_in.jsonl",
+    "compress": "compress.jsonl",
 }
 
 SYSTEM_PROMPT = (
@@ -201,12 +202,25 @@ def main() -> None:
     safe_name = args.model.replace("/", "_")
     out_path = Path(args.out) if args.out else RESULTS_DIR / f"{safe_name}.json"
 
-    all_results = {
-        "model": args.model,
-        "base_url": args.base_url,
-        "started_at": time.strftime("%Y-%m-%d %H:%M:%S"),
-        "tasks": {},
-    }
+    # Merge with existing file so partial-task runs don't drop earlier results.
+    if out_path.exists():
+        try:
+            all_results = json.loads(out_path.read_text(encoding="utf-8"))
+            all_results.setdefault("tasks", {})
+            all_results["model"] = args.model
+            all_results["base_url"] = args.base_url
+            all_results["last_updated_at"] = time.strftime("%Y-%m-%d %H:%M:%S")
+        except Exception:
+            all_results = None
+    else:
+        all_results = None
+    if all_results is None:
+        all_results = {
+            "model": args.model,
+            "base_url": args.base_url,
+            "started_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "tasks": {},
+        }
 
     for task in args.tasks:
         result = run_task(

@@ -217,12 +217,35 @@ def score_fill_in(pred: str, rec: dict) -> dict:
     }
 
 
+def score_compress(pred: str, rec: dict) -> dict:
+    """Compress task: modern Chinese → classical Chinese.
+
+    Rewards both fidelity (chrf vs reference classical) and compression
+    (output shorter than input). Efficiency = chrf * max(0, 1 - ratio).
+    """
+    ref = rec["reference"]
+    inp = rec["input"]
+    chrf_val = chrf(pred, ref)
+    pred_cn = _chinese_chars(pred)
+    inp_cn = _chinese_chars(inp)
+    ratio = len(pred_cn) / max(len(inp_cn), 1)
+    compression = max(0.0, 1.0 - ratio)
+    efficiency = chrf_val * compression
+    return {
+        "chrf": round(chrf_val, 4),
+        "ratio": round(ratio, 4),
+        "compression": round(compression, 4),
+        "efficiency": round(efficiency, 4),
+    }
+
+
 SCORERS = {
     "translate": score_translate,
     "punctuate": score_punctuate,
     "char-gloss": score_char_gloss,
     "idiom-source": score_idiom_source,
     "fill-in": score_fill_in,
+    "compress": score_compress,
 }
 
 
