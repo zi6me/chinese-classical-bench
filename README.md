@@ -8,11 +8,22 @@
 > 🤗 本评测集也在 HuggingFace: [gujilab/chinese-classical-bench](https://huggingface.co/datasets/gujilab/chinese-classical-bench) — `load_dataset("gujilab/chinese-classical-bench", "translate")`
 > 🔗 配套语料集: [gujilab/chinese-classical-corpus](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) (CC0 公有领域)
 
-## 评测目的
+## 为什么做这个
 
-回答一个具体问题：**国产开源 LLM 在中国古典文献理解上谁更强？**
+短答：**中文（尤其文言文）在 LLM 时代有一个被严重低估的优势 —— 信息密度。**
 
-主要面向 Qwen / DeepSeek / Llama / Yi / ChatGLM / Baichuan / InternLM 等开源模型的横向对比，可选扩展到 Claude / GPT / Gemini。
+- **Token 经济学**：同一句话用文言文表达，token 数约为现代英文的 1/2，比现代白话还再压缩 30-40%。在 1M 上下文卷成本的今天，这是 free lunch
+- **典故 = 语义级 RAG 压缩**："图穷匕见"四字承载一整段故事 —— 典故是嵌在语言里的、人类沉淀 2000+ 年的"超浓缩 token"，英文几乎没有等价机制
+- **3000+ 年单一书写系统**：跨时代知识图谱、概念演化建模、长时间窗文本相似度学习，所需的时间深度训练信号只有中文有
+
+但现状是：训练语料古典占比极低，公开 benchmark（CMMLU / C-Eval）几乎只评白话，没人针对古典的"高密度短文本"优化 tokenizer 或评测体系。本仓库 + 配套语料集是想把这条赛道做扎实的两个基础设施 —— 让 LLM 中文古典能力变得**可量化、可对比、可训练**。
+
+具体到这个 bench，500 题在回答两个问题：
+
+1. **哪些模型在中文古典任务上已经达到可用水平？** —— 给做古籍/教育/出版/法律/中医等应用的人选模型用
+2. **不同能力维度（理解 / 操控 / 记忆 / 推理）的 ceiling 和 bottleneck 在哪？** —— 给训练/微调的人定方向用
+
+主要面向 Qwen / DeepSeek / GLM / MiniMax / Yi / InternLM 等中文模型横评，也扩展到 Claude / GPT / Gemini 作为对照组。
 
 ## 5 个任务
 
