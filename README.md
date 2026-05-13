@@ -2,9 +2,9 @@
 
 中国古典语言能力评测基准 (Classical Chinese benchmark) — **5 个任务 × 100 题 = 500 道**，覆盖翻译、断句、字义、典故、续写填空。
 
-> 📊 在线排行榜: [🤗 Space — chinese-classical-bench-leaderboard](https://huggingface.co/spaces/dzxr/chinese-classical-bench-leaderboard)
-> 🤗 本评测集也在 HuggingFace: [dzxr/chinese-classical-bench](https://huggingface.co/datasets/dzxr/chinese-classical-bench) — `load_dataset("dzxr/chinese-classical-bench", "translate")`
-> 🔗 配套语料集: [dzxr/chinese-classical-corpus](https://huggingface.co/datasets/dzxr/chinese-classical-corpus) (CC0 公有领域)
+> 📊 在线排行榜: [🤗 Space — chinese-classical-bench-leaderboard](https://huggingface.co/spaces/gujilab/chinese-classical-bench-leaderboard)
+> 🤗 本评测集也在 HuggingFace: [gujilab/chinese-classical-bench](https://huggingface.co/datasets/gujilab/chinese-classical-bench) — `load_dataset("gujilab/chinese-classical-bench", "translate")`
+> 🔗 配套语料集: [gujilab/chinese-classical-corpus](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) (CC0 公有领域)
 
 ## 评测目的
 
@@ -106,4 +106,4 @@ docs/tasks.md          # 任务详细说明
 
 ## License
 
-题目和评分代码：**MIT**。源数据来自 [chinese-classical-corpus](https://huggingface.co/datasets/dzxr/chinese-classical-corpus) (CC0)。
+题目和评分代码：**MIT**。源数据来自 [chinese-classical-corpus](https://huggingface.co/datasets/gujilab/chinese-classical-corpus) (CC0)。
