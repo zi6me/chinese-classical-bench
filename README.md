@@ -2,7 +2,8 @@
 
 中国古典语言能力评测基准 (Classical Chinese benchmark) — **5 个任务 × 100 题 = 500 道**，覆盖翻译、断句、字义、典故、续写填空。
 
-> 🔗 配套数据集: [dzxr/chinese-classical-corpus](https://huggingface.co/datasets/dzxr/chinese-classical-corpus) (CC0 公有领域)
+> 🤗 本评测集也在 HuggingFace: [dzxr/chinese-classical-bench](https://huggingface.co/datasets/dzxr/chinese-classical-bench) — `load_dataset("dzxr/chinese-classical-bench", "translate")`
+> 🔗 配套语料集: [dzxr/chinese-classical-corpus](https://huggingface.co/datasets/dzxr/chinese-classical-corpus) (CC0 公有领域)
 
 ## 评测目的
 
