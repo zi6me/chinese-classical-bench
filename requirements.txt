@@ -1,0 +1,2 @@
+# Core eval is stdlib-only — these are optional but recommended.
+opencc-python-reimplemented  # better idiom-source book matching (t2s normalization)

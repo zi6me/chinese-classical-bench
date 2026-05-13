@@ -3146,7 +3146,7 @@
       "errors": 0,
       "elapsed_sec": 180.3,
       "summary": {
-        "book_em": 0.64,
+        "book_em": 0.65,
         "quote_chrf": 0.3485
       },
       "items": [
@@ -3406,7 +3406,7 @@
           "reference": "出自《穀梁传》：「荀息牵马操璧而前曰：‘璧则犹是也，而马齿加长矣。’」",
           "prediction": "《穀梁傳·僖公二年》：「璧則猶是也，而馬齒加長矣。」",
           "scores": {
-            "book_em": 0.0,
+            "book_em": 1.0,
             "quote_chrf": 0.10894734248966224
           }
         },

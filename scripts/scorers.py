@@ -127,14 +127,65 @@ def score_char_gloss(pred: str, rec: dict) -> dict:
     }
 
 
+# --- idiom-source helpers --------------------------------------------------
+
+# Common alternate names for books in our ground truth. Canonical → variants
+# that should count as a hit.
+_BOOK_ALIASES = {
+    "老子":   ["道德经"],
+    "庄子":   ["南华经", "南华真经"],
+    "史记":   ["太史公书"],
+    "汉书":   ["前汉书"],
+    "周易":   ["易经"],
+    "尚书":   ["书经"],
+    "诗经":   ["毛诗"],
+    "左传":   ["左氏春秋", "春秋左氏传", "左氏传"],
+    "公羊传": ["春秋公羊传"],
+    # OpenCC's t2s maps 穀→谷, so the normalized form of 穀梁傳 is 谷梁传.
+    "穀梁传": ["春秋穀梁传", "谷梁传", "春秋谷梁传"],
+}
+
+_BOOK_PUNCT = "《》「」『』\"\"''（）()【】 \t\n"
+
+# Lazy opencc import: t2s normalization is a real improvement (models often
+# quote Classical Chinese in traditional script) but we don't want to hard-
+# require the dep. Fall back to identity if missing.
+try:
+    from opencc import OpenCC as _OpenCC
+    _cc_t2s = _OpenCC("t2s")
+    def _t2s(s: str) -> str:
+        return _cc_t2s.convert(s)
+except Exception:  # pragma: no cover
+    def _t2s(s: str) -> str:
+        return s
+
+
+def _norm_book(s: str) -> str:
+    """Normalize traditional→simplified and strip brackets/whitespace so
+    substring matching does the right thing across script variants."""
+    s = _t2s(s)
+    for c in _BOOK_PUNCT:
+        s = s.replace(c, "")
+    return s
+
+
+def _book_hit(pred: str, book: str) -> bool:
+    p = _norm_book(pred)
+    if _norm_book(book) in p:
+        return True
+    for alias in _BOOK_ALIASES.get(book, ()):
+        if _norm_book(alias) in p:
+            return True
+    return False
+
+
 def score_idiom_source(pred: str, rec: dict) -> dict:
-    """Book name exact-match + quote chrF."""
+    """Book name match (with t2s normalization + common aliases) + quote chrF."""
     pred = _strip(pred)
     book = rec["metadata"]["book"]
     quote = _strip(rec["metadata"]["expected_quote"])
-    book_hit = float(book in pred)
     return {
-        "book_em": book_hit,
+        "book_em": float(_book_hit(pred, book)),
         "quote_chrf": chrf(pred, quote),
     }
 
