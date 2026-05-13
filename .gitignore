@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+.venv-tok/
 .DS_Store
 
 # never commit kcli-gw / API credentials

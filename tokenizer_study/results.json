@@ -1,0 +1,1451 @@
+{
+  "tokenizers": [
+    "GPT-4o / GPT-4.1 / o1 (o200k_base)",
+    "GPT-3.5 / GPT-4 (cl100k_base)",
+    "Qwen2.5",
+    "Qwen3",
+    "DeepSeek-V3",
+    "GLM-4",
+    "Yi-1.5"
+  ],
+  "samples": [
+    {
+      "source": "汉书·传/张冯汲郑传",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 47,
+        "modern_chars": 71,
+        "english_chars": 292
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 48,
+          "modern": 65,
+          "english": 66
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 65,
+          "modern": 88,
+          "english": 66
+        },
+        "Qwen2.5": {
+          "classical": 42,
+          "modern": 50,
+          "english": 66
+        },
+        "Qwen3": {
+          "classical": 42,
+          "modern": 50,
+          "english": 66
+        },
+        "DeepSeek-V3": {
+          "classical": 41,
+          "modern": 48,
+          "english": 65
+        },
+        "GLM-4": {
+          "classical": 43,
+          "modern": 50,
+          "english": 66
+        },
+        "Yi-1.5": {
+          "classical": 46,
+          "modern": 49,
+          "english": 68
+        }
+      }
+    },
+    {
+      "source": "明史·志/卷四十三",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 48,
+        "modern_chars": 76,
+        "english_chars": 372
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 55,
+          "modern": 80,
+          "english": 77
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 74,
+          "modern": 110,
+          "english": 78
+        },
+        "Qwen2.5": {
+          "classical": 48,
+          "modern": 59,
+          "english": 78
+        },
+        "Qwen3": {
+          "classical": 48,
+          "modern": 59,
+          "english": 78
+        },
+        "DeepSeek-V3": {
+          "classical": 49,
+          "modern": 57,
+          "english": 75
+        },
+        "GLM-4": {
+          "classical": 50,
+          "modern": 58,
+          "english": 76
+        },
+        "Yi-1.5": {
+          "classical": 55,
+          "modern": 63,
+          "english": 84
+        }
+      }
+    },
+    {
+      "source": "宋史·列传/卷七十五",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 123,
+        "modern_chars": 152,
+        "english_chars": 903
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 133,
+          "modern": 146,
+          "english": 183
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 175,
+          "modern": 205,
+          "english": 185
+        },
+        "Qwen2.5": {
+          "classical": 119,
+          "modern": 127,
+          "english": 185
+        },
+        "Qwen3": {
+          "classical": 119,
+          "modern": 127,
+          "english": 185
+        },
+        "DeepSeek-V3": {
+          "classical": 118,
+          "modern": 119,
+          "english": 182
+        },
+        "GLM-4": {
+          "classical": 119,
+          "modern": 124,
+          "english": 185
+        },
+        "Yi-1.5": {
+          "classical": 133,
+          "modern": 130,
+          "english": 188
+        }
+      }
+    },
+    {
+      "source": "淮南子·本经训",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 62,
+        "modern_chars": 96,
+        "english_chars": 493
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 73,
+          "modern": 97,
+          "english": 106
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 96,
+          "modern": 145,
+          "english": 110
+        },
+        "Qwen2.5": {
+          "classical": 57,
+          "modern": 77,
+          "english": 110
+        },
+        "Qwen3": {
+          "classical": 57,
+          "modern": 77,
+          "english": 110
+        },
+        "DeepSeek-V3": {
+          "classical": 57,
+          "modern": 76,
+          "english": 109
+        },
+        "GLM-4": {
+          "classical": 62,
+          "modern": 82,
+          "english": 110
+        },
+        "Yi-1.5": {
+          "classical": 75,
+          "modern": 91,
+          "english": 119
+        }
+      }
+    },
+    {
+      "source": "陈书·本纪/卷一",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 47,
+        "modern_chars": 83,
+        "english_chars": 449
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 55,
+          "modern": 79,
+          "english": 93
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 74,
+          "modern": 119,
+          "english": 93
+        },
+        "Qwen2.5": {
+          "classical": 46,
+          "modern": 68,
+          "english": 93
+        },
+        "Qwen3": {
+          "classical": 46,
+          "modern": 68,
+          "english": 93
+        },
+        "DeepSeek-V3": {
+          "classical": 47,
+          "modern": 60,
+          "english": 93
+        },
+        "GLM-4": {
+          "classical": 49,
+          "modern": 63,
+          "english": 93
+        },
+        "Yi-1.5": {
+          "classical": 55,
+          "modern": 65,
+          "english": 95
+        }
+      }
+    },
+    {
+      "source": "太平广记·卷二百零三·乐一",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 46,
+        "modern_chars": 73,
+        "english_chars": 323
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 49,
+          "modern": 77,
+          "english": 74
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 67,
+          "modern": 104,
+          "english": 75
+        },
+        "Qwen2.5": {
+          "classical": 41,
+          "modern": 59,
+          "english": 75
+        },
+        "Qwen3": {
+          "classical": 41,
+          "modern": 59,
+          "english": 75
+        },
+        "DeepSeek-V3": {
+          "classical": 42,
+          "modern": 58,
+          "english": 71
+        },
+        "GLM-4": {
+          "classical": 44,
+          "modern": 61,
+          "english": 75
+        },
+        "Yi-1.5": {
+          "classical": 51,
+          "modern": 66,
+          "english": 75
+        }
+      }
+    },
+    {
+      "source": "晋书·列传/第三章",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 55,
+        "modern_chars": 73,
+        "english_chars": 400
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 55,
+          "modern": 62,
+          "english": 75
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 76,
+          "modern": 100,
+          "english": 74
+        },
+        "Qwen2.5": {
+          "classical": 51,
+          "modern": 52,
+          "english": 74
+        },
+        "Qwen3": {
+          "classical": 51,
+          "modern": 52,
+          "english": 74
+        },
+        "DeepSeek-V3": {
+          "classical": 51,
+          "modern": 49,
+          "english": 76
+        },
+        "GLM-4": {
+          "classical": 51,
+          "modern": 50,
+          "english": 74
+        },
+        "Yi-1.5": {
+          "classical": 54,
+          "modern": 54,
+          "english": 77
+        }
+      }
+    },
+    {
+      "source": "汉书·传/赵尹韩张两王传",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 48,
+        "modern_chars": 69,
+        "english_chars": 382
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 46,
+          "modern": 65,
+          "english": 83
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 65,
+          "modern": 88,
+          "english": 84
+        },
+        "Qwen2.5": {
+          "classical": 49,
+          "modern": 58,
+          "english": 84
+        },
+        "Qwen3": {
+          "classical": 49,
+          "modern": 58,
+          "english": 84
+        },
+        "DeepSeek-V3": {
+          "classical": 44,
+          "modern": 52,
+          "english": 84
+        },
+        "GLM-4": {
+          "classical": 48,
+          "modern": 53,
+          "english": 84
+        },
+        "Yi-1.5": {
+          "classical": 49,
+          "modern": 58,
+          "english": 93
+        }
+      }
+    },
+    {
+      "source": "淮南子·泰族训",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 40,
+        "modern_chars": 74,
+        "english_chars": 353
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 37,
+          "modern": 63,
+          "english": 77
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 47,
+          "modern": 91,
+          "english": 77
+        },
+        "Qwen2.5": {
+          "classical": 34,
+          "modern": 48,
+          "english": 77
+        },
+        "Qwen3": {
+          "classical": 34,
+          "modern": 48,
+          "english": 77
+        },
+        "DeepSeek-V3": {
+          "classical": 33,
+          "modern": 45,
+          "english": 75
+        },
+        "GLM-4": {
+          "classical": 33,
+          "modern": 44,
+          "english": 77
+        },
+        "Yi-1.5": {
+          "classical": 34,
+          "modern": 48,
+          "english": 78
+        }
+      }
+    },
+    {
+      "source": "旧五代史·后晋/高祖纪二",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 40,
+        "modern_chars": 69,
+        "english_chars": 350
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 44,
+          "modern": 63,
+          "english": 68
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 62,
+          "modern": 89,
+          "english": 67
+        },
+        "Qwen2.5": {
+          "classical": 38,
+          "modern": 51,
+          "english": 67
+        },
+        "Qwen3": {
+          "classical": 38,
+          "modern": 51,
+          "english": 67
+        },
+        "DeepSeek-V3": {
+          "classical": 38,
+          "modern": 45,
+          "english": 68
+        },
+        "GLM-4": {
+          "classical": 38,
+          "modern": 49,
+          "english": 67
+        },
+        "Yi-1.5": {
+          "classical": 41,
+          "modern": 53,
+          "english": 70
+        }
+      }
+    },
+    {
+      "source": "后汉书·列传/杜栾刘李刘谢列传",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 43,
+        "modern_chars": 60,
+        "english_chars": 356
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 49,
+          "modern": 54,
+          "english": 65
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 64,
+          "modern": 86,
+          "english": 66
+        },
+        "Qwen2.5": {
+          "classical": 43,
+          "modern": 46,
+          "english": 66
+        },
+        "Qwen3": {
+          "classical": 43,
+          "modern": 46,
+          "english": 66
+        },
+        "DeepSeek-V3": {
+          "classical": 42,
+          "modern": 44,
+          "english": 66
+        },
+        "GLM-4": {
+          "classical": 42,
+          "modern": 44,
+          "english": 66
+        },
+        "Yi-1.5": {
+          "classical": 52,
+          "modern": 50,
+          "english": 69
+        }
+      }
+    },
+    {
+      "source": "宋史·列传/卷二",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 56,
+        "modern_chars": 67,
+        "english_chars": 425
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 60,
+          "modern": 69,
+          "english": 85
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 79,
+          "modern": 94,
+          "english": 89
+        },
+        "Qwen2.5": {
+          "classical": 55,
+          "modern": 62,
+          "english": 89
+        },
+        "Qwen3": {
+          "classical": 55,
+          "modern": 62,
+          "english": 89
+        },
+        "DeepSeek-V3": {
+          "classical": 54,
+          "modern": 60,
+          "english": 86
+        },
+        "GLM-4": {
+          "classical": 57,
+          "modern": 62,
+          "english": 88
+        },
+        "Yi-1.5": {
+          "classical": 65,
+          "modern": 70,
+          "english": 91
+        }
+      }
+    },
+    {
+      "source": "三国志·吴书/程黄韩蒋周陈董甘淩徐",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 58,
+        "modern_chars": 89,
+        "english_chars": 437
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 58,
+          "modern": 86,
+          "english": 102
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 88,
+          "modern": 121,
+          "english": 103
+        },
+        "Qwen2.5": {
+          "classical": 56,
+          "modern": 72,
+          "english": 103
+        },
+        "Qwen3": {
+          "classical": 56,
+          "modern": 72,
+          "english": 103
+        },
+        "DeepSeek-V3": {
+          "classical": 54,
+          "modern": 68,
+          "english": 102
+        },
+        "GLM-4": {
+          "classical": 54,
+          "modern": 70,
+          "english": 103
+        },
+        "Yi-1.5": {
+          "classical": 57,
+          "modern": 72,
+          "english": 109
+        }
+      }
+    },
+    {
+      "source": "徐霞客游记·粤西游日记十七",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 45,
+        "modern_chars": 63,
+        "english_chars": 336
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 50,
+          "modern": 64,
+          "english": 72
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 63,
+          "modern": 86,
+          "english": 70
+        },
+        "Qwen2.5": {
+          "classical": 42,
+          "modern": 52,
+          "english": 70
+        },
+        "Qwen3": {
+          "classical": 42,
+          "modern": 52,
+          "english": 70
+        },
+        "DeepSeek-V3": {
+          "classical": 41,
+          "modern": 50,
+          "english": 71
+        },
+        "GLM-4": {
+          "classical": 43,
+          "modern": 52,
+          "english": 70
+        },
+        "Yi-1.5": {
+          "classical": 47,
+          "modern": 57,
+          "english": 73
+        }
+      }
+    },
+    {
+      "source": "明史·列传/卷一百九十八",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 138,
+        "modern_chars": 147,
+        "english_chars": 530
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 152,
+          "modern": 150,
+          "english": 141
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 224,
+          "modern": 212,
+          "english": 156
+        },
+        "Qwen2.5": {
+          "classical": 134,
+          "modern": 125,
+          "english": 156
+        },
+        "Qwen3": {
+          "classical": 134,
+          "modern": 125,
+          "english": 156
+        },
+        "DeepSeek-V3": {
+          "classical": 141,
+          "modern": 129,
+          "english": 146
+        },
+        "GLM-4": {
+          "classical": 141,
+          "modern": 129,
+          "english": 156
+        },
+        "Yi-1.5": {
+          "classical": 151,
+          "modern": 143,
+          "english": 161
+        }
+      }
+    },
+    {
+      "source": "后汉书·列传/邓张徐张胡列传",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 62,
+        "modern_chars": 68,
+        "english_chars": 475
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 60,
+          "modern": 64,
+          "english": 93
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 80,
+          "modern": 82,
+          "english": 94
+        },
+        "Qwen2.5": {
+          "classical": 59,
+          "modern": 59,
+          "english": 94
+        },
+        "Qwen3": {
+          "classical": 59,
+          "modern": 59,
+          "english": 94
+        },
+        "DeepSeek-V3": {
+          "classical": 57,
+          "modern": 57,
+          "english": 94
+        },
+        "GLM-4": {
+          "classical": 56,
+          "modern": 58,
+          "english": 94
+        },
+        "Yi-1.5": {
+          "classical": 64,
+          "modern": 65,
+          "english": 97
+        }
+      }
+    },
+    {
+      "source": "资治通鉴·晋纪/晋纪三十六",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 42,
+        "modern_chars": 65,
+        "english_chars": 316
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 42,
+          "modern": 59,
+          "english": 65
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 64,
+          "modern": 91,
+          "english": 66
+        },
+        "Qwen2.5": {
+          "classical": 38,
+          "modern": 51,
+          "english": 66
+        },
+        "Qwen3": {
+          "classical": 38,
+          "modern": 51,
+          "english": 66
+        },
+        "DeepSeek-V3": {
+          "classical": 37,
+          "modern": 48,
+          "english": 64
+        },
+        "GLM-4": {
+          "classical": 38,
+          "modern": 50,
+          "english": 66
+        },
+        "Yi-1.5": {
+          "classical": 40,
+          "modern": 52,
+          "english": 72
+        }
+      }
+    },
+    {
+      "source": "元史·列传/卷四十九",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 45,
+        "modern_chars": 101,
+        "english_chars": 588
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 48,
+          "modern": 103,
+          "english": 129
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 65,
+          "modern": 142,
+          "english": 132
+        },
+        "Qwen2.5": {
+          "classical": 43,
+          "modern": 91,
+          "english": 132
+        },
+        "Qwen3": {
+          "classical": 43,
+          "modern": 91,
+          "english": 132
+        },
+        "DeepSeek-V3": {
+          "classical": 42,
+          "modern": 87,
+          "english": 128
+        },
+        "GLM-4": {
+          "classical": 43,
+          "modern": 90,
+          "english": 132
+        },
+        "Yi-1.5": {
+          "classical": 45,
+          "modern": 93,
+          "english": 133
+        }
+      }
+    },
+    {
+      "source": "资治通鉴·唐纪/唐纪六十二",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 41,
+        "modern_chars": 70,
+        "english_chars": 359
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 42,
+          "modern": 67,
+          "english": 77
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 57,
+          "modern": 94,
+          "english": 78
+        },
+        "Qwen2.5": {
+          "classical": 39,
+          "modern": 57,
+          "english": 78
+        },
+        "Qwen3": {
+          "classical": 39,
+          "modern": 57,
+          "english": 78
+        },
+        "DeepSeek-V3": {
+          "classical": 39,
+          "modern": 56,
+          "english": 76
+        },
+        "GLM-4": {
+          "classical": 38,
+          "modern": 56,
+          "english": 78
+        },
+        "Yi-1.5": {
+          "classical": 44,
+          "modern": 64,
+          "english": 82
+        }
+      }
+    },
+    {
+      "source": "新唐书·列传/卷一百四十七",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 49,
+        "modern_chars": 64,
+        "english_chars": 415
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 52,
+          "modern": 62,
+          "english": 91
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 71,
+          "modern": 90,
+          "english": 94
+        },
+        "Qwen2.5": {
+          "classical": 46,
+          "modern": 55,
+          "english": 94
+        },
+        "Qwen3": {
+          "classical": 46,
+          "modern": 55,
+          "english": 94
+        },
+        "DeepSeek-V3": {
+          "classical": 45,
+          "modern": 52,
+          "english": 93
+        },
+        "GLM-4": {
+          "classical": 47,
+          "modern": 54,
+          "english": 94
+        },
+        "Yi-1.5": {
+          "classical": 53,
+          "modern": 60,
+          "english": 95
+        }
+      }
+    },
+    {
+      "source": "宋书·志/卷十九",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 56,
+        "modern_chars": 68,
+        "english_chars": 300
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 51,
+          "modern": 55,
+          "english": 74
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 80,
+          "modern": 101,
+          "english": 77
+        },
+        "Qwen2.5": {
+          "classical": 57,
+          "modern": 62,
+          "english": 77
+        },
+        "Qwen3": {
+          "classical": 57,
+          "modern": 62,
+          "english": 77
+        },
+        "DeepSeek-V3": {
+          "classical": 48,
+          "modern": 52,
+          "english": 77
+        },
+        "GLM-4": {
+          "classical": 50,
+          "modern": 52,
+          "english": 77
+        },
+        "Yi-1.5": {
+          "classical": 67,
+          "modern": 70,
+          "english": 93
+        }
+      }
+    },
+    {
+      "source": "宋史·列传/卷一百一十八",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 44,
+        "modern_chars": 63,
+        "english_chars": 376
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 43,
+          "modern": 58,
+          "english": 75
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 62,
+          "modern": 80,
+          "english": 75
+        },
+        "Qwen2.5": {
+          "classical": 39,
+          "modern": 47,
+          "english": 75
+        },
+        "Qwen3": {
+          "classical": 39,
+          "modern": 47,
+          "english": 75
+        },
+        "DeepSeek-V3": {
+          "classical": 39,
+          "modern": 46,
+          "english": 75
+        },
+        "GLM-4": {
+          "classical": 41,
+          "modern": 48,
+          "english": 75
+        },
+        "Yi-1.5": {
+          "classical": 44,
+          "modern": 52,
+          "english": 76
+        }
+      }
+    },
+    {
+      "source": "金史·本纪/卷十五",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 68,
+        "modern_chars": 82,
+        "english_chars": 471
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 77,
+          "modern": 86,
+          "english": 97
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 107,
+          "modern": 121,
+          "english": 102
+        },
+        "Qwen2.5": {
+          "classical": 67,
+          "modern": 69,
+          "english": 100
+        },
+        "Qwen3": {
+          "classical": 67,
+          "modern": 69,
+          "english": 100
+        },
+        "DeepSeek-V3": {
+          "classical": 65,
+          "modern": 65,
+          "english": 99
+        },
+        "GLM-4": {
+          "classical": 67,
+          "modern": 68,
+          "english": 100
+        },
+        "Yi-1.5": {
+          "classical": 75,
+          "modern": 75,
+          "english": 109
+        }
+      }
+    },
+    {
+      "source": "元史·列传/卷十一",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 55,
+        "modern_chars": 119,
+        "english_chars": 658
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 54,
+          "modern": 118,
+          "english": 161
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 76,
+          "modern": 176,
+          "english": 167
+        },
+        "Qwen2.5": {
+          "classical": 55,
+          "modern": 110,
+          "english": 167
+        },
+        "Qwen3": {
+          "classical": 55,
+          "modern": 110,
+          "english": 167
+        },
+        "DeepSeek-V3": {
+          "classical": 51,
+          "modern": 108,
+          "english": 165
+        },
+        "GLM-4": {
+          "classical": 52,
+          "modern": 111,
+          "english": 167
+        },
+        "Yi-1.5": {
+          "classical": 55,
+          "modern": 124,
+          "english": 176
+        }
+      }
+    },
+    {
+      "source": "明史·志/卷八",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 62,
+        "modern_chars": 75,
+        "english_chars": 328
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 62,
+          "modern": 75,
+          "english": 84
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 84,
+          "modern": 101,
+          "english": 84
+        },
+        "Qwen2.5": {
+          "classical": 57,
+          "modern": 67,
+          "english": 91
+        },
+        "Qwen3": {
+          "classical": 57,
+          "modern": 67,
+          "english": 91
+        },
+        "DeepSeek-V3": {
+          "classical": 54,
+          "modern": 61,
+          "english": 80
+        },
+        "GLM-4": {
+          "classical": 55,
+          "modern": 64,
+          "english": 86
+        },
+        "Yi-1.5": {
+          "classical": 57,
+          "modern": 65,
+          "english": 94
+        }
+      }
+    },
+    {
+      "source": "资治通鉴·晋纪/晋纪二十三",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 50,
+        "modern_chars": 71,
+        "english_chars": 317
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 53,
+          "modern": 70,
+          "english": 69
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 68,
+          "modern": 92,
+          "english": 72
+        },
+        "Qwen2.5": {
+          "classical": 47,
+          "modern": 54,
+          "english": 72
+        },
+        "Qwen3": {
+          "classical": 47,
+          "modern": 54,
+          "english": 72
+        },
+        "DeepSeek-V3": {
+          "classical": 47,
+          "modern": 50,
+          "english": 70
+        },
+        "GLM-4": {
+          "classical": 47,
+          "modern": 51,
+          "english": 72
+        },
+        "Yi-1.5": {
+          "classical": 49,
+          "modern": 56,
+          "english": 76
+        }
+      }
+    },
+    {
+      "source": "明史·列传/卷六十七",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 46,
+        "modern_chars": 72,
+        "english_chars": 354
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 50,
+          "modern": 69,
+          "english": 83
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 69,
+          "modern": 98,
+          "english": 85
+        },
+        "Qwen2.5": {
+          "classical": 42,
+          "modern": 60,
+          "english": 85
+        },
+        "Qwen3": {
+          "classical": 42,
+          "modern": 60,
+          "english": 85
+        },
+        "DeepSeek-V3": {
+          "classical": 44,
+          "modern": 52,
+          "english": 82
+        },
+        "GLM-4": {
+          "classical": 45,
+          "modern": 57,
+          "english": 84
+        },
+        "Yi-1.5": {
+          "classical": 49,
+          "modern": 60,
+          "english": 88
+        }
+      }
+    },
+    {
+      "source": "资治通鉴·唐纪/唐纪四十七",
+      "category": "史",
+      "lengths": {
+        "classical_chars": 43,
+        "modern_chars": 71,
+        "english_chars": 300
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 46,
+          "modern": 69,
+          "english": 66
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 65,
+          "modern": 100,
+          "english": 69
+        },
+        "Qwen2.5": {
+          "classical": 41,
+          "modern": 53,
+          "english": 69
+        },
+        "Qwen3": {
+          "classical": 41,
+          "modern": 53,
+          "english": 69
+        },
+        "DeepSeek-V3": {
+          "classical": 42,
+          "modern": 51,
+          "english": 68
+        },
+        "GLM-4": {
+          "classical": 42,
+          "modern": 53,
+          "english": 69
+        },
+        "Yi-1.5": {
+          "classical": 46,
+          "modern": 58,
+          "english": 74
+        }
+      }
+    },
+    {
+      "source": "太平广记·卷四十三·神仙四十三",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 40,
+        "modern_chars": 61,
+        "english_chars": 317
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 41,
+          "modern": 56,
+          "english": 68
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 54,
+          "modern": 74,
+          "english": 68
+        },
+        "Qwen2.5": {
+          "classical": 38,
+          "modern": 45,
+          "english": 68
+        },
+        "Qwen3": {
+          "classical": 38,
+          "modern": 45,
+          "english": 68
+        },
+        "DeepSeek-V3": {
+          "classical": 37,
+          "modern": 42,
+          "english": 68
+        },
+        "GLM-4": {
+          "classical": 37,
+          "modern": 42,
+          "english": 68
+        },
+        "Yi-1.5": {
+          "classical": 38,
+          "modern": 45,
+          "english": 71
+        }
+      }
+    },
+    {
+      "source": "太平广记·卷二百二十三·相三",
+      "category": "集",
+      "lengths": {
+        "classical_chars": 41,
+        "modern_chars": 63,
+        "english_chars": 316
+      },
+      "tokens": {
+        "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+          "classical": 43,
+          "modern": 57,
+          "english": 70
+        },
+        "GPT-3.5 / GPT-4 (cl100k_base)": {
+          "classical": 60,
+          "modern": 79,
+          "english": 74
+        },
+        "Qwen2.5": {
+          "classical": 38,
+          "modern": 51,
+          "english": 74
+        },
+        "Qwen3": {
+          "classical": 38,
+          "modern": 51,
+          "english": 74
+        },
+        "DeepSeek-V3": {
+          "classical": 37,
+          "modern": 47,
+          "english": 70
+        },
+        "GLM-4": {
+          "classical": 38,
+          "modern": 51,
+          "english": 74
+        },
+        "Yi-1.5": {
+          "classical": 40,
+          "modern": 53,
+          "english": 76
+        }
+      }
+    }
+  ],
+  "summary": {
+    "GPT-4o / GPT-4.1 / o1 (o200k_base)": {
+      "classical_mean": 57.6,
+      "modern_mean": 76.27,
+      "english_mean": 88.97,
+      "classical_vs_english_ratio": 0.647,
+      "modern_vs_english_ratio": 0.857,
+      "classical_vs_modern_ratio": 0.755
+    },
+    "GPT-3.5 / GPT-4 (cl100k_base)": {
+      "classical_mean": 79.37,
+      "modern_mean": 108.63,
+      "english_mean": 91.0,
+      "classical_vs_english_ratio": 0.872,
+      "modern_vs_english_ratio": 1.194,
+      "classical_vs_modern_ratio": 0.731
+    },
+    "Qwen2.5": {
+      "classical_mean": 52.03,
+      "modern_mean": 64.57,
+      "english_mean": 91.17,
+      "classical_vs_english_ratio": 0.571,
+      "modern_vs_english_ratio": 0.708,
+      "classical_vs_modern_ratio": 0.806
+    },
+    "Qwen3": {
+      "classical_mean": 52.03,
+      "modern_mean": 64.57,
+      "english_mean": 91.17,
+      "classical_vs_english_ratio": 0.571,
+      "modern_vs_english_ratio": 0.708,
+      "classical_vs_modern_ratio": 0.806
+    },
+    "DeepSeek-V3": {
+      "classical_mean": 51.2,
+      "modern_mean": 61.13,
+      "english_mean": 89.27,
+      "classical_vs_english_ratio": 0.574,
+      "modern_vs_english_ratio": 0.685,
+      "classical_vs_modern_ratio": 0.838
+    },
+    "GLM-4": {
+      "classical_mean": 52.33,
+      "modern_mean": 63.2,
+      "english_mean": 90.87,
+      "classical_vs_english_ratio": 0.576,
+      "modern_vs_english_ratio": 0.696,
+      "classical_vs_modern_ratio": 0.828
+    },
+    "Yi-1.5": {
+      "classical_mean": 57.7,
+      "modern_mean": 68.7,
+      "english_mean": 95.4,
+      "classical_vs_english_ratio": 0.605,
+      "modern_vs_english_ratio": 0.72,
+      "classical_vs_modern_ratio": 0.84
+    }
+  }
+}
