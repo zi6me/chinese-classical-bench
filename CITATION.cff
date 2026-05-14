@@ -3,10 +3,10 @@ message: "If you use this benchmark, please cite it as below."
 title: "Chinese Classical Bench"
 abstract: >-
   A benchmark for Classical Chinese language understanding in LLMs:
-  5 tasks (translation, punctuation restoration, character glossing,
-  allusion sourcing, single-character cloze) x 100 questions = 500,
-  sampled from a CC0 corpus of the Thirteen Classics, Shuowen Jiezi,
-  Zizhi Tongjian, and the first 15 of the Twenty-Four Histories.
+  6 tasks (translation, punctuation restoration, character glossing,
+  allusion sourcing, single-character cloze, modern-to-classical compression)
+  x 100 questions = 600, sampled from a CC0 corpus of the Thirteen Classics,
+  Shuowen Jiezi, Zizhi Tongjian, and the first 15 of the Twenty-Four Histories.
 authors:
   - name: "gujilab"
 repository-code: "https://github.com/gujilab/chinese-classical-bench"
@@ -18,5 +18,5 @@ keywords:
   - benchmark
   - evaluation
   - large-language-models
-version: "1.0"
-date-released: "2026-05-02"
+version: "1.1"
+date-released: "2026-05-14"

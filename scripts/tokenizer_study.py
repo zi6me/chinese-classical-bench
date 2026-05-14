@@ -79,7 +79,8 @@ def translate_to_english(samples: list[dict]) -> list[dict]:
         return samples
     print("translating modern Chinese → English via Claude Sonnet 4.6...")
 
-    key = Path("/tmp/kcli-key").read_text().strip()
+    import os
+    key = os.environ.get("OPENAI_API_KEY") or os.environ.get("KCLI_API_KEY") or Path("/tmp/kcli-key").read_text().strip()
     url = "http://127.0.0.1:8990/v1/chat/completions"
     system_prompt = (
         "You are a professional translator. Translate the given Chinese "

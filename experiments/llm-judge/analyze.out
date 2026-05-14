@@ -1,0 +1,80 @@
+loaded 1000 judge rows
+
+## Correlation (chrF vs judge), pooled across models
+  translate    n= 500  pearson=+0.457  spearman=+0.515
+  char-gloss   n= 500  pearson=+0.470  spearman=+0.601
+
+## Per (model, task) means
+                 model |             task |                n |        chrf_mean |  judge_mean_norm
+       claude-opus-4-7 |       char-gloss |              100 |           0.2126 |           0.7160
+       claude-opus-4-7 |        translate |              100 |           0.2436 |           0.8000
+  claude-opus-4-7-thinking |       char-gloss |              100 |           0.2073 |           0.7360
+  claude-opus-4-7-thinking |        translate |              100 |           0.2419 |           0.8020
+     claude-sonnet-4-6 |       char-gloss |              100 |           0.1565 |           0.6940
+     claude-sonnet-4-6 |        translate |              100 |           0.2305 |           0.7760
+          deepseek-3.2 |       char-gloss |              100 |           0.1387 |           0.5380
+          deepseek-3.2 |        translate |              100 |           0.2399 |           0.7540
+                 glm-5 |       char-gloss |              100 |           0.1762 |           0.6380
+                 glm-5 |        translate |              100 |           0.2411 |           0.7480
+
+## Per-model correlation (chrF vs judge)
+            claude-opus-4-7 / translate   n=100  pearson=+0.399  spearman=+0.464
+            claude-opus-4-7 / char-gloss  n=100  pearson=+0.443  spearman=+0.568
+   claude-opus-4-7-thinking / translate   n=100  pearson=+0.473  spearman=+0.526
+   claude-opus-4-7-thinking / char-gloss  n=100  pearson=+0.432  spearman=+0.566
+          claude-sonnet-4-6 / translate   n=100  pearson=+0.495  spearman=+0.517
+          claude-sonnet-4-6 / char-gloss  n=100  pearson=+0.436  spearman=+0.589
+               deepseek-3.2 / translate   n=100  pearson=+0.420  spearman=+0.502
+               deepseek-3.2 / char-gloss  n=100  pearson=+0.513  spearman=+0.607
+                      glm-5 / translate   n=100  pearson=+0.516  spearman=+0.567
+                      glm-5 / char-gloss  n=100  pearson=+0.527  spearman=+0.639
+
+## Divergence (translate) — across all (model, question) rows
+  Top 10 chrF UNDER-rates (high judge, low chrF):
+    [     claude-sonnet-4-6] translate#73   chrf=0.086 judge=5  pred='能与贤人相处共事，在于以礼待之。' ref='跟贤人在一起是能够办到的，那就是以礼对待他们。'
+    [       claude-opus-4-7] translate#53   chrf=0.092 judge=5  pred='承蒙国君赐礼之荣，故以"鲤"为名，以"伯鱼"为字。' ref='孔子得到国君的赏赐感到很荣耀，所以给儿子取名鲤，字伯鱼。'
+    [     claude-sonnet-4-6] translate#87   chrf=0.121 judge=5  pred='你的罪行本该处死，但朕见先帝对所俘获的酋长必定宽恕，所以现在赦免你，不予处死。' ref='你罪该死。但我看见先帝擒获酋长后都赦免了他们，我今天也免你死罪。'
+    [     claude-sonnet-4-6] translate#24   chrf=0.127 judge=5  pred='最初出仕担任辅国将军府参军，府署撤销后回归故里。' ref='羊欣开始任辅国参军，州府解体后就回到家乡。'
+    [          deepseek-3.2] translate#33   chrf=0.131 judge=5  pred='叔卿原本打算拜见武帝，认为武帝喜好道术，见到自己一定会给予优厚的礼遇。' ref='卫叔卿本来听说汉武帝喜好修道才来拜见，以为武帝看见他以后会对他特别优待尊重。'
+    [          deepseek-3.2] translate#89   chrf=0.136 judge=5  pred='月圆时蚌蛤充实，阴类之物都盈满；月缺时蚌蛤空虚，阴类之物都亏缺。' ref='月满的时候，蚌蛤的肉就充实，各种属阴之物也都满盈；月光尽敛的时侯，蚌蛤的肉就空虚，各种属阴之物也都亏损。'
+    [claude-opus-4-7-thinking] translate#89   chrf=0.142 judge=5  pred='月圆之时，蚌蛤体内充实饱满，一切阴类之物都随之盈满；月亏之夜，蚌蛤体内空虚干瘪，一切阴类之物都随之亏损。' ref='月满的时候，蚌蛤的肉就充实，各种属阴之物也都满盈；月光尽敛的时侯，蚌蛤的肉就空虚，各种属阴之物也都亏损。'
+    [     claude-sonnet-4-6] translate#83   chrf=0.144 judge=5  pred='祭祀时，黍稷上加放牲肺，祭酒中加入明水，这是回报阴气（之恩）。' ref='用黍樱加肺祭祀，用五齐加明水祭祀，这是为了报答阴气。'
+    [     claude-sonnet-4-6] translate#66   chrf=0.145 judge=5  pred='过了半天，海潮涌来，四万人同时冻死。只有番人、汉人各一名得以生还，回来详细上报。' ref='经过半日，小海波涛涨涌，四万人一时间全都冻死，只有一个汉人和一个蕃人跑了回来，详细地向皇上禀报。'
+    [       claude-opus-4-7] translate#89   chrf=0.149 judge=5  pred='月圆之时，蚌蛤体内饱满，一切阴类之物皆充盈；月末无光之时，蚌蛤体内空虚，一切阴类之物皆亏损。' ref='月满的时候，蚌蛤的肉就充实，各种属阴之物也都满盈；月光尽敛的时侯，蚌蛤的肉就空虚，各种属阴之物也都亏损。'
+  Top 10 chrF OVER-rates (low judge, high chrF):
+    [                 glm-5] translate#10   chrf=0.160 judge=0  pred='殿内将军、陇西人牛子充，同僚推重他能言善辩，曾对玠说："您表面上有才德，恐怕担当不了治国重任。"' ref='殿内将军陇西的牛子充被同事和朋友们公认为机敏善辩，他对阳玠说：你的阳物有疥疮，恐怕不能作菜。'
+    [          deepseek-3.2] translate#58   chrf=0.086 judge=0  pred='两凿，渠夫前端下堞四寸而适。' ref='外露部分凿两孔，渠柱顶端比女墙低四寸为宜。'
+    [claude-opus-4-7-thinking] translate#10   chrf=0.268 judge=1  pred='殿内将军陇西人牛子充，同僚们都推崇他机敏善辩，他曾对（王）玠说：你们阳地有玠（美玉），恐怕不堪作厨（烹饪之用）。' ref='殿内将军陇西的牛子充被同事和朋友们公认为机敏善辩，他对阳玠说：你的阳物有疥疮，恐怕不能作菜。'
+    [          deepseek-3.2] translate#74   chrf=0.062 judge=0  pred='因功被授予开府仪同三司。尉迟迥又派遣他的部将宇文胄从石济渡河，宇文威、邹绍从白马渡河，两路兵马一同进发，再次进攻于仲文。' ref='部队驻扎在乌骨城，于仲文挑选瘦弱的马、驴几千头，放在军后。'
+    [claude-opus-4-7-thinking] translate#74   chrf=0.059 judge=0  pred='因战功被授予开府之职。尉迟迥又派遣其部将宇文胄从石济渡河，宇文威、邹绍从白马出发，两路同时进兵，再次进攻于仲文。' ref='部队驻扎在乌骨城，于仲文挑选瘦弱的马、驴几千头，放在军后。'
+    [     claude-sonnet-4-6] translate#74   chrf=0.058 judge=0  pred='凭借战功被授予开府之职。尉迟迥又派遣他的将领宇文胄从石济渡河，宇文威、邹绍从白马出发，两路同时推进，再次攻打于仲文。' ref='部队驻扎在乌骨城，于仲文挑选瘦弱的马、驴几千头，放在军后。'
+    [     claude-sonnet-4-6] translate#56   chrf=0.056 judge=0  pred='五剽体质的人，外表华美鲜亮，看起来芬芳润泽，却脆弱易折。' ref='五种剽土的性状，白白如粉而且土质较脆。'
+    [       claude-opus-4-7] translate#74   chrf=0.045 judge=0  pred='因功勋授予开府之职。尉迟迥又派遣其部将宇文胄从石济渡河，宇文威、邹绍从白马出发，两路并进，再次进攻仲文。' ref='部队驻扎在乌骨城，于仲文挑选瘦弱的马、驴几千头，放在军后。'
+    [                 glm-5] translate#74   chrf=0.044 judge=0  pred='凭借功绩被授予开府官职。尉迟迥又派遣他的将领宇文胄从石济渡河，宇文威、邹绍从白马出发，两路并进，再次攻打仲文。' ref='部队驻扎在乌骨城，于仲文挑选瘦弱的马、驴几千头，放在军后。'
+    [       claude-opus-4-7] translate#10   chrf=0.243 judge=1  pred='殿内将军陇西人牛子充，同僚们推崇他机敏善辩，他曾对王玠说：您表面上有"玠"之名，恐怕难以胜任厨事。' ref='殿内将军陇西的牛子充被同事和朋友们公认为机敏善辩，他对阳玠说：你的阳物有疥疮，恐怕不能作菜。'
+
+## Divergence (char-gloss) — across all (model, question) rows
+  Top 10 chrF UNDER-rates (high judge, low chrF):
+    [                 glm-5] char-gloss#5   chrf=0.000 judge=5  pred='捕鸟网' ref='同本义。'
+    [     claude-sonnet-4-6] char-gloss#94  chrf=0.019 judge=5  pred='符合，匹配（内心与外表相符）' ref='一说通“称”。相当;相称。'
+    [       claude-opus-4-7] char-gloss#70  chrf=0.089 judge=5  pred='声色享乐' ref='旧指“声色”。即歌舞和女色。'
+    [     claude-sonnet-4-6] char-gloss#1   chrf=0.119 judge=5  pred='濒临，接近于' ref='靠近;临近。'
+    [       claude-opus-4-7] char-gloss#1   chrf=0.125 judge=5  pred='濒临、接近' ref='靠近;临近。'
+    [claude-opus-4-7-thinking] char-gloss#1   chrf=0.125 judge=5  pred='濒临、接近' ref='靠近;临近。'
+    [     claude-sonnet-4-6] char-gloss#10  chrf=0.160 judge=5  pred='未经腊制的鼠肉。' ref='没有晾干的鼠肉。'
+    [     claude-sonnet-4-6] char-gloss#99  chrf=0.164 judge=5  pred='制陶用的旋转圆盘（陶轮）。' ref='制陶器所用的转轮。'
+    [     claude-sonnet-4-6] char-gloss#62  chrf=0.166 judge=5  pred='风月：男女情爱之事。' ref='男女间的情爱。'
+    [     claude-sonnet-4-6] char-gloss#37  chrf=0.179 judge=5  pred='掌管、把持（政务）' ref='总管。'
+  Top 10 chrF OVER-rates (low judge, high chrF):
+    [       claude-opus-4-7] char-gloss#8   chrf=1.000 judge=4  pred='宏伟' ref='宏伟。'
+    [       claude-opus-4-7] char-gloss#50  chrf=1.000 judge=4  pred='呻吟' ref='呻吟。'
+    [       claude-opus-4-7] char-gloss#86  chrf=1.000 judge=4  pred='早晨' ref='早晨。'
+    [claude-opus-4-7-thinking] char-gloss#49  chrf=1.000 judge=4  pred='恳切' ref='恳切。'
+    [claude-opus-4-7-thinking] char-gloss#50  chrf=1.000 judge=4  pred='呻吟' ref='呻吟。'
+    [claude-opus-4-7-thinking] char-gloss#86  chrf=1.000 judge=4  pred='早晨' ref='早晨。'
+    [     claude-sonnet-4-6] char-gloss#67  chrf=1.000 judge=4  pred='亲戚' ref='亲戚。'
+    [          deepseek-3.2] char-gloss#40  chrf=1.000 judge=4  pred='打猎' ref='打猎。'
+    [          deepseek-3.2] char-gloss#86  chrf=1.000 judge=4  pred='早晨' ref='早晨。'
+    [                 glm-5] char-gloss#86  chrf=1.000 judge=4  pred='早晨' ref='早晨。'
+
+Wrote /Users/zion/Documents/zion/chinese-classical-bench/experiments/llm-judge/summary.json

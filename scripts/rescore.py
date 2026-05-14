@@ -31,6 +31,7 @@ TASK_FILES = {
     "char-gloss":   "char_gloss.jsonl",
     "idiom-source": "idiom_source.jsonl",
     "fill-in":      "fill_in.jsonl",
+    "compress":     "compress.jsonl",
 }
 
 
@@ -60,7 +61,7 @@ def rescore_file(fp: Path, recs: dict[str, dict]) -> tuple[dict, dict]:
             it["scores"] = sc
             for k, v in sc.items():
                 all_scores.setdefault(k, []).append(v)
-        new_summary = {k: round(statistics.mean(v), 4) for k, v in all_scores.items() if v}
+        new_summary = {k: round(statistics.fmean(v), 4) for k, v in all_scores.items() if v}
         old_summary = tdata.get("summary", {})
         if new_summary != old_summary:
             diff[task] = {

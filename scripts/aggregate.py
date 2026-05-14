@@ -38,7 +38,11 @@ def main() -> None:
 
     rows = []
     for fp in files:
-        d = json.loads(fp.read_text(encoding="utf-8"))
+        try:
+            d = json.loads(fp.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"warning: skipping {fp.name} (invalid JSON: {e})", file=__import__("sys").stderr)
+            continue
         model = d.get("model", fp.stem)
         row = {"model": model}
         for t in TASK_ORDER:

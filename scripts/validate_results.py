@@ -13,7 +13,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 RESULTS = REPO / "results"
 
-TASKS = {"translate", "punctuate", "char-gloss", "idiom-source", "fill-in"}
+TASKS = {"translate", "punctuate", "char-gloss", "idiom-source", "fill-in", "compress"}
 N_PER_TASK = 100
 
 
@@ -51,8 +51,11 @@ def validate_file(fp: Path) -> list[str]:
         if not isinstance(items, list):
             errs.append(f"{fp.name}: tasks.{t}.items missing or not a list")
             continue
-        if len(items) != N_PER_TASK:
-            errs.append(f"{fp.name}: tasks.{t}.items has {len(items)}, expected {N_PER_TASK}")
+        if len(items) > N_PER_TASK:
+            errs.append(f"{fp.name}: tasks.{t}.items has {len(items)}, max allowed {N_PER_TASK}")
+        elif len(items) < N_PER_TASK:
+            # partial run (e.g. --limit flag) — warn but do not fail
+            print(f"  warn: {fp.name}: tasks.{t}.items has {len(items)}/{N_PER_TASK} (partial run?)")
         for i, it in enumerate(items[:N_PER_TASK]):
             if not isinstance(it, dict):
                 errs.append(f"{fp.name}: tasks.{t}.items[{i}] is not an object")

@@ -142,7 +142,7 @@ def run_task(
     items = []
     metric_acc: dict[str, list[float]] = {}
     for rec, pred in zip(records, preds):
-        s = score(rec, pred)
+        s = score(rec, pred if pred is not None else "")
         for k, v in s.items():
             metric_acc.setdefault(k, []).append(v)
         items.append(

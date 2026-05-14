@@ -1,0 +1,81 @@
+{
+  "n_total": 1000,
+  "tasks": {
+    "translate": {
+      "n": 500,
+      "pearson": 0.45667796492399726,
+      "spearman": 0.5145916995553703,
+      "chrf_mean": 0.2394289845890083,
+      "judge_mean_norm": 0.776
+    },
+    "char-gloss": {
+      "n": 500,
+      "pearson": 0.4702544827475481,
+      "spearman": 0.600810910945927,
+      "chrf_mean": 0.17826510375246057,
+      "judge_mean_norm": 0.6644
+    }
+  },
+  "models": {
+    "claude-opus-4-7": {
+      "char-gloss": {
+        "chrf": 0.21261893670993928,
+        "judge": 0.716,
+        "n": 100
+      },
+      "translate": {
+        "chrf": 0.24362301206602538,
+        "judge": 0.8,
+        "n": 100
+      }
+    },
+    "claude-opus-4-7-thinking": {
+      "char-gloss": {
+        "chrf": 0.20734361003117413,
+        "judge": 0.736,
+        "n": 100
+      },
+      "translate": {
+        "chrf": 0.2419493706368052,
+        "judge": 0.8019999999999999,
+        "n": 100
+      }
+    },
+    "claude-sonnet-4-6": {
+      "char-gloss": {
+        "chrf": 0.15647187238215582,
+        "judge": 0.6940000000000001,
+        "n": 100
+      },
+      "translate": {
+        "chrf": 0.23052207824489443,
+        "judge": 0.776,
+        "n": 100
+      }
+    },
+    "deepseek-3.2": {
+      "char-gloss": {
+        "chrf": 0.13868437357255406,
+        "judge": 0.538,
+        "n": 100
+      },
+      "translate": {
+        "chrf": 0.23994184510368274,
+        "judge": 0.754,
+        "n": 100
+      }
+    },
+    "glm-5": {
+      "char-gloss": {
+        "chrf": 0.17620672606647952,
+        "judge": 0.638,
+        "n": 100
+      },
+      "translate": {
+        "chrf": 0.24110861689363378,
+        "judge": 0.748,
+        "n": 100
+      }
+    }
+  }
+}
