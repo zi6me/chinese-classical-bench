@@ -10,13 +10,32 @@
 
 ## 为什么做这个
 
-短答：**中文（尤其文言文）在 LLM 时代有一个被严重低估的优势 —— 信息密度。**
+中文（尤其文言文）在 LLM 时代常被说成"高密度优势"。这套基础设施（bench + corpus + [experiments/](experiments/)）想把这个论点变成可验证的数字 —— **包括它在哪些场景成立、在哪些场景不成立**。
 
-- **Token 经济学**：同一句话用文言文表达，token 数约为现代英文的 1/2，比现代白话还再压缩 30-40%。在 1M 上下文卷成本的今天，这是 free lunch（→ 实测数据见 [tokenizer_study/report.md](tokenizer_study/report.md)：DeepSeek-V3 tokenizer 上文言文是英文 0.57×、现代中文 0.69×）
-- **典故 = 语义级 RAG 压缩**："图穷匕见"四字承载一整段故事 —— 典故是嵌在语言里的、人类沉淀 2000+ 年的"超浓缩 token"，英文几乎没有等价机制
-- **3000+ 年单一书写系统**：跨时代知识图谱、概念演化建模、长时间窗文本相似度学习，所需的时间深度训练信号只有中文有
+### Tokenizer 层面（实证：[tokenizer_study/](tokenizer_study/report.md)）
+- 7 个主流 tokenizer 横评：DeepSeek-V3 / Qwen2.5 / Qwen3 上 **文言文 = 英文 0.57×、现代中文 0.69×**
+- 老 GPT-3.5/4 (cl100k_base) **对中文比英文还费 19% token**
+- 这一层的"省 token"是真的
 
-但现状是：训练语料古典占比极低，公开 benchmark（CMMLU / C-Eval）几乎只评白话，没人针对古典的"高密度短文本"优化 tokenizer 或评测体系。本仓库 + 配套语料集是想把这条赛道做扎实的两个基础设施 —— 让 LLM 中文古典能力变得**可量化、可对比、可训练**。
+### Prompt 层面（实证：[experiments/](experiments/)）
+
+| 场景 | 字符/Token 节省 | 任务准确率/质量 | 结论 |
+|---|---|---|---|
+| **英文 prompt → 文言文 prompt**（中文域任务） | **−74%** 字符 | **+2pp** 准确率 | **大赢** |
+| **现代中文 prompt → 文言文 prompt**（同任务改写） | −4.7% 字符 | **−11.3pp** 准确率 | 不是 free lunch |
+| **典故 prompt vs 字面展开 prompt**（盲评 140 对） | −25% token | 字面赢 49% > 典故赢 38% | 省 token，质量有代价 |
+
+### 校准结论
+> 中文的高密度 = 真的 **tokenizer-level 优势**，但 ≠ **LLM-task-level free lunch**。
+> 替换英文 prompt 是真节省；替换现代中文或用典故压缩，**省 token 是真，质量代价也是真**。
+> 这个 nuance 之前自己也忽略了 —— 详细数据见 [experiments/prompt-compression](experiments/prompt-compression/report.md) 和 [experiments/idiom-prompting](experiments/idiom-prompting/report.md)。
+
+### 时间深度（未实证）
+3000+ 年单一书写系统，跨时代知识图谱、概念演化建模的训练信号只有中文有 —— 这一条尚未做实证 task，欢迎社区贡献。
+
+---
+
+现状问题：训练语料古典占比极低，公开 benchmark（CMMLU / C-Eval）几乎只评白话，没人针对古典的"高密度短文本"优化 tokenizer 或评测体系。本仓库 + 配套语料集是想把这条赛道做扎实的两个基础设施 —— 让 LLM 中文古典能力变得**可量化、可对比、可训练**。
 
 具体到这个 bench，600 题在回答两个问题：
 
@@ -112,13 +131,27 @@ docs/tasks.md          # 任务详细说明
 ### 关于分数
 
 - `chrF` 是字符级 n-gram F2 分数（n=1..6），同义改写会扣分但语义对的话主要靠 `char_f1` 兜底
+- **`chrF` 与语义质量相关性 moderate** — [experiments/llm-judge](experiments/llm-judge/report.md) 用 Claude Opus 4.7 对 5 模型 × 1000 道题重打分: translate Pearson +0.46 / char-gloss +0.47。**结论：chrF 是方向正确的下限，不是质量指标**。判断 leaderboard 排名时建议同时看 judge 分数（translate 任务 judge 重排后 Sonnet 4.6 上升、GLM-5 下降）
 - `idiom-source` 的 Book EM 较宽松：模型答 "《史记》" 就算对，不要求卷次/篇名匹配
 - `fill-in` 单字答案，模型能从带引号或单字输出中抽取（详见 `scorers.py`）
 
+## Experiments（论点实证）
+
+`bench` 之外，本仓库还有 4 个 thesis 验证实验：
+
+| 实验 | 论点 | 结果 |
+|---|---|---|
+| [tokenizer_study/](tokenizer_study/) | 中文是高密度语言？ | ✅ 国产 tokenizer 上文言文 = 英文 0.57× |
+| [experiments/prompt-compression/](experiments/prompt-compression/) | 文言文 prompt 真省 token 又保准确率？ | HALF — vs 英文大赢，vs 现代中文反损 11pp |
+| [experiments/llm-judge/](experiments/llm-judge/) | chrF 是好的质量指标？ | ❌ Pearson 0.46-0.47，重排后 Sonnet ↑、GLM ↓ |
+| [experiments/idiom-prompting/](experiments/idiom-prompting/) | 典故 = 语义级 RAG 压缩？ | HALF — 省 25% token，但盲评字面版 49% > 典故 38% |
+
+每个实验自带 README、可复现 script、原始 jsonl 数据、最终 report.md。结果不是单方向支持原命题，**有支持有修正** —— 这是命题该有的样子。
+
 ## 已知 limitation
 
-- `translate` / `char-gloss` 用 chrF 评分，对同义改写过严 — 后续会加 LLM judge
-- 5 个 task 题目均从配套 corpus 抽样，可能与某些模型的训练数据有重合污染（开源模型大多训练过《十三经》《史记》）
+- `translate` / `char-gloss` 用 chrF 评分，对同义改写过严 — **已加 LLM judge 实验：[experiments/llm-judge](experiments/llm-judge/)**（Pearson 0.46-0.47，建议结合使用而非替换）
+- 6 个 task 题目均从配套 corpus 抽样，可能与某些模型的训练数据有重合污染（开源模型大多训练过《十三经》《史记》）
 - 100 题/task 是 trade-off：太少噪声大，太多跑评测贵 — 后续可能扩到 200/task
 - **11 题（2.2%）有数据质量问题**（主要在 punctuate：误从 校勘记/历法表 抽样），已用 `metadata._audit_issue` 字段标注。详见 [docs/quality-audit.md](docs/quality-audit.md)。可通过 `ds.filter(lambda x: not x['metadata'].get('_audit_issue'))` 过滤。这些题目未删除以保持已有 result 文件兼容
 
