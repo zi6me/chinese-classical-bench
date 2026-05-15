@@ -35,7 +35,11 @@ def validate_file(fp: Path) -> list[str]:
 
     missing = TASKS - set(tasks)
     if missing:
-        errs.append(f"{fp.name}: missing task(s): {sorted(missing)}")
+        # Missing tasks are a warning, not a failure — tasks are added over time
+        # (e.g. `compress` was added after some models were evaluated) and we
+        # don't want to gate CI on re-running every legacy result file.
+        # Schema problems within tasks that ARE present are still errors below.
+        print(f"  warn: {fp.name}: missing task(s): {sorted(missing)}")
     extra = set(tasks) - TASKS
     if extra:
         errs.append(f"{fp.name}: unexpected task key(s): {sorted(extra)}")
