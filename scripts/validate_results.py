@@ -67,7 +67,8 @@ def validate_file(fp: Path) -> list[str]:
 
 
 def main() -> int:
-    files = sorted(RESULTS.glob("*.json"))
+    # `_*.json` is reserved for non-result artifacts in results/ (e.g. _bootstrap.json).
+    files = sorted(f for f in RESULTS.glob("*.json") if not f.name.startswith("_"))
     if not files:
         print(f"no result files in {RESULTS}")
         return 1
