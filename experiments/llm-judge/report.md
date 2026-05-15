@@ -119,10 +119,44 @@ This is the textbook case for why we need a judge: shared proper nouns can fool 
    - Publish judge-normalized score as the primary column for translate and char-gloss.
    - Use `scripts/judge_scorer.py::score_with_judge` to add judge to future `eval_runner` runs (opt-in, costly).
 
+## Cross-judge validation (2026-05-15 extension)
+
+Updated to all 10 leaderboard models × 2 tasks × 100 questions, with Claude Sonnet 4.6 added as a second judge (rubric and prompt identical to Opus 4.7). Inter-judge agreement is reported in `agreement.json`; it serves as a "no-human-gold" calibration: if two independent strong judges with different training agree, the rating is trustworthy.
+
+### Inter-judge agreement (Opus 4.7 vs Sonnet 4.6)
+
+| task | n | Cohen κ_quad | strict agree | lenient (\|Δ\|≤1) | mean Opus−Sonnet |
+|---|---|---|---|---|---|
+| translate | 998 | **0.775** (substantial) | 63.4% | 97.6% | +0.044 |
+| char-gloss | 991 | **0.894** (almost perfect) | 68.2% | 98.3% | +0.012 |
+
+| ranking task | n models | Spearman ρ |
+|---|---|---|
+| translate (model means) | 10 | **0.948** |
+| char-gloss (model means) | 10 | **0.979** |
+
+Two judges converge on essentially the same model ranking. Bias is small (Opus rates 0.04 higher on translate, 0.01 on char-gloss); the judge column in `leaderboard.md` is therefore well-defined without a human gold set.
+
+### What the judge column reveals that chrF hides
+
+chrF places Claude opus 4.7 ahead of opus-thinking on translate (0.244 vs 0.242) — both judges say opus-thinking edges ahead (0.802/0.770 vs 0.800/0.780). The chrF gap is statistical noise; the judge gap, while still small, is consistent across both judges.
+
+**DeepSeek-3.2 translate is dramatically downgraded by the judge.** chrF puts DeepSeek tied #2 on translate (0.240, identical to Opus 4.7's 0.244). Both judges put it 7th of 10 (0.754/0.738 vs Sonnet's 0.776/0.756). DeepSeek's chrF score was buoyed by character-level overlap from proper nouns and reused phrasing — when judged on whether the translation actually conveys the original meaning, it drops below glm-5 and the minimax models. **This is the largest chrF-vs-judge discrepancy on the leaderboard.**
+
+**DeepSeek-3.2 char-gloss is also downgraded, this time consistently.** chrF says 0.139 (rank 9), both judges say ≈0.55 (rank 10, behind haiku-4-5). DeepSeek's gloss responses are short and often miss the contextual sense — chrF doesn't penalize brevity but the judge does.
+
+### High-disagreement items
+
+14 items (0.7% of overlap) have \|Opus − Sonnet\| ≥ 3. Almost all are **translate#74**, a Wugu City passage that 4 of 5 models translated as a different sentence about Yuchi Jiong attacking Yu Zhongwen (see Pattern C example in this report). Opus correctly gives 0/5 (meaning is wrong); Sonnet gives 3-4/5 (gave benefit of doubt for shared proper nouns). This is the textbook case for stricter rubrics: Opus is the harsher and arguably more correct judge here.
+
 ## Provenance
 
-- `judge.py` — judge script, concurrency 5 (cap 8). 974 fresh calls in ~23 min after gateway rate limit was raised to 6000 rpm / burst 1000.
-- `judge_scores.jsonl` — 1000 rows, append-only cache.
-- `analyze.py` — produces this report's numbers; rerun any time.
-- `summary.json` — machine-readable summary.
+- `judge.py` — judge script, now supports `--judge-model` and `--cache-path` flags (used to run both Opus and Sonnet judges off the same code path).
+- `judge_scores.jsonl` — 1989 rows (10 models × 2 tasks × ≈99 valid predictions × Opus judge).
+- `judge_scores_sonnet.jsonl` — 1989 rows (same coverage, Sonnet judge).
+- `agreement.py` — Cohen's quadratic kappa, Spearman, bias and high-disagreement filtering.
+- `agreement.json` — machine-readable cross-judge stats.
+- `analyze.py` — produces the original chrF↔Opus correlation numbers; rerun any time.
+- `summary.json` — machine-readable summary (Opus only).
 - `scripts/judge_scorer.py` — integration hook for future eval_runner.
+- `scripts/backfill_judge.py` — replays the caches into `results/*.json` (`judge` + `judge_sonnet` labels).

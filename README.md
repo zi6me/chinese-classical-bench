@@ -99,7 +99,7 @@ docs/tasks.md          # 任务详细说明
 
 ## Leaderboard
 
-完整带 95% 置信区间的版本见 [`leaderboard.md`](leaderboard.md)。
+完整带 95% 置信区间与 LLM judge 重排的版本见 [`leaderboard.md`](leaderboard.md)。
 
 | Model | translate (chrF) | punctuate (Punct F1) | char-gloss (chrF) | idiom-source (Book EM) | fill-in (Exact) | compress (Eff) | Avg (95% CI) |
 |---|---|---|---|---|---|---|---|
@@ -134,7 +134,7 @@ docs/tasks.md          # 任务详细说明
 ### 关于分数
 
 - `chrF` 是字符级 n-gram F2 分数（n=1..6），同义改写会扣分但语义对的话主要靠 `char_f1` 兜底
-- **`chrF` 与语义质量相关性 moderate** — [experiments/llm-judge](experiments/llm-judge/report.md) 用 Claude Opus 4.7 对 5 模型 × 1000 道题重打分: translate Pearson +0.46 / char-gloss +0.47。**结论：chrF 是方向正确的下限，不是质量指标**。判断 leaderboard 排名时建议同时看 judge 分数（translate 任务 judge 重排后 Sonnet 4.6 上升、GLM-5 下降）
+- **`chrF` 与语义质量相关性 moderate** — [experiments/llm-judge](experiments/llm-judge/report.md) 现已扩展到 10 模型 × 2 任务 × 100 题、**Opus 4.7 + Sonnet 4.6 双 judge 交叉验证**。Inter-judge Cohen κ_quad：translate **0.775** / char-gloss **0.894**；model-mean Spearman ρ：translate **0.948** / char-gloss **0.979**——两个独立 judge 几乎完全同意排名，等于不依赖人工标注就拿到了可信的语义评分。**结论：chrF 是方向正确的下限，不是质量指标**。最大反差是 **DeepSeek-3.2 translate**：chrF 把它排第 2 (0.240)，judge 把它压到第 7 (0.75)——它的 chrF 高分是被专有名词共现拉起来的，并不真懂原意。详见 `leaderboard.md` 的 Judge-rescored 子表
 - `idiom-source` 的 Book EM 较宽松：模型答 "《史记》" 就算对，不要求卷次/篇名匹配
 - `fill-in` 单字答案，模型能从带引号或单字输出中抽取（详见 `scorers.py`）
 

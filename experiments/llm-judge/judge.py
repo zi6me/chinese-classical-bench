@@ -273,6 +273,7 @@ def run(models: list[str], tasks: list[str], limit: int | None,
 # ----------------- CLI -----------------
 
 def main() -> None:
+    global JUDGE_MODEL, CACHE_PATH
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", nargs="+", default=DEFAULT_MODELS)
     ap.add_argument("--tasks", nargs="+", default=DEFAULT_TASKS,
@@ -280,10 +281,17 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=None,
                     help="limit per-task questions (for smoke test)")
     ap.add_argument("--concurrency", type=int, default=MAX_CONCURRENCY)
+    ap.add_argument("--judge-model", default=JUDGE_MODEL,
+                    help=f"judge model (default {JUDGE_MODEL}). Use claude-sonnet-4-6 for cross-judge.")
+    ap.add_argument("--cache-path", type=Path, default=CACHE_PATH,
+                    help=f"override cache file (default {CACHE_PATH.name})")
     args = ap.parse_args()
     if args.concurrency > MAX_CONCURRENCY:
         print(f"[note] capping concurrency at {MAX_CONCURRENCY}")
         args.concurrency = MAX_CONCURRENCY
+    JUDGE_MODEL = args.judge_model
+    CACHE_PATH = args.cache_path
+    print(f"[config] judge_model={JUDGE_MODEL} cache={CACHE_PATH.name}")
     run(args.models, args.tasks, args.limit, args.concurrency)
 
 

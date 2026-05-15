@@ -1,0 +1,228 @@
+{
+  "n_overlap": 1989,
+  "per_task": {
+    "char-gloss": {
+      "n": 991,
+      "kappa_quad": 0.8938,
+      "strict_agree": 0.6821,
+      "lenient_agree": 0.9828,
+      "bias_opus_minus_sonnet": 0.0121
+    },
+    "translate": {
+      "n": 998,
+      "kappa_quad": 0.7752,
+      "strict_agree": 0.6343,
+      "lenient_agree": 0.976,
+      "bias_opus_minus_sonnet": 0.0441
+    }
+  },
+  "model_spearman": {
+    "char-gloss": {
+      "n_models": 10,
+      "spearman": 0.9787,
+      "per_model": {
+        "Qwen3.5-35B-A3B": {
+          "opus_mean": 3.1,
+          "sonnet_mean": 3.15
+        },
+        "claude-haiku-4-5-20251001": {
+          "opus_mean": 2.889,
+          "sonnet_mean": 2.869
+        },
+        "claude-opus-4-7": {
+          "opus_mean": 3.58,
+          "sonnet_mean": 3.5
+        },
+        "claude-opus-4-7-thinking": {
+          "opus_mean": 3.68,
+          "sonnet_mean": 3.53
+        },
+        "claude-sonnet-4-6": {
+          "opus_mean": 3.47,
+          "sonnet_mean": 3.5
+        },
+        "deepseek-3.2": {
+          "opus_mean": 2.69,
+          "sonnet_mean": 2.77
+        },
+        "glm-5": {
+          "opus_mean": 3.19,
+          "sonnet_mean": 3.22
+        },
+        "minimax-m2.1": {
+          "opus_mean": 3.475,
+          "sonnet_mean": 3.424
+        },
+        "minimax-m2.5": {
+          "opus_mean": 3.269,
+          "sonnet_mean": 3.312
+        },
+        "qwen3-coder-next": {
+          "opus_mean": 3.01,
+          "sonnet_mean": 2.96
+        }
+      }
+    },
+    "translate": {
+      "n_models": 10,
+      "spearman": 0.9483,
+      "per_model": {
+        "Qwen3.5-35B-A3B": {
+          "opus_mean": 3.64,
+          "sonnet_mean": 3.66
+        },
+        "claude-haiku-4-5-20251001": {
+          "opus_mean": 3.378,
+          "sonnet_mean": 3.408
+        },
+        "claude-opus-4-7": {
+          "opus_mean": 4.0,
+          "sonnet_mean": 3.9
+        },
+        "claude-opus-4-7-thinking": {
+          "opus_mean": 4.01,
+          "sonnet_mean": 3.85
+        },
+        "claude-sonnet-4-6": {
+          "opus_mean": 3.88,
+          "sonnet_mean": 3.78
+        },
+        "deepseek-3.2": {
+          "opus_mean": 3.77,
+          "sonnet_mean": 3.69
+        },
+        "glm-5": {
+          "opus_mean": 3.74,
+          "sonnet_mean": 3.75
+        },
+        "minimax-m2.1": {
+          "opus_mean": 3.52,
+          "sonnet_mean": 3.54
+        },
+        "minimax-m2.5": {
+          "opus_mean": 3.52,
+          "sonnet_mean": 3.44
+        },
+        "qwen3-coder-next": {
+          "opus_mean": 3.73,
+          "sonnet_mean": 3.73
+        }
+      }
+    }
+  },
+  "high_disagreement_count": 14,
+  "high_disagreement_items": [
+    {
+      "model": "claude-opus-4-7-thinking",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "qwen3-coder-next",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 3,
+      "diff": -3
+    },
+    {
+      "model": "minimax-m2.1",
+      "task": "translate",
+      "id": "translate#51",
+      "opus": 0,
+      "sonnet": 3,
+      "diff": -3
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "claude-opus-4-7-thinking",
+      "task": "char-gloss",
+      "id": "char-gloss#95",
+      "opus": 4,
+      "sonnet": 1,
+      "diff": 3
+    },
+    {
+      "model": "minimax-m2.1",
+      "task": "char-gloss",
+      "id": "char-gloss#59",
+      "opus": 0,
+      "sonnet": 3,
+      "diff": -3
+    },
+    {
+      "model": "claude-opus-4-7",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "deepseek-3.2",
+      "task": "translate",
+      "id": "translate#58",
+      "opus": 0,
+      "sonnet": 3,
+      "diff": -3
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "minimax-m2.1",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "qwen3-coder-next",
+      "task": "char-gloss",
+      "id": "char-gloss#95",
+      "opus": 4,
+      "sonnet": 1,
+      "diff": 3
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "deepseek-3.2",
+      "task": "translate",
+      "id": "translate#74",
+      "opus": 0,
+      "sonnet": 4,
+      "diff": -4
+    },
+    {
+      "model": "claude-opus-4-7",
+      "task": "char-gloss",
+      "id": "char-gloss#71",
+      "opus": 0,
+      "sonnet": 3,
+      "diff": -3
+    }
+  ]
+}
