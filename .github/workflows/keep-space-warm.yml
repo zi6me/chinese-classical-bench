@@ -1,0 +1,22 @@
+name: Keep HF Space warm
+
+# HF free-tier Spaces sleep after 48h of inactivity; any HTTP request resets
+# that timer. Ping every 6h so visitors arriving from the README badge never
+# hit a cold start.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping leaderboard Space
+        run: |
+          URL="https://gujilab-chinese-classical-bench-leaderboard.hf.space/"
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 "$URL")
+          echo "HTTP $code from $URL"
+          # 200 = awake/served, others (e.g. 503 while waking) still reset the timer
+          test "$code" -ge 200
