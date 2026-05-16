@@ -156,7 +156,7 @@ docs/tasks.md          # 任务详细说明
 - `translate` / `char-gloss` 用 chrF 评分，对同义改写过严 — **已加 LLM judge 实验：[experiments/llm-judge](experiments/llm-judge/)**（Pearson 0.46-0.47，建议结合使用而非替换）
 - 6 个 task 题目均从配套 corpus 抽样，可能与某些模型的训练数据有重合污染（开源模型大多训练过《十三经》《史记》）
 - 100 题/task 是 trade-off：太少噪声大，太多跑评测贵 — 后续可能扩到 200/task
-- **31 题有数据质量问题**，已用 `metadata._audit_issue` 标注（含 char-gloss 18 题 gold 为字典占位符 `同本义。`，由题目区分度分析发现）。详见 [docs/quality-audit.md](docs/quality-audit.md)，方法与全部发现见 **[docs/findings.md](docs/findings.md)**（题目难度/区分度心理测量学审计，零成本回溯）。可通过 `ds.filter(lambda x: not x['metadata'].get('_audit_issue'))` 过滤。题目未删除以保持已有 result 文件兼容
+- **31 题有数据质量问题**，已用 `metadata._audit_issue` 标注（含 char-gloss 18 题 gold 为字典占位符 `同本义。`，由题目区分度分析发现）。详见 [docs/quality-audit.md](docs/quality-audit.md)，方法与全部发现见 **[docs/findings.md](docs/findings.md)**（题目难度/区分度心理测量学审计，零成本回溯；含[污染探针](docs/contamination.md) `idiom-source` ρ=0.68 与[任务冗余分析](docs/task-redundancy.md)）。可通过 `ds.filter(lambda x: not x['metadata'].get('_audit_issue'))` 过滤。题目未删除以保持已有 result 文件兼容
 
 ## Contributing
 

@@ -90,6 +90,40 @@ A well-calibrated benchmark wants items clustered around 50% solve rate. This
 one is bimodal (trivial or impossible), which inflates variance and wastes
 question budget.
 
+## 6. Contamination is real — but only on `idiom-source` (and a bit `compress`)
+
+Full method and numbers: [`contamination.md`](contamination.md). Proxy:
+source-canonicity tier (3 = core canon like 论语/史记/诗经, massively
+over-represented in any training corpus; 1 = obscure dynastic histories).
+Spearman(canonicity, item difficulty):
+
+- `idiom-source` **ρ=+0.68** — core-canon items mean difficulty **0.806**
+  vs obscure-source **0.069**. This task is largely a *do-you-recognize-this-
+  famous-allusion* recall test, and it is exactly the task carrying the 23
+  ceiling items from §5. The two findings are the same finding.
+- `compress` ρ=+0.42 — moderately recall-influenced (compressing a familiar
+  passage is easier).
+- `translate` / `punctuate` / `fill-in` **ρ≈0.06–0.08** — contamination-
+  robust; difficulty there is skill/metric, not memorization.
+
+So "is this benchmark just measuring memorization?" has a precise answer:
+**no for 4 of 6 tasks, substantially yes for `idiom-source`.** Bench-wide
+ρ=+0.34 is a misleading average — the honest statement is per-task.
+
+## 7. The one redundant-looking task pair isn't redundant
+
+Full analysis: [`task-redundancy.md`](task-redundancy.md). `punctuate`↔
+`translate` ρ=0.88 (§4) is **not** redundancy — at n=10 with a wide ability
+spread, even `punctuate`'s `char_preserved` sub-metric (a dimension
+`translate` cannot express) correlates ρ=0.86 with translate. Inter-task ρ
+has no power to detect redundancy at this n. The construct test settles it:
+the hardest `translate` items are 经/子/集 (semantic transfer on dense
+philosophy/literature); the hardest `punctuate` items are **14/15 from 史**
+(boundary segmentation on histories). Disjoint material, different skills —
+keep both. Bonus diagnostic: the minimax models silently rewrite **38/100**
+inputs on `punctuate` (a fidelity failure `translate` can't surface);
+`char_preserved` should be a labelled leaderboard column.
+
 ## Honest scope and limitations
 
 - **n = 10 models, 100 questions/task.** Discrimination and task-correlation
@@ -106,13 +140,31 @@ question budget.
 
 ## Implications for v1.x
 
-1. Regenerate the 18 circular-gold `char-gloss` items from the CC0 corpus
-   with resolved senses (deterministic, no model calls) — but this
-   invalidates stored predictions for those items, so it needs a *scoped
-   rerun* (cost), not a free rescore. Defer until a rerun is funded.
-2. Replace `idiom-source`'s 23 ceiling items with rarer allusions
-   (deterministic from corpus).
-3. Promote the judge-rescored table to the primary leaderboard for
+Priority order, now that the follow-ups have run:
+
+1. **`idiom-source` is the worst task and for two compounding reasons** — 23
+   ceiling items (§5) *and* ρ=0.68 contamination (§6), which are the same
+   problem: it samples famous canon. Rebuild it from Tier-1 (obscure-source)
+   allusions. **Status: blocked** — the source idiom dictionary
+   (`idiom.json`) was deleted; deterministic regeneration with verifiable
+   出处 is not possible without it. Options: re-acquire the dictionary, or
+   hand-curate from Tier-1 corpus books (not free, not deterministic). Do
+   **not** fabricate gold — that is the failure mode this whole audit exists
+   to catch.
+2. **`char-gloss` 18 circular-gold items**: candidates staged at
+   `data/char_gloss.candidates.jsonl` (10 mechanical 说文 candidates, 8
+   blocked). 说文 gives the 本义, which often ≠ the contextual sense the task
+   tests, so these are explicitly *not* drop-in — they need human/judge
+   review **and** a scoped rerun (cost), since replacing items invalidates
+   stored predictions. Until then the `_audit_issue` filter is the fix.
+3. **Report a canonicity-stratified leaderboard** (Tier-1/2/3 columns). Cheap,
+   no rerun, and directly exposes which models rely on recall.
+4. **Promote the judge-rescored table** to the primary leaderboard for
    `translate`/`char-gloss`; keep chrF as a labelled secondary floor.
-4. Decide `punctuate`/`translate` redundancy with a failure-mode comparison,
-   not just the correlation.
+5. **Surface `char_preserved`** as a labelled `punctuate` column — it is the
+   genuinely additive part of that task (§7). Keep both `punctuate` and
+   `translate`; the redundancy question is resolved (not redundant).
+
+Net: of the cheap/free wins, items 3–5 are doable now without a rerun;
+items 1–2 are correctly *blocked on either funding or source recovery*, and
+saying so plainly is more useful than shipping fabricated replacements.

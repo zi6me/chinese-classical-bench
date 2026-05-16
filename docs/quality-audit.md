@@ -38,6 +38,23 @@ not the bench-wide dead mass — the remaining dead items (notably
 idiom-source's 23 ceiling items) are genuinely too easy/too hard and need
 harder *replacement* items, not relabeling. Tracked as a v1.x task.
 
+**Follow-ups (same day, all zero-cost):**
+- *Contamination probe* ([`contamination.md`](contamination.md)): difficulty
+  vs source-canonicity. `idiom-source` ρ=+0.68 (recall-driven, = its 23
+  ceiling items); `compress` +0.42; `translate`/`punctuate`/`fill-in` clean
+  (≈0.06). Per-task, not the misleading bench-wide +0.34 average.
+- *Redundancy* ([`task-redundancy.md`](task-redundancy.md)): `punctuate`↔
+  `translate` ρ=0.88 is an n=10 ability artifact, not redundancy — hardest
+  material is disjoint (punctuate 93% 史, translate 0% 史). Keep both.
+- *char-gloss regeneration*: `data/char_gloss.candidates.jsonl` stages 10
+  mechanical 说文-derived candidates + 8 blocked, via
+  `scripts/regen_char_gloss_candidates.py`. **Not adopted** — 说文 gives 本义
+  ≠ contextual sense; needs human/judge review + a scoped rerun. The
+  original modern-gloss dictionary is gone.
+- *idiom-source ceiling fix*: **blocked** — source `idiom.json` deleted;
+  deterministic regen with verifiable 出处 impossible without it. Will not
+  fabricate gold.
+
 Total flagged after this pass: **31 records** (18 new char-gloss circular +
 2 new disputed + 11 from the 2026-05-13 pass below).
 
