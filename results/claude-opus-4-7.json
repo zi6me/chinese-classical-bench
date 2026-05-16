@@ -11,9 +11,11 @@
       "summary": {
         "chrf": 0.2436,
         "char_f1": 0.6179,
+        "judge": 4.0,
         "judge_norm": 0.8,
-        "judge_n": 100,
+        "judge_sonnet": 3.9,
         "judge_sonnet_norm": 0.78,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -2540,9 +2542,11 @@
       "summary": {
         "chrf": 0.2126,
         "char_f1": 0.3335,
+        "judge": 3.58,
         "judge_norm": 0.716,
-        "judge_n": 100,
+        "judge_sonnet": 3.5,
         "judge_sonnet_norm": 0.7,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -4966,8 +4970,8 @@
       "errors": 0,
       "elapsed_sec": 93.8,
       "summary": {
-        "exact_match": 0.84,
-        "in_pred": 0.84
+        "exact_match": 0.86,
+        "in_pred": 0.86
       },
       "items": [
         {
@@ -5006,8 +5010,8 @@
           "reference": "饥",
           "prediction": "饑",
           "scores": {
-            "exact_match": 0.0,
-            "in_pred": 0.0
+            "exact_match": 1.0,
+            "in_pred": 1.0
           }
         },
         {
@@ -5236,8 +5240,8 @@
           "reference": "维",
           "prediction": "維",
           "scores": {
-            "exact_match": 0.0,
-            "in_pred": 0.0
+            "exact_match": 1.0,
+            "in_pred": 1.0
           }
         },
         {

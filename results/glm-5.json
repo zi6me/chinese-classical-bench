@@ -11,9 +11,11 @@
       "summary": {
         "chrf": 0.2411,
         "char_f1": 0.5969,
+        "judge": 3.74,
         "judge_norm": 0.748,
-        "judge_n": 100,
+        "judge_sonnet": 3.75,
         "judge_sonnet_norm": 0.75,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -2540,9 +2542,11 @@
       "summary": {
         "chrf": 0.1762,
         "char_f1": 0.2828,
+        "judge": 3.19,
         "judge_norm": 0.638,
-        "judge_n": 100,
+        "judge_sonnet": 3.22,
         "judge_sonnet_norm": 0.644,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -4966,8 +4970,8 @@
       "errors": 0,
       "elapsed_sec": 663.1,
       "summary": {
-        "exact_match": 0.44,
-        "in_pred": 0.44
+        "exact_match": 0.45,
+        "in_pred": 0.45
       },
       "items": [
         {
@@ -5086,8 +5090,8 @@
           "reference": "征",
           "prediction": "徵",
           "scores": {
-            "exact_match": 0.0,
-            "in_pred": 0.0
+            "exact_match": 1.0,
+            "in_pred": 1.0
           }
         },
         {

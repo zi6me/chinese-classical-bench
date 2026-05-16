@@ -218,9 +218,12 @@ def score_fill_in(pred: str, rec: dict) -> dict:
             extracted = cn
         elif cn:
             extracted = cn[0]
+    # Models often answer in traditional script (饑 vs 饥); normalize both
+    # sides t2s before comparing, same as the idiom-source book matcher.
+    ex_n, ans_n = _t2s(extracted), _t2s(ans)
     return {
-        "exact_match": float(extracted == ans),
-        "in_pred": float(ans in pred_s),
+        "exact_match": float(ex_n == ans_n and ex_n != ""),
+        "in_pred": float(ans in pred_s or ans_n in _t2s(pred_s)),
     }
 
 

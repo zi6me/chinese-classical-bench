@@ -11,9 +11,11 @@
       "summary": {
         "chrf": 0.2305,
         "char_f1": 0.5907,
+        "judge": 3.88,
         "judge_norm": 0.776,
-        "judge_n": 100,
+        "judge_sonnet": 3.78,
         "judge_sonnet_norm": 0.756,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -2540,9 +2542,11 @@
       "summary": {
         "chrf": 0.1565,
         "char_f1": 0.2471,
+        "judge": 3.47,
         "judge_norm": 0.694,
-        "judge_n": 100,
+        "judge_sonnet": 3.5,
         "judge_sonnet_norm": 0.7,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [

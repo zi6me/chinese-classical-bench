@@ -100,6 +100,22 @@ def main() -> None:
         print("no result files")
         return
 
+    # ids carrying a metadata._audit_issue flag (data/*.jsonl) — used to
+    # quantify how much known-bad gold inflates the dead/neg-disc counts.
+    flagged: set[str] = set()
+    data_dir = REPO / "data"
+    for fname in ("translate.jsonl", "punctuate.jsonl", "char_gloss.jsonl",
+                  "idiom_source.jsonl", "fill_in.jsonl", "compress.jsonl"):
+        fp = data_dir / fname
+        if not fp.exists():
+            continue
+        for line in fp.open(encoding="utf-8"):
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("metadata", {}).get("_audit_issue"):
+                flagged.add(r["id"])
+
     # ---- collect per-(task, item) score vectors across models -------------
     # item_scores[task][item_id] = {model: headline_score}
     item_scores: dict[str, dict[str, dict[str, float]]] = {}
@@ -222,6 +238,34 @@ def main() -> None:
         md.append(f"- mean discrimination across all items: "
                   f"**{sum(overall_disc)/len(overall_disc):.3f}**")
         md.append("")
+
+        if flagged:
+            clean_rows = [r for t in report["tasks"]
+                          for r in report["tasks"][t]["items"]
+                          if r["id"] not in flagged]
+            c_dead = sum(1 for r in clean_rows if r["variance"] < DEAD_VAR)
+            c_neg = sum(1 for r in clean_rows
+                        if (r["discrimination"] or 0) < 0)
+            c_disc = [r["discrimination"] for r in clean_rows
+                      if r["discrimination"] is not None]
+            n = len(clean_rows)
+            md.append(f"**Excluding {len(flagged)} `_audit_issue`-flagged "
+                      f"items ({n} clean):**")
+            md.append(f"- dead **{c_dead} ({c_dead/n:.0%})** "
+                      f"(was {dead_tot/tot:.0%}), "
+                      f"negative-disc **{c_neg} ({c_neg/n:.0%})** "
+                      f"(was {neg_tot/tot:.0%})")
+            md.append(f"- mean discrimination **"
+                      f"{sum(c_disc)/len(c_disc):.3f}** "
+                      f"(was {sum(overall_disc)/len(overall_disc):.3f})")
+            md.append(f"- Interpretation: the flags remove "
+                      f"{dead_tot - c_dead} dead items but discrimination is "
+                      f"~flat, so bad gold explains the char-gloss floor "
+                      f"specifically, **not** the bench-wide dead mass — the "
+                      f"rest is genuine ceiling (too easy) / floor (too hard) "
+                      f"and needs harder/replacement items, not relabeling")
+            md.append("")
+            report["flagged_count"] = len(flagged)
 
     # ---- task redundancy: Spearman over model task means ------------------
     md.append("## Task redundancy (Spearman over model task-means)")

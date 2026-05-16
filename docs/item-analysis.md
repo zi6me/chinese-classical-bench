@@ -40,11 +40,11 @@ Retroactive analysis over **10 models** on stored predictions — no new model c
 
 ## fill-in  (metric: `exact_match`, n=100 items)
 
-- mean difficulty **0.587**, mean discrimination **0.452**
-- **dead items: 20** (14 ceiling — every model ≈solves, 6 floor — every model ≈fails) → carry no information, drop/replace candidates
+- mean difficulty **0.591**, mean discrimination **0.471**
+- **dead items: 21** (15 ceiling — every model ≈solves, 6 floor — every model ≈fails) → carry no information, drop/replace candidates
 - **negative discrimination: 8** (stronger models do *worse* — likely ambiguous prompt or bad gold; audit first)
 - low |discrimination| (<0.1): 7
-- worst negative-disc items: `fill-in#4` (-0.51), `fill-in#19` (-0.40), `fill-in#31` (-0.31), `fill-in#34` (-0.19), `fill-in#41` (-0.10), `fill-in#60` (-0.10), `fill-in#87` (-0.03), `fill-in#24` (-0.02)
+- worst negative-disc items: `fill-in#19` (-0.41), `fill-in#31` (-0.29), `fill-in#34` (-0.20), `fill-in#12` (-0.17), `fill-in#41` (-0.09), `fill-in#60` (-0.09), `fill-in#87` (-0.02), `fill-in#24` (-0.02)
 
 ## compress  (metric: `efficiency`, n=100 items)
 
@@ -56,8 +56,13 @@ Retroactive analysis over **10 models** on stored predictions — no new model c
 
 ## Bench-wide
 
-- 600 items total; **104 dead (17%)**, **90 negative-discrimination (15%)**
-- mean discrimination across all items: **0.314**
+- 600 items total; **105 dead (18%)**, **90 negative-discrimination (15%)**
+- mean discrimination across all items: **0.317**
+
+**Excluding 31 `_audit_issue`-flagged items (569 clean):**
+- dead **79 (14%)** (was 18%), negative-disc **88 (15%)** (was 15%)
+- mean discrimination **0.319** (was 0.317)
+- Interpretation: the flags remove 26 dead items but discrimination is ~flat, so bad gold explains the char-gloss floor specifically, **not** the bench-wide dead mass — the rest is genuine ceiling (too easy) / floor (too hard) and needs harder/replacement items, not relabeling
 
 ## Task redundancy (Spearman over model task-means)
 

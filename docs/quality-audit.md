@@ -1,11 +1,50 @@
 # Data Quality Audit
 
-> Last run: 2026-05-13. Method: programmatic checks + targeted inspection.
+> Last run: 2026-05-16 (psychometric pass). Prior pass: 2026-05-13.
+> Method: programmatic checks + item-level discrimination analysis
+> (`scripts/item_analysis.py`) + targeted inspection of every
+> negative-discrimination and floor item against 10 models' stored predictions.
+
+## 2026-05-16 — psychometric pass (the big one)
+
+The item-level discrimination analysis surfaced a problem the 2026-05-13
+grep-pass missed entirely: **18 `char-gloss` items have gold = `"同本义。"`**
+— a dictionary placeholder ("same as the original meaning", defined
+elsewhere), not a usable gloss. Every model scores chrF≈0 on these regardless
+of answer quality (models produce correct glosses like `留宿`, `香气`,
+`从上取物`). These are exactly 18 of char-gloss's 27 floor items and they drag
+the whole task's headline (chrF 0.164, the lowest of 6 tasks).
+
+Also confirmed by reading gold + predictions:
+- `idiom-source#52` 经邦论道 — gold `隋书`, but the idiom canonically
+  originates from `尚书·周官` ("论道经邦"); the strong models answered 尚书 and
+  were marked wrong. **Disputed source**, flagged.
+- `fill-in#19` 天_下民 — gold `降` (孟子 quoting 尚书); `佑` is an attested
+  variant in transmitted 尚书 editions ("天佑下民"). **Ambiguous cloze**, flagged.
+
+**Scorer fix (not a data fix):** `score_fill_in` did not apply the t2s
+normalization that `idiom-source` already uses, so models answering in
+traditional script (e.g. `饑` for gold `饥`, `fill-in#4`) scored 0 on a
+correct answer. Fixed in `scorers.py`; `rescore.py` re-applied it to all 10
+models retroactively (no new model calls). Net effect: opus-4-7 fill-in
+0.84→0.86, opus-4-7-thinking 0.87→0.88, glm-5 0.44→0.45. Two latent
+`rescore.py` bugs fixed in passing: it crashed on `_*.json` and would have
+wiped the LLM-judge columns (now merges instead of clobbering).
+
+**Honest scope (`docs/item-analysis.md`):** excluding all 31 flagged items
+drops the bench-wide dead-item rate 18%→14% and leaves discrimination flat
+(0.317→0.319). So bad gold explains the **char-gloss floor specifically**,
+not the bench-wide dead mass — the remaining dead items (notably
+idiom-source's 23 ceiling items) are genuinely too easy/too hard and need
+harder *replacement* items, not relabeling. Tracked as a v1.x task.
+
+Total flagged after this pass: **31 records** (18 new char-gloss circular +
+2 new disputed + 11 from the 2026-05-13 pass below).
 
 ## Summary
 
-11 records (2.2% of 500) have known quality issues. Each is annotated in the
-data file with a `metadata._audit_issue` field — contributors can filter:
+Each flagged record is annotated in the data file with a
+`metadata._audit_issue` field — contributors can filter:
 
 ```python
 ds = ds.filter(lambda x: not x.get("metadata", {}).get("_audit_issue"))

@@ -11,9 +11,11 @@
       "summary": {
         "chrf": 0.2419,
         "char_f1": 0.6142,
+        "judge": 4.01,
         "judge_norm": 0.802,
-        "judge_n": 100,
+        "judge_sonnet": 3.85,
         "judge_sonnet_norm": 0.77,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -2540,9 +2542,11 @@
       "summary": {
         "chrf": 0.2073,
         "char_f1": 0.3264,
+        "judge": 3.68,
         "judge_norm": 0.736,
-        "judge_n": 100,
+        "judge_sonnet": 3.53,
         "judge_sonnet_norm": 0.706,
+        "judge_n": 100,
         "judge_sonnet_n": 100
       },
       "items": [
@@ -4966,8 +4970,8 @@
       "errors": 0,
       "elapsed_sec": 169.2,
       "summary": {
-        "exact_match": 0.87,
-        "in_pred": 0.87
+        "exact_match": 0.88,
+        "in_pred": 0.88
       },
       "items": [
         {
@@ -5236,8 +5240,8 @@
           "reference": "维",
           "prediction": "維",
           "scores": {
-            "exact_match": 0.0,
-            "in_pred": 0.0
+            "exact_match": 1.0,
+            "in_pred": 1.0
           }
         },
         {

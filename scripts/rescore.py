@@ -50,7 +50,10 @@ def rescore_file(fp: Path, recs: dict[str, dict]) -> tuple[dict, dict]:
     """Returns (new_doc, summary_diff). summary_diff: {task: {metric: (old, new)}}."""
     d = json.loads(fp.read_text(encoding="utf-8"))
     diff: dict[str, dict] = {}
-    for task, tdata in d["tasks"].items():
+    # Keys produced by the LLM judge (backfill_judge.py), not by score().
+    # rescore must NOT drop them — merge scorer output, preserve the rest.
+    JUDGE_KEYS = {"judge", "judge_norm", "judge_sonnet", "judge_sonnet_norm"}
+    for task, tdata in d.get("tasks", {}).items():
         items = tdata.get("items", [])
         all_scores: dict[str, list[float]] = {}
         for it in items:
@@ -58,10 +61,17 @@ def rescore_file(fp: Path, recs: dict[str, dict]) -> tuple[dict, dict]:
             if rec is None:
                 continue
             sc = score(rec, it.get("prediction", ""))
-            it["scores"] = sc
-            for k, v in sc.items():
+            preserved = {k: v for k, v in it.get("scores", {}).items()
+                         if k in JUDGE_KEYS}
+            it["scores"] = {**sc, **preserved}
+            for k, v in it["scores"].items():
                 all_scores.setdefault(k, []).append(v)
-        new_summary = {k: round(statistics.fmean(v), 4) for k, v in all_scores.items() if v}
+        new_summary = {k: round(statistics.fmean(v), 4)
+                       for k, v in all_scores.items() if v}
+        # carry forward judge_n / judge_sonnet_n (counts, not per-item scores)
+        for k, v in tdata.get("summary", {}).items():
+            if k.endswith("_n") and k not in new_summary:
+                new_summary[k] = v
         old_summary = tdata.get("summary", {})
         if new_summary != old_summary:
             diff[task] = {
@@ -80,7 +90,8 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    files = args.files or sorted(RESULTS.glob("*.json"))
+    files = args.files or [f for f in sorted(RESULTS.glob("*.json"))
+                           if not f.name.startswith("_")]
     recs = load_records()
 
     any_change = False

@@ -2499,18 +2499,18 @@
     },
     "fill-in": {
       "n_items": 100,
-      "difficulty_mean": 0.587,
-      "discrimination_mean": 0.4521,
-      "dead": 20,
-      "ceiling": 14,
+      "difficulty_mean": 0.591,
+      "discrimination_mean": 0.471,
+      "dead": 21,
+      "ceiling": 15,
       "floor": 6,
       "negative_disc": 8,
       "low_disc": 7,
       "worst_negative": [
-        "fill-in#4",
         "fill-in#19",
         "fill-in#31",
         "fill-in#34",
+        "fill-in#12",
         "fill-in#41",
         "fill-in#60",
         "fill-in#87",
@@ -2521,73 +2521,73 @@
           "id": "fill-in#1",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.3434
+          "discrimination": 0.3384
         },
         {
           "id": "fill-in#10",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.4846
+          "discrimination": 0.476
         },
         {
           "id": "fill-in#100",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.5521
+          "discrimination": 0.5364
         },
         {
           "id": "fill-in#11",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.7463
+          "discrimination": 0.7362
         },
         {
           "id": "fill-in#12",
-          "difficulty": 0.1,
-          "variance": 0.09,
-          "discrimination": 0.0672
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": -0.1701
         },
         {
           "id": "fill-in#13",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6005
+          "discrimination": 0.6036
         },
         {
           "id": "fill-in#14",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.3936
+          "discrimination": 0.3925
         },
         {
           "id": "fill-in#15",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.3469
+          "discrimination": 0.3462
         },
         {
           "id": "fill-in#16",
           "difficulty": 0.3,
           "variance": 0.21,
-          "discrimination": 0.7358
+          "discrimination": 0.7423
         },
         {
           "id": "fill-in#17",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.4537
+          "discrimination": 0.4512
         },
         {
           "id": "fill-in#18",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.3855
+          "discrimination": 0.3885
         },
         {
           "id": "fill-in#19",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": -0.3969
+          "discrimination": -0.4066
         },
         {
           "id": "fill-in#2",
@@ -2599,37 +2599,37 @@
           "id": "fill-in#20",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.3787
+          "discrimination": 0.3726
         },
         {
           "id": "fill-in#21",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.7843
+          "discrimination": 0.7732
         },
         {
           "id": "fill-in#22",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.3936
+          "discrimination": 0.3925
         },
         {
           "id": "fill-in#23",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.8274
+          "discrimination": 0.8252
         },
         {
           "id": "fill-in#24",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": -0.0237
+          "discrimination": -0.0154
         },
         {
           "id": "fill-in#25",
           "difficulty": 0.1,
           "variance": 0.09,
-          "discrimination": 0.4859
+          "discrimination": 0.5061
         },
         {
           "id": "fill-in#26",
@@ -2639,21 +2639,21 @@
         },
         {
           "id": "fill-in#27",
-          "difficulty": 0.5,
-          "variance": 0.25,
-          "discrimination": 0.0356
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.737
         },
         {
           "id": "fill-in#28",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.7844
+          "discrimination": 0.7991
         },
         {
           "id": "fill-in#29",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.5521
+          "discrimination": 0.5364
         },
         {
           "id": "fill-in#3",
@@ -2665,79 +2665,79 @@
           "id": "fill-in#30",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.6276
+          "discrimination": 0.637
         },
         {
           "id": "fill-in#31",
           "difficulty": 0.1,
           "variance": 0.09,
-          "discrimination": -0.3063
+          "discrimination": -0.288
         },
         {
           "id": "fill-in#32",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.7261
+          "discrimination": 0.7264
         },
         {
           "id": "fill-in#33",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.0647
+          "discrimination": 0.0658
         },
         {
           "id": "fill-in#34",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": -0.1948
+          "discrimination": -0.1975
         },
         {
           "id": "fill-in#35",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.513
+          "discrimination": 0.5182
         },
         {
           "id": "fill-in#36",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.3936
+          "discrimination": 0.3925
         },
         {
           "id": "fill-in#37",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6883
+          "discrimination": 0.6894
         },
         {
           "id": "fill-in#38",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6883
+          "discrimination": 0.6894
         },
         {
           "id": "fill-in#39",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.1147
+          "discrimination": 0.1199
         },
         {
           "id": "fill-in#4",
-          "difficulty": 0.9,
-          "variance": 0.09,
-          "discrimination": -0.5125
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
         },
         {
           "id": "fill-in#40",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.7463
+          "discrimination": 0.7362
         },
         {
           "id": "fill-in#41",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": -0.1025
+          "discrimination": -0.0925
         },
         {
           "id": "fill-in#42",
@@ -2749,13 +2749,13 @@
           "id": "fill-in#43",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.4831
+          "discrimination": 0.4793
         },
         {
           "id": "fill-in#44",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.7261
+          "discrimination": 0.7264
         },
         {
           "id": "fill-in#45",
@@ -2767,13 +2767,13 @@
           "id": "fill-in#46",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6381
+          "discrimination": 0.6403
         },
         {
           "id": "fill-in#47",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.2952
+          "discrimination": 0.2856
         },
         {
           "id": "fill-in#48",
@@ -2791,7 +2791,7 @@
           "id": "fill-in#5",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.335
+          "discrimination": 0.3392
         },
         {
           "id": "fill-in#50",
@@ -2803,19 +2803,19 @@
           "id": "fill-in#51",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.513
+          "discrimination": 0.4938
         },
         {
           "id": "fill-in#52",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6883
+          "discrimination": 0.6894
         },
         {
           "id": "fill-in#53",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.5879
+          "discrimination": 0.6036
         },
         {
           "id": "fill-in#54",
@@ -2827,25 +2827,25 @@
           "id": "fill-in#55",
           "difficulty": 0.3,
           "variance": 0.21,
-          "discrimination": 0.8303
+          "discrimination": 0.8345
         },
         {
           "id": "fill-in#56",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.5295
+          "discrimination": 0.5411
         },
         {
           "id": "fill-in#57",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.6276
+          "discrimination": 0.637
         },
         {
           "id": "fill-in#58",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.6446
+          "discrimination": 0.6452
         },
         {
           "id": "fill-in#59",
@@ -2863,19 +2863,19 @@
           "id": "fill-in#60",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": -0.1025
+          "discrimination": -0.0925
         },
         {
           "id": "fill-in#61",
           "difficulty": 0.1,
           "variance": 0.09,
-          "discrimination": 0.5462
+          "discrimination": 0.5454
         },
         {
           "id": "fill-in#62",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.6883
+          "discrimination": 0.6894
         },
         {
           "id": "fill-in#63",
@@ -2887,25 +2887,25 @@
           "id": "fill-in#64",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.5295
+          "discrimination": 0.5411
         },
         {
           "id": "fill-in#65",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.6044
+          "discrimination": 0.606
         },
         {
           "id": "fill-in#66",
           "difficulty": 0.3,
           "variance": 0.21,
-          "discrimination": 0.6285
+          "discrimination": 0.6374
         },
         {
           "id": "fill-in#67",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.3835
+          "discrimination": 0.3865
         },
         {
           "id": "fill-in#68",
@@ -2917,37 +2917,37 @@
           "id": "fill-in#69",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.6435
+          "discrimination": 0.6405
         },
         {
           "id": "fill-in#7",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.5879
+          "discrimination": 0.6036
         },
         {
           "id": "fill-in#70",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.0553
+          "discrimination": 0.0618
         },
         {
           "id": "fill-in#71",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.6435
+          "discrimination": 0.6405
         },
         {
           "id": "fill-in#72",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.5879
+          "discrimination": 0.5914
         },
         {
           "id": "fill-in#73",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.7844
+          "discrimination": 0.7991
         },
         {
           "id": "fill-in#74",
@@ -2971,19 +2971,19 @@
           "id": "fill-in#77",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.752
+          "discrimination": 0.737
         },
         {
           "id": "fill-in#78",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.2386
+          "discrimination": 0.2449
         },
         {
           "id": "fill-in#79",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.8274
+          "discrimination": 0.8252
         },
         {
           "id": "fill-in#8",
@@ -2995,31 +2995,31 @@
           "id": "fill-in#80",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.554
+          "discrimination": 0.5531
         },
         {
           "id": "fill-in#81",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.4537
+          "discrimination": 0.4512
         },
         {
           "id": "fill-in#82",
           "difficulty": 0.4,
           "variance": 0.24,
-          "discrimination": 0.7767
+          "discrimination": 0.7757
         },
         {
           "id": "fill-in#83",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.2738
+          "discrimination": 0.2558
         },
         {
           "id": "fill-in#84",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.5454
+          "discrimination": 0.5523
         },
         {
           "id": "fill-in#85",
@@ -3031,13 +3031,13 @@
           "id": "fill-in#86",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.3936
+          "discrimination": 0.3925
         },
         {
           "id": "fill-in#87",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": -0.0326
+          "discrimination": -0.0203
         },
         {
           "id": "fill-in#88",
@@ -3049,19 +3049,19 @@
           "id": "fill-in#89",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.2502
+          "discrimination": 0.2416
         },
         {
           "id": "fill-in#9",
           "difficulty": 0.5,
           "variance": 0.25,
-          "discrimination": 0.6769
+          "discrimination": 0.6731
         },
         {
           "id": "fill-in#90",
           "difficulty": 0.7,
           "variance": 0.21,
-          "discrimination": 0.2211
+          "discrimination": 0.2314
         },
         {
           "id": "fill-in#91",
@@ -3079,43 +3079,43 @@
           "id": "fill-in#93",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.7843
+          "discrimination": 0.7732
         },
         {
           "id": "fill-in#94",
           "difficulty": 0.6,
           "variance": 0.24,
-          "discrimination": 0.4583
+          "discrimination": 0.4671
         },
         {
           "id": "fill-in#95",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.7844
+          "discrimination": 0.7991
         },
         {
           "id": "fill-in#96",
           "difficulty": 0.9,
           "variance": 0.09,
-          "discrimination": 0.4537
+          "discrimination": 0.4512
         },
         {
           "id": "fill-in#97",
           "difficulty": 0.8,
           "variance": 0.16,
-          "discrimination": 0.5521
+          "discrimination": 0.5364
         },
         {
           "id": "fill-in#98",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.0445
+          "discrimination": 0.0319
         },
         {
           "id": "fill-in#99",
           "difficulty": 0.2,
           "variance": 0.16,
-          "discrimination": 0.7844
+          "discrimination": 0.7991
         }
       ]
     },
@@ -3742,6 +3742,7 @@
       ]
     }
   },
+  "flagged_count": 31,
   "task_corr": {
     "translate": {
       "translate": 1.0,

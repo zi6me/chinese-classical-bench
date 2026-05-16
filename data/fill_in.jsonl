@@ -16,7 +16,7 @@
 {"id": "fill-in#16", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "尔以为必行缀兆、兴羽钥、___钟鼓然后谓之乐乎", "reference": "作", "metadata": {"source": "礼记·仲尼燕居", "context": "尔以为必行缀兆、兴羽钥、作钟鼓然后谓之乐乎"}}
 {"id": "fill-in#17", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”子曰：“临之以庄，则敬；孝___，则忠；举善而教不能，则劝", "reference": "慈", "metadata": {"source": "论语·为政", "context": "”子曰：“临之以庄，则敬；孝慈，则忠；举善而教不能，则劝"}}
 {"id": "fill-in#18", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "因不失其亲，___可宗也", "reference": "亦", "metadata": {"source": "论语·学而", "context": "因不失其亲，亦可宗也"}}
-{"id": "fill-in#19", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《书》曰：『天___下民，作之君，作之师", "reference": "降", "metadata": {"source": "孟子·梁惠王下", "context": "《书》曰：『天降下民，作之君，作之师"}}
+{"id": "fill-in#19", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "《书》曰：『天___下民，作之君，作之师", "reference": "降", "metadata": {"source": "孟子·梁惠王下", "context": "《书》曰：『天降下民，作之君，作之师", "_audit_issue": "ambiguous cloze: gold 降 (孟子 quoting 尚书); 佑 is an attested variant in transmitted 尚书 ('天佑下民')"}}
 {"id": "fill-in#20", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "故君子有终___之忧，而无一朝之患", "reference": "身", "metadata": {"source": "礼记·檀弓", "context": "故君子有终身之忧，而无一朝之患"}}
 {"id": "fill-in#21", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "”帷殡，非古也，自敬___之哭穆伯始也", "reference": "姜", "metadata": {"source": "礼记·檀弓", "context": "”帷殡，非古也，自敬姜之哭穆伯始也"}}
 {"id": "fill-in#22", "task": "fill-in", "instruction": "下面这句古文中 ___ 处应填什么字？只需回答一个字。", "input": "厥田惟中上，厥___错上中", "reference": "赋", "metadata": {"source": "尚书·虞书 皋陶谟第四", "context": "厥田惟中上，厥赋错上中"}}
