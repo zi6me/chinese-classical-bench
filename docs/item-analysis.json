@@ -1,0 +1,3795 @@
+{
+  "models": [
+    "Qwen3.5-35B-A3B",
+    "claude-haiku-4-5-20251001",
+    "claude-opus-4-7-thinking",
+    "claude-opus-4-7",
+    "claude-sonnet-4-6",
+    "deepseek-3.2",
+    "glm-5",
+    "minimax-m2.1",
+    "minimax-m2.5",
+    "qwen3-coder-next"
+  ],
+  "tasks": {
+    "translate": {
+      "n_items": 100,
+      "difficulty_mean": 0.2288,
+      "discrimination_mean": 0.1724,
+      "dead": 4,
+      "ceiling": 0,
+      "floor": 1,
+      "negative_disc": 26,
+      "low_disc": 11,
+      "worst_negative": [
+        "translate#93",
+        "translate#52",
+        "translate#8",
+        "translate#66",
+        "translate#76",
+        "translate#9",
+        "translate#86",
+        "translate#70"
+      ],
+      "items": [
+        {
+          "id": "translate#1",
+          "difficulty": 0.2647,
+          "variance": 0.000911,
+          "discrimination": -0.3735
+        },
+        {
+          "id": "translate#10",
+          "difficulty": 0.2003,
+          "variance": 0.001737,
+          "discrimination": 0.3456
+        },
+        {
+          "id": "translate#100",
+          "difficulty": 0.1738,
+          "variance": 0.003243,
+          "discrimination": 0.29
+        },
+        {
+          "id": "translate#11",
+          "difficulty": 0.1411,
+          "variance": 0.002156,
+          "discrimination": -0.1379
+        },
+        {
+          "id": "translate#12",
+          "difficulty": 0.2282,
+          "variance": 0.005183,
+          "discrimination": 0.0989
+        },
+        {
+          "id": "translate#13",
+          "difficulty": 0.3854,
+          "variance": 0.004901,
+          "discrimination": 0.1049
+        },
+        {
+          "id": "translate#14",
+          "difficulty": 0.3197,
+          "variance": 0.003188,
+          "discrimination": 0.2526
+        },
+        {
+          "id": "translate#15",
+          "difficulty": 0.3962,
+          "variance": 0.008627,
+          "discrimination": 0.2057
+        },
+        {
+          "id": "translate#16",
+          "difficulty": 0.1719,
+          "variance": 0.000872,
+          "discrimination": 0.2526
+        },
+        {
+          "id": "translate#17",
+          "difficulty": 0.1764,
+          "variance": 0.010608,
+          "discrimination": 0.2661
+        },
+        {
+          "id": "translate#18",
+          "difficulty": 0.1759,
+          "variance": 0.004395,
+          "discrimination": 0.6112
+        },
+        {
+          "id": "translate#19",
+          "difficulty": 0.5468,
+          "variance": 0.012045,
+          "discrimination": 0.4169
+        },
+        {
+          "id": "translate#2",
+          "difficulty": 0.4671,
+          "variance": 0.004163,
+          "discrimination": 0.2052
+        },
+        {
+          "id": "translate#20",
+          "difficulty": 0.1574,
+          "variance": 0.001654,
+          "discrimination": 0.5152
+        },
+        {
+          "id": "translate#21",
+          "difficulty": 0.2869,
+          "variance": 0.003948,
+          "discrimination": 0.2705
+        },
+        {
+          "id": "translate#22",
+          "difficulty": 0.1433,
+          "variance": 8.6e-05,
+          "discrimination": 0.3087
+        },
+        {
+          "id": "translate#23",
+          "difficulty": 0.3871,
+          "variance": 0.014117,
+          "discrimination": 0.3784
+        },
+        {
+          "id": "translate#24",
+          "difficulty": 0.194,
+          "variance": 0.001925,
+          "discrimination": -0.2706
+        },
+        {
+          "id": "translate#25",
+          "difficulty": 0.0601,
+          "variance": 0.000182,
+          "discrimination": 0.2075
+        },
+        {
+          "id": "translate#26",
+          "difficulty": 0.2856,
+          "variance": 0.002283,
+          "discrimination": 0.557
+        },
+        {
+          "id": "translate#27",
+          "difficulty": 0.1613,
+          "variance": 0.002381,
+          "discrimination": 0.2336
+        },
+        {
+          "id": "translate#28",
+          "difficulty": 0.2954,
+          "variance": 0.007289,
+          "discrimination": 0.6808
+        },
+        {
+          "id": "translate#29",
+          "difficulty": 0.1099,
+          "variance": 0.000971,
+          "discrimination": 0.2058
+        },
+        {
+          "id": "translate#3",
+          "difficulty": 0.2255,
+          "variance": 0.002298,
+          "discrimination": 0.3272
+        },
+        {
+          "id": "translate#30",
+          "difficulty": 0.2114,
+          "variance": 0.006491,
+          "discrimination": 0.007
+        },
+        {
+          "id": "translate#31",
+          "difficulty": 0.2592,
+          "variance": 0.004901,
+          "discrimination": 0.1227
+        },
+        {
+          "id": "translate#32",
+          "difficulty": 0.2908,
+          "variance": 0.003657,
+          "discrimination": -0.2434
+        },
+        {
+          "id": "translate#33",
+          "difficulty": 0.1207,
+          "variance": 0.000172,
+          "discrimination": 0.6163
+        },
+        {
+          "id": "translate#34",
+          "difficulty": 0.2993,
+          "variance": 0.00741,
+          "discrimination": 0.534
+        },
+        {
+          "id": "translate#35",
+          "difficulty": 0.1074,
+          "variance": 0.000803,
+          "discrimination": 0.2947
+        },
+        {
+          "id": "translate#36",
+          "difficulty": 0.1371,
+          "variance": 0.002041,
+          "discrimination": 0.5607
+        },
+        {
+          "id": "translate#37",
+          "difficulty": 0.2451,
+          "variance": 0.011874,
+          "discrimination": -0.0404
+        },
+        {
+          "id": "translate#38",
+          "difficulty": 0.3748,
+          "variance": 0.010957,
+          "discrimination": 0.4822
+        },
+        {
+          "id": "translate#39",
+          "difficulty": 0.1664,
+          "variance": 0.002065,
+          "discrimination": 0.815
+        },
+        {
+          "id": "translate#4",
+          "difficulty": 0.2197,
+          "variance": 0.001196,
+          "discrimination": 0.443
+        },
+        {
+          "id": "translate#40",
+          "difficulty": 0.224,
+          "variance": 0.009979,
+          "discrimination": 0.12
+        },
+        {
+          "id": "translate#41",
+          "difficulty": 0.12,
+          "variance": 0.000177,
+          "discrimination": -0.3711
+        },
+        {
+          "id": "translate#42",
+          "difficulty": 0.0793,
+          "variance": 3.2e-05,
+          "discrimination": -0.3309
+        },
+        {
+          "id": "translate#43",
+          "difficulty": 0.1938,
+          "variance": 0.00686,
+          "discrimination": 0.2911
+        },
+        {
+          "id": "translate#44",
+          "difficulty": 0.1657,
+          "variance": 0.004028,
+          "discrimination": 0.2403
+        },
+        {
+          "id": "translate#45",
+          "difficulty": 0.2118,
+          "variance": 0.001101,
+          "discrimination": 0.4265
+        },
+        {
+          "id": "translate#46",
+          "difficulty": 0.3954,
+          "variance": 0.007845,
+          "discrimination": -0.047
+        },
+        {
+          "id": "translate#47",
+          "difficulty": 0.2072,
+          "variance": 0.005077,
+          "discrimination": 0.4843
+        },
+        {
+          "id": "translate#48",
+          "difficulty": 0.234,
+          "variance": 0.010878,
+          "discrimination": 0.1809
+        },
+        {
+          "id": "translate#49",
+          "difficulty": 0.2465,
+          "variance": 0.002862,
+          "discrimination": 0.5237
+        },
+        {
+          "id": "translate#5",
+          "difficulty": 0.3509,
+          "variance": 0.008864,
+          "discrimination": 0.5582
+        },
+        {
+          "id": "translate#50",
+          "difficulty": 0.1695,
+          "variance": 0.004273,
+          "discrimination": 0.4497
+        },
+        {
+          "id": "translate#51",
+          "difficulty": 0.1692,
+          "variance": 0.007688,
+          "discrimination": 0.3721
+        },
+        {
+          "id": "translate#52",
+          "difficulty": 0.1945,
+          "variance": 0.004184,
+          "discrimination": -0.6772
+        },
+        {
+          "id": "translate#53",
+          "difficulty": 0.1693,
+          "variance": 0.007582,
+          "discrimination": 0.2308
+        },
+        {
+          "id": "translate#54",
+          "difficulty": 0.2009,
+          "variance": 0.003705,
+          "discrimination": -0.0724
+        },
+        {
+          "id": "translate#55",
+          "difficulty": 0.0862,
+          "variance": 0.000149,
+          "discrimination": 0.15
+        },
+        {
+          "id": "translate#56",
+          "difficulty": 0.0945,
+          "variance": 0.00125,
+          "discrimination": 0.4432
+        },
+        {
+          "id": "translate#57",
+          "difficulty": 0.078,
+          "variance": 0.000159,
+          "discrimination": 0.5582
+        },
+        {
+          "id": "translate#58",
+          "difficulty": 0.0882,
+          "variance": 0.000395,
+          "discrimination": 0.3979
+        },
+        {
+          "id": "translate#59",
+          "difficulty": 0.2082,
+          "variance": 0.002403,
+          "discrimination": 0.367
+        },
+        {
+          "id": "translate#6",
+          "difficulty": 0.2092,
+          "variance": 0.006743,
+          "discrimination": 0.1644
+        },
+        {
+          "id": "translate#60",
+          "difficulty": 0.2176,
+          "variance": 0.000402,
+          "discrimination": 0.0857
+        },
+        {
+          "id": "translate#61",
+          "difficulty": 0.2332,
+          "variance": 0.002977,
+          "discrimination": 0.3332
+        },
+        {
+          "id": "translate#62",
+          "difficulty": 0.2509,
+          "variance": 0.000494,
+          "discrimination": 0.0469
+        },
+        {
+          "id": "translate#63",
+          "difficulty": 0.2172,
+          "variance": 0.00422,
+          "discrimination": 0.5446
+        },
+        {
+          "id": "translate#64",
+          "difficulty": 0.2332,
+          "variance": 0.02075,
+          "discrimination": 0.2961
+        },
+        {
+          "id": "translate#65",
+          "difficulty": 0.2978,
+          "variance": 0.00249,
+          "discrimination": -0.1492
+        },
+        {
+          "id": "translate#66",
+          "difficulty": 0.2032,
+          "variance": 0.001636,
+          "discrimination": -0.5259
+        },
+        {
+          "id": "translate#67",
+          "difficulty": 0.3463,
+          "variance": 0.002449,
+          "discrimination": 0.2758
+        },
+        {
+          "id": "translate#68",
+          "difficulty": 0.4322,
+          "variance": 0.002155,
+          "discrimination": 0.0746
+        },
+        {
+          "id": "translate#69",
+          "difficulty": 0.2638,
+          "variance": 0.000673,
+          "discrimination": 0.1945
+        },
+        {
+          "id": "translate#7",
+          "difficulty": 0.5901,
+          "variance": 0.005056,
+          "discrimination": 0.3686
+        },
+        {
+          "id": "translate#70",
+          "difficulty": 0.1249,
+          "variance": 0.000153,
+          "discrimination": -0.3837
+        },
+        {
+          "id": "translate#71",
+          "difficulty": 0.1921,
+          "variance": 2.1e-05,
+          "discrimination": -0.3191
+        },
+        {
+          "id": "translate#72",
+          "difficulty": 0.3397,
+          "variance": 0.000625,
+          "discrimination": -0.194
+        },
+        {
+          "id": "translate#73",
+          "difficulty": 0.085,
+          "variance": 0.0004,
+          "discrimination": -0.0397
+        },
+        {
+          "id": "translate#74",
+          "difficulty": 0.0497,
+          "variance": 5.5e-05,
+          "discrimination": 0.3163
+        },
+        {
+          "id": "translate#75",
+          "difficulty": 0.2446,
+          "variance": 0.001932,
+          "discrimination": 0.4698
+        },
+        {
+          "id": "translate#76",
+          "difficulty": 0.087,
+          "variance": 0.000434,
+          "discrimination": -0.4977
+        },
+        {
+          "id": "translate#77",
+          "difficulty": 0.3563,
+          "variance": 0.005743,
+          "discrimination": 0.1473
+        },
+        {
+          "id": "translate#78",
+          "difficulty": 0.1943,
+          "variance": 0.001504,
+          "discrimination": 0.3938
+        },
+        {
+          "id": "translate#79",
+          "difficulty": 0.0536,
+          "variance": 0.000313,
+          "discrimination": 0.4918
+        },
+        {
+          "id": "translate#8",
+          "difficulty": 0.3965,
+          "variance": 0.017075,
+          "discrimination": -0.5822
+        },
+        {
+          "id": "translate#80",
+          "difficulty": 0.1851,
+          "variance": 0.002018,
+          "discrimination": -0.1594
+        },
+        {
+          "id": "translate#81",
+          "difficulty": 0.3044,
+          "variance": 0.002747,
+          "discrimination": 0.4268
+        },
+        {
+          "id": "translate#82",
+          "difficulty": 0.2145,
+          "variance": 0.004525,
+          "discrimination": 0.3332
+        },
+        {
+          "id": "translate#83",
+          "difficulty": 0.2104,
+          "variance": 0.005052,
+          "discrimination": -0.0013
+        },
+        {
+          "id": "translate#84",
+          "difficulty": 0.1143,
+          "variance": 0.000313,
+          "discrimination": 0.4839
+        },
+        {
+          "id": "translate#85",
+          "difficulty": 0.1873,
+          "variance": 0.000733,
+          "discrimination": 0.1538
+        },
+        {
+          "id": "translate#86",
+          "difficulty": 0.3129,
+          "variance": 0.003103,
+          "discrimination": -0.4361
+        },
+        {
+          "id": "translate#87",
+          "difficulty": 0.1327,
+          "variance": 0.000189,
+          "discrimination": 0.3762
+        },
+        {
+          "id": "translate#88",
+          "difficulty": 0.405,
+          "variance": 0.003613,
+          "discrimination": 0.5277
+        },
+        {
+          "id": "translate#89",
+          "difficulty": 0.1391,
+          "variance": 0.000696,
+          "discrimination": 0.1327
+        },
+        {
+          "id": "translate#9",
+          "difficulty": 0.3779,
+          "variance": 0.008734,
+          "discrimination": -0.466
+        },
+        {
+          "id": "translate#90",
+          "difficulty": 0.1659,
+          "variance": 0.001983,
+          "discrimination": -0.1656
+        },
+        {
+          "id": "translate#91",
+          "difficulty": 0.2696,
+          "variance": 0.004142,
+          "discrimination": 0.4847
+        },
+        {
+          "id": "translate#92",
+          "difficulty": 0.1335,
+          "variance": 0.001313,
+          "discrimination": 0.146
+        },
+        {
+          "id": "translate#93",
+          "difficulty": 0.1546,
+          "variance": 0.004435,
+          "discrimination": -0.7441
+        },
+        {
+          "id": "translate#94",
+          "difficulty": 0.3074,
+          "variance": 0.006251,
+          "discrimination": 0.1373
+        },
+        {
+          "id": "translate#95",
+          "difficulty": 0.3155,
+          "variance": 0.012805,
+          "discrimination": 0.2323
+        },
+        {
+          "id": "translate#96",
+          "difficulty": 0.1417,
+          "variance": 0.001295,
+          "discrimination": -0.3048
+        },
+        {
+          "id": "translate#97",
+          "difficulty": 0.4625,
+          "variance": 0.001232,
+          "discrimination": 0.2752
+        },
+        {
+          "id": "translate#98",
+          "difficulty": 0.1049,
+          "variance": 0.000839,
+          "discrimination": -0.0799
+        },
+        {
+          "id": "translate#99",
+          "difficulty": 0.3504,
+          "variance": 0.001289,
+          "discrimination": 0.538
+        }
+      ]
+    },
+    "punctuate": {
+      "n_items": 100,
+      "difficulty_mean": 0.7584,
+      "discrimination_mean": 0.2571,
+      "dead": 12,
+      "ceiling": 3,
+      "floor": 8,
+      "negative_disc": 17,
+      "low_disc": 16,
+      "worst_negative": [
+        "punctuate#52",
+        "punctuate#20",
+        "punctuate#91",
+        "punctuate#4",
+        "punctuate#32",
+        "punctuate#71",
+        "punctuate#68",
+        "punctuate#90"
+      ],
+      "items": [
+        {
+          "id": "punctuate#1",
+          "difficulty": 0.8572,
+          "variance": 0.029305,
+          "discrimination": 0.1246
+        },
+        {
+          "id": "punctuate#10",
+          "difficulty": 0.9183,
+          "variance": 0.000237,
+          "discrimination": 0.5282
+        },
+        {
+          "id": "punctuate#100",
+          "difficulty": 0.9643,
+          "variance": 0.000818,
+          "discrimination": 0.2927
+        },
+        {
+          "id": "punctuate#11",
+          "difficulty": 0.7026,
+          "variance": 0.072264,
+          "discrimination": 0.305
+        },
+        {
+          "id": "punctuate#12",
+          "difficulty": 0.8657,
+          "variance": 0.083422,
+          "discrimination": 0.227
+        },
+        {
+          "id": "punctuate#13",
+          "difficulty": 0.8719,
+          "variance": 0.050829,
+          "discrimination": 0.1019
+        },
+        {
+          "id": "punctuate#14",
+          "difficulty": 0.9079,
+          "variance": 0.054059,
+          "discrimination": 0.0385
+        },
+        {
+          "id": "punctuate#15",
+          "difficulty": 0.9443,
+          "variance": 0.000302,
+          "discrimination": 0.8107
+        },
+        {
+          "id": "punctuate#16",
+          "difficulty": 0.8108,
+          "variance": 0.01933,
+          "discrimination": -0.0095
+        },
+        {
+          "id": "punctuate#17",
+          "difficulty": 0.8664,
+          "variance": 0.083572,
+          "discrimination": 0.4257
+        },
+        {
+          "id": "punctuate#18",
+          "difficulty": 0.2654,
+          "variance": 0.002795,
+          "discrimination": 0.3849
+        },
+        {
+          "id": "punctuate#19",
+          "difficulty": 0.9123,
+          "variance": 0.057047,
+          "discrimination": 0.0937
+        },
+        {
+          "id": "punctuate#2",
+          "difficulty": 0.4623,
+          "variance": 0.072762,
+          "discrimination": 0.5018
+        },
+        {
+          "id": "punctuate#20",
+          "difficulty": 0.7077,
+          "variance": 0.019882,
+          "discrimination": -0.5069
+        },
+        {
+          "id": "punctuate#21",
+          "difficulty": 0.7757,
+          "variance": 0.075084,
+          "discrimination": 0.7108
+        },
+        {
+          "id": "punctuate#22",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#23",
+          "difficulty": 0.0485,
+          "variance": 1.9e-05,
+          "discrimination": 0.3948
+        },
+        {
+          "id": "punctuate#24",
+          "difficulty": 0.6997,
+          "variance": 0.062092,
+          "discrimination": 0.2233
+        },
+        {
+          "id": "punctuate#25",
+          "difficulty": 0.6443,
+          "variance": 0.054442,
+          "discrimination": 0.4346
+        },
+        {
+          "id": "punctuate#26",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#27",
+          "difficulty": 0.9295,
+          "variance": 0.001416,
+          "discrimination": 0.517
+        },
+        {
+          "id": "punctuate#28",
+          "difficulty": 0.0062,
+          "variance": 0.000341,
+          "discrimination": -0.1435
+        },
+        {
+          "id": "punctuate#29",
+          "difficulty": 0.9499,
+          "variance": 0.000355,
+          "discrimination": 0.1298
+        },
+        {
+          "id": "punctuate#3",
+          "difficulty": 0.9881,
+          "variance": 0.000255,
+          "discrimination": 0.3837
+        },
+        {
+          "id": "punctuate#30",
+          "difficulty": 0.9537,
+          "variance": 0.000204,
+          "discrimination": 0.0465
+        },
+        {
+          "id": "punctuate#31",
+          "difficulty": 0.9603,
+          "variance": 0.000524,
+          "discrimination": -0.1173
+        },
+        {
+          "id": "punctuate#32",
+          "difficulty": 0.9941,
+          "variance": 0.000311,
+          "discrimination": -0.4056
+        },
+        {
+          "id": "punctuate#33",
+          "difficulty": 0.9108,
+          "variance": 0.006826,
+          "discrimination": 0.6724
+        },
+        {
+          "id": "punctuate#34",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#35",
+          "difficulty": 0.7339,
+          "variance": 0.057981,
+          "discrimination": -0.1873
+        },
+        {
+          "id": "punctuate#36",
+          "difficulty": 0.8225,
+          "variance": 0.001053,
+          "discrimination": 0.7332
+        },
+        {
+          "id": "punctuate#37",
+          "difficulty": 0.9567,
+          "variance": 0.002842,
+          "discrimination": 0.8076
+        },
+        {
+          "id": "punctuate#38",
+          "difficulty": 0.6158,
+          "variance": 0.089702,
+          "discrimination": -0.117
+        },
+        {
+          "id": "punctuate#39",
+          "difficulty": 0.8974,
+          "variance": 0.008282,
+          "discrimination": 0.4863
+        },
+        {
+          "id": "punctuate#4",
+          "difficulty": 0.0045,
+          "variance": 0.000186,
+          "discrimination": -0.4999
+        },
+        {
+          "id": "punctuate#40",
+          "difficulty": 0.9299,
+          "variance": 0.000987,
+          "discrimination": 0.3373
+        },
+        {
+          "id": "punctuate#41",
+          "difficulty": 0.8921,
+          "variance": 0.000357,
+          "discrimination": 0.3742
+        },
+        {
+          "id": "punctuate#42",
+          "difficulty": 0.087,
+          "variance": 0.001195,
+          "discrimination": 0.5737
+        },
+        {
+          "id": "punctuate#43",
+          "difficulty": 0.6784,
+          "variance": 0.050102,
+          "discrimination": 0.6328
+        },
+        {
+          "id": "punctuate#44",
+          "difficulty": 0.9641,
+          "variance": 0.003429,
+          "discrimination": 0.4807
+        },
+        {
+          "id": "punctuate#45",
+          "difficulty": 0.8918,
+          "variance": 0.041213,
+          "discrimination": 0.5176
+        },
+        {
+          "id": "punctuate#46",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#47",
+          "difficulty": 0.9548,
+          "variance": 0.00092,
+          "discrimination": 0.3287
+        },
+        {
+          "id": "punctuate#48",
+          "difficulty": 0.9597,
+          "variance": 0.000326,
+          "discrimination": 0.4387
+        },
+        {
+          "id": "punctuate#49",
+          "difficulty": 0.9702,
+          "variance": 0.000874,
+          "discrimination": 0.769
+        },
+        {
+          "id": "punctuate#5",
+          "difficulty": 0.2521,
+          "variance": 0.053344,
+          "discrimination": 0.3608
+        },
+        {
+          "id": "punctuate#50",
+          "difficulty": 0.8753,
+          "variance": 0.007402,
+          "discrimination": 0.565
+        },
+        {
+          "id": "punctuate#51",
+          "difficulty": 0.8898,
+          "variance": 0.005531,
+          "discrimination": 0.3876
+        },
+        {
+          "id": "punctuate#52",
+          "difficulty": 0.892,
+          "variance": 0.001004,
+          "discrimination": -0.6891
+        },
+        {
+          "id": "punctuate#53",
+          "difficulty": 0.9519,
+          "variance": 0.000116,
+          "discrimination": 0.0856
+        },
+        {
+          "id": "punctuate#54",
+          "difficulty": 0.8798,
+          "variance": 0.006585,
+          "discrimination": 0.2429
+        },
+        {
+          "id": "punctuate#55",
+          "difficulty": 0.3337,
+          "variance": 0.008667,
+          "discrimination": -0.0588
+        },
+        {
+          "id": "punctuate#56",
+          "difficulty": 0.9354,
+          "variance": 0.000194,
+          "discrimination": 0.5802
+        },
+        {
+          "id": "punctuate#57",
+          "difficulty": 0.9648,
+          "variance": 0.000252,
+          "discrimination": 0.4413
+        },
+        {
+          "id": "punctuate#58",
+          "difficulty": 0.8843,
+          "variance": 0.026431,
+          "discrimination": 0.5426
+        },
+        {
+          "id": "punctuate#59",
+          "difficulty": 0.9023,
+          "variance": 0.000478,
+          "discrimination": 0.2415
+        },
+        {
+          "id": "punctuate#6",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#60",
+          "difficulty": 0.8299,
+          "variance": 0.034459,
+          "discrimination": 0.0533
+        },
+        {
+          "id": "punctuate#61",
+          "difficulty": 0.5568,
+          "variance": 0.109204,
+          "discrimination": 0.01
+        },
+        {
+          "id": "punctuate#62",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#63",
+          "difficulty": 0.7361,
+          "variance": 0.108403,
+          "discrimination": 0.1853
+        },
+        {
+          "id": "punctuate#64",
+          "difficulty": 0.8953,
+          "variance": 0.013027,
+          "discrimination": 0.058
+        },
+        {
+          "id": "punctuate#65",
+          "difficulty": 0.4364,
+          "variance": 0.09989,
+          "discrimination": 0.4253
+        },
+        {
+          "id": "punctuate#66",
+          "difficulty": 0.8244,
+          "variance": 0.056787,
+          "discrimination": 0.0718
+        },
+        {
+          "id": "punctuate#67",
+          "difficulty": 0.9235,
+          "variance": 0.015566,
+          "discrimination": -0.0566
+        },
+        {
+          "id": "punctuate#68",
+          "difficulty": 0.9762,
+          "variance": 0.000609,
+          "discrimination": -0.3043
+        },
+        {
+          "id": "punctuate#69",
+          "difficulty": 0.884,
+          "variance": 0.000469,
+          "discrimination": 0.459
+        },
+        {
+          "id": "punctuate#7",
+          "difficulty": 0.8829,
+          "variance": 0.004275,
+          "discrimination": 0.0269
+        },
+        {
+          "id": "punctuate#70",
+          "difficulty": 0.8896,
+          "variance": 0.071296,
+          "discrimination": 0.0551
+        },
+        {
+          "id": "punctuate#71",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": -0.3896
+        },
+        {
+          "id": "punctuate#72",
+          "difficulty": 0.9967,
+          "variance": 4.3e-05,
+          "discrimination": -0.1992
+        },
+        {
+          "id": "punctuate#73",
+          "difficulty": 0.9879,
+          "variance": 0.000417,
+          "discrimination": 0.4993
+        },
+        {
+          "id": "punctuate#74",
+          "difficulty": 0.6129,
+          "variance": 0.076455,
+          "discrimination": 0.4491
+        },
+        {
+          "id": "punctuate#75",
+          "difficulty": 0.8374,
+          "variance": 0.078544,
+          "discrimination": 0.451
+        },
+        {
+          "id": "punctuate#76",
+          "difficulty": 0.9939,
+          "variance": 9.6e-05,
+          "discrimination": 0.7717
+        },
+        {
+          "id": "punctuate#77",
+          "difficulty": 0.9477,
+          "variance": 0.00033,
+          "discrimination": 0.2236
+        },
+        {
+          "id": "punctuate#78",
+          "difficulty": 0.9673,
+          "variance": 0.000751,
+          "discrimination": 0.8665
+        },
+        {
+          "id": "punctuate#79",
+          "difficulty": 0.9385,
+          "variance": 0.00483,
+          "discrimination": 0.4487
+        },
+        {
+          "id": "punctuate#8",
+          "difficulty": 0.9531,
+          "variance": 0.000634,
+          "discrimination": 0.2747
+        },
+        {
+          "id": "punctuate#80",
+          "difficulty": 0.9717,
+          "variance": 0.000234,
+          "discrimination": 0.4719
+        },
+        {
+          "id": "punctuate#81",
+          "difficulty": 0.8556,
+          "variance": 0.070413,
+          "discrimination": 0.4411
+        },
+        {
+          "id": "punctuate#82",
+          "difficulty": 0.704,
+          "variance": 0.129551,
+          "discrimination": 0.7115
+        },
+        {
+          "id": "punctuate#83",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "punctuate#84",
+          "difficulty": 0.9165,
+          "variance": 8.3e-05,
+          "discrimination": 0.3654
+        },
+        {
+          "id": "punctuate#85",
+          "difficulty": 0.9553,
+          "variance": 0.000335,
+          "discrimination": 0.4394
+        },
+        {
+          "id": "punctuate#86",
+          "difficulty": 0.9833,
+          "variance": 0.0025,
+          "discrimination": 0.2821
+        },
+        {
+          "id": "punctuate#87",
+          "difficulty": 0.9584,
+          "variance": 8e-05,
+          "discrimination": -0.2173
+        },
+        {
+          "id": "punctuate#88",
+          "difficulty": 0.9009,
+          "variance": 0.000681,
+          "discrimination": 0.208
+        },
+        {
+          "id": "punctuate#89",
+          "difficulty": 0.8914,
+          "variance": 0.051774,
+          "discrimination": 0.2618
+        },
+        {
+          "id": "punctuate#9",
+          "difficulty": 0.9215,
+          "variance": 0.000642,
+          "discrimination": 0.5884
+        },
+        {
+          "id": "punctuate#90",
+          "difficulty": 0.9228,
+          "variance": 0.001345,
+          "discrimination": -0.2486
+        },
+        {
+          "id": "punctuate#91",
+          "difficulty": 0.9842,
+          "variance": 0.000582,
+          "discrimination": -0.505
+        },
+        {
+          "id": "punctuate#92",
+          "difficulty": 0.8212,
+          "variance": 0.041881,
+          "discrimination": 0.6084
+        },
+        {
+          "id": "punctuate#93",
+          "difficulty": 0.7716,
+          "variance": 0.034693,
+          "discrimination": 0.0175
+        },
+        {
+          "id": "punctuate#94",
+          "difficulty": 0.9468,
+          "variance": 0.000362,
+          "discrimination": 0.1307
+        },
+        {
+          "id": "punctuate#95",
+          "difficulty": 0.828,
+          "variance": 0.002756,
+          "discrimination": 0.0591
+        },
+        {
+          "id": "punctuate#96",
+          "difficulty": 0.9321,
+          "variance": 0.0004,
+          "discrimination": 0.0302
+        },
+        {
+          "id": "punctuate#97",
+          "difficulty": 0.7574,
+          "variance": 0.069588,
+          "discrimination": 0.1673
+        },
+        {
+          "id": "punctuate#98",
+          "difficulty": 0.9434,
+          "variance": 0.000348,
+          "discrimination": 0.6646
+        },
+        {
+          "id": "punctuate#99",
+          "difficulty": 0.8699,
+          "variance": 0.058358,
+          "discrimination": 0.5105
+        }
+      ]
+    },
+    "char-gloss": {
+      "n_items": 100,
+      "difficulty_mean": 0.1645,
+      "discrimination_mean": 0.2564,
+      "dead": 27,
+      "ceiling": 0,
+      "floor": 27,
+      "negative_disc": 19,
+      "low_disc": 16,
+      "worst_negative": [
+        "char-gloss#19",
+        "char-gloss#47",
+        "char-gloss#39",
+        "char-gloss#68",
+        "char-gloss#67",
+        "char-gloss#26",
+        "char-gloss#22",
+        "char-gloss#63"
+      ],
+      "items": [
+        {
+          "id": "char-gloss#1",
+          "difficulty": 0.142,
+          "variance": 0.004024,
+          "discrimination": 0.0638
+        },
+        {
+          "id": "char-gloss#10",
+          "difficulty": 0.1136,
+          "variance": 0.010347,
+          "discrimination": 0.6507
+        },
+        {
+          "id": "char-gloss#100",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#11",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#12",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#13",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#14",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#15",
+          "difficulty": 0.0326,
+          "variance": 0.002036,
+          "discrimination": 0.4849
+        },
+        {
+          "id": "char-gloss#16",
+          "difficulty": 0.3171,
+          "variance": 0.047815,
+          "discrimination": 0.6522
+        },
+        {
+          "id": "char-gloss#17",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#18",
+          "difficulty": 0.5628,
+          "variance": 0.030628,
+          "discrimination": 0.0072
+        },
+        {
+          "id": "char-gloss#19",
+          "difficulty": 0.0896,
+          "variance": 0.00394,
+          "discrimination": -0.6973
+        },
+        {
+          "id": "char-gloss#2",
+          "difficulty": 0.0574,
+          "variance": 0.001912,
+          "discrimination": 0.405
+        },
+        {
+          "id": "char-gloss#20",
+          "difficulty": 0.0157,
+          "variance": 0.000112,
+          "discrimination": 0.0477
+        },
+        {
+          "id": "char-gloss#21",
+          "difficulty": 0.0703,
+          "variance": 0.001409,
+          "discrimination": 0.7026
+        },
+        {
+          "id": "char-gloss#22",
+          "difficulty": 0.3631,
+          "variance": 0.024754,
+          "discrimination": -0.2067
+        },
+        {
+          "id": "char-gloss#23",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#24",
+          "difficulty": 0.1611,
+          "variance": 0.00518,
+          "discrimination": -0.1006
+        },
+        {
+          "id": "char-gloss#25",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#26",
+          "difficulty": 0.0505,
+          "variance": 0.002448,
+          "discrimination": -0.2175
+        },
+        {
+          "id": "char-gloss#27",
+          "difficulty": 0.3643,
+          "variance": 0.040186,
+          "discrimination": 0.7391
+        },
+        {
+          "id": "char-gloss#28",
+          "difficulty": 0.0221,
+          "variance": 0.000225,
+          "discrimination": 0.3182
+        },
+        {
+          "id": "char-gloss#29",
+          "difficulty": 0.2497,
+          "variance": 0.024881,
+          "discrimination": -0.0465
+        },
+        {
+          "id": "char-gloss#3",
+          "difficulty": 0.0176,
+          "variance": 0.001242,
+          "discrimination": 0.0278
+        },
+        {
+          "id": "char-gloss#30",
+          "difficulty": 0.142,
+          "variance": 0.021493,
+          "discrimination": 0.4799
+        },
+        {
+          "id": "char-gloss#31",
+          "difficulty": 0.333,
+          "variance": 0.018874,
+          "discrimination": 0.5769
+        },
+        {
+          "id": "char-gloss#32",
+          "difficulty": 0.2614,
+          "variance": 0.029314,
+          "discrimination": 0.4785
+        },
+        {
+          "id": "char-gloss#33",
+          "difficulty": 0.1447,
+          "variance": 0.003093,
+          "discrimination": 0.5009
+        },
+        {
+          "id": "char-gloss#34",
+          "difficulty": 0.0993,
+          "variance": 0.019534,
+          "discrimination": 0.737
+        },
+        {
+          "id": "char-gloss#35",
+          "difficulty": 0.2787,
+          "variance": 0.019182,
+          "discrimination": 0.1028
+        },
+        {
+          "id": "char-gloss#36",
+          "difficulty": 0.0481,
+          "variance": 0.000719,
+          "discrimination": -0.0787
+        },
+        {
+          "id": "char-gloss#37",
+          "difficulty": 0.1512,
+          "variance": 0.018872,
+          "discrimination": 0.2976
+        },
+        {
+          "id": "char-gloss#38",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#39",
+          "difficulty": 0.0375,
+          "variance": 0.000938,
+          "discrimination": -0.4702
+        },
+        {
+          "id": "char-gloss#4",
+          "difficulty": 0.2292,
+          "variance": 0.000434,
+          "discrimination": 0.178
+        },
+        {
+          "id": "char-gloss#40",
+          "difficulty": 0.7143,
+          "variance": 0.061565,
+          "discrimination": -0.0143
+        },
+        {
+          "id": "char-gloss#41",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#42",
+          "difficulty": 0.7869,
+          "variance": 0.080171,
+          "discrimination": 0.4591
+        },
+        {
+          "id": "char-gloss#43",
+          "difficulty": 0.2027,
+          "variance": 0.002682,
+          "discrimination": 0.2889
+        },
+        {
+          "id": "char-gloss#44",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#45",
+          "difficulty": 0.0888,
+          "variance": 0.001126,
+          "discrimination": 0.3714
+        },
+        {
+          "id": "char-gloss#46",
+          "difficulty": 0.0125,
+          "variance": 0.000625,
+          "discrimination": 0.0883
+        },
+        {
+          "id": "char-gloss#47",
+          "difficulty": 0.0913,
+          "variance": 0.002474,
+          "discrimination": -0.559
+        },
+        {
+          "id": "char-gloss#48",
+          "difficulty": 0.2452,
+          "variance": 0.027876,
+          "discrimination": 0.6498
+        },
+        {
+          "id": "char-gloss#49",
+          "difficulty": 0.7964,
+          "variance": 0.004605,
+          "discrimination": 0.4611
+        },
+        {
+          "id": "char-gloss#5",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#50",
+          "difficulty": 0.7601,
+          "variance": 0.077918,
+          "discrimination": 0.3165
+        },
+        {
+          "id": "char-gloss#51",
+          "difficulty": 0.0369,
+          "variance": 0.001334,
+          "discrimination": 0.0809
+        },
+        {
+          "id": "char-gloss#52",
+          "difficulty": 0.1913,
+          "variance": 0.014438,
+          "discrimination": -0.0539
+        },
+        {
+          "id": "char-gloss#53",
+          "difficulty": 0.4177,
+          "variance": 0.010962,
+          "discrimination": -0.0796
+        },
+        {
+          "id": "char-gloss#54",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#55",
+          "difficulty": 0.025,
+          "variance": 0.000938,
+          "discrimination": -0.0503
+        },
+        {
+          "id": "char-gloss#56",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#57",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#58",
+          "difficulty": 0.0678,
+          "variance": 0.021836,
+          "discrimination": 0.2975
+        },
+        {
+          "id": "char-gloss#59",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#6",
+          "difficulty": 0.1042,
+          "variance": 0.010851,
+          "discrimination": 0.1572
+        },
+        {
+          "id": "char-gloss#60",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#61",
+          "difficulty": 0.2091,
+          "variance": 0.102054,
+          "discrimination": 0.6702
+        },
+        {
+          "id": "char-gloss#62",
+          "difficulty": 0.2002,
+          "variance": 0.010436,
+          "discrimination": 0.4695
+        },
+        {
+          "id": "char-gloss#63",
+          "difficulty": 0.0797,
+          "variance": 0.001933,
+          "discrimination": -0.115
+        },
+        {
+          "id": "char-gloss#64",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#65",
+          "difficulty": 0.1752,
+          "variance": 0.040461,
+          "discrimination": 0.4927
+        },
+        {
+          "id": "char-gloss#66",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#67",
+          "difficulty": 0.5024,
+          "variance": 0.138741,
+          "discrimination": -0.2497
+        },
+        {
+          "id": "char-gloss#68",
+          "difficulty": 0.25,
+          "variance": 0.102431,
+          "discrimination": -0.323
+        },
+        {
+          "id": "char-gloss#69",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#7",
+          "difficulty": 0.0811,
+          "variance": 0.000353,
+          "discrimination": 0.1199
+        },
+        {
+          "id": "char-gloss#70",
+          "difficulty": 0.0145,
+          "variance": 0.000898,
+          "discrimination": 0.7451
+        },
+        {
+          "id": "char-gloss#71",
+          "difficulty": 0.0445,
+          "variance": 0.004015,
+          "discrimination": 0.6111
+        },
+        {
+          "id": "char-gloss#72",
+          "difficulty": 0.4098,
+          "variance": 0.059341,
+          "discrimination": 0.4358
+        },
+        {
+          "id": "char-gloss#73",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#74",
+          "difficulty": 0.1081,
+          "variance": 0.005295,
+          "discrimination": 0.5372
+        },
+        {
+          "id": "char-gloss#75",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#76",
+          "difficulty": 0.2817,
+          "variance": 0.007966,
+          "discrimination": 0.569
+        },
+        {
+          "id": "char-gloss#77",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#78",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#79",
+          "difficulty": 0.0758,
+          "variance": 0.003044,
+          "discrimination": 0.2529
+        },
+        {
+          "id": "char-gloss#8",
+          "difficulty": 0.5762,
+          "variance": 0.073836,
+          "discrimination": 0.1644
+        },
+        {
+          "id": "char-gloss#80",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#81",
+          "difficulty": 0.8419,
+          "variance": 0.104326,
+          "discrimination": 0.4072
+        },
+        {
+          "id": "char-gloss#82",
+          "difficulty": 0.0258,
+          "variance": 0.001221,
+          "discrimination": 0.7467
+        },
+        {
+          "id": "char-gloss#83",
+          "difficulty": 0.1099,
+          "variance": 0.04227,
+          "discrimination": 0.7329
+        },
+        {
+          "id": "char-gloss#84",
+          "difficulty": 0.0604,
+          "variance": 0.011411,
+          "discrimination": 0.5036
+        },
+        {
+          "id": "char-gloss#85",
+          "difficulty": 0.1982,
+          "variance": 0.005109,
+          "discrimination": 0.1059
+        },
+        {
+          "id": "char-gloss#86",
+          "difficulty": 0.7586,
+          "variance": 0.090873,
+          "discrimination": 0.4721
+        },
+        {
+          "id": "char-gloss#87",
+          "difficulty": 0.0958,
+          "variance": 0.001821,
+          "discrimination": 0.5474
+        },
+        {
+          "id": "char-gloss#88",
+          "difficulty": 0.0725,
+          "variance": 0.002112,
+          "discrimination": 0.415
+        },
+        {
+          "id": "char-gloss#89",
+          "difficulty": 0.3595,
+          "variance": 0.122755,
+          "discrimination": 0.6776
+        },
+        {
+          "id": "char-gloss#9",
+          "difficulty": 0.025,
+          "variance": 0.005625,
+          "discrimination": 0.1062
+        },
+        {
+          "id": "char-gloss#90",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#91",
+          "difficulty": 0.0362,
+          "variance": 0.003593,
+          "discrimination": -0.0043
+        },
+        {
+          "id": "char-gloss#92",
+          "difficulty": 0.0513,
+          "variance": 0.006183,
+          "discrimination": -0.0547
+        },
+        {
+          "id": "char-gloss#93",
+          "difficulty": 0.5913,
+          "variance": 0.090294,
+          "discrimination": -0.0504
+        },
+        {
+          "id": "char-gloss#94",
+          "difficulty": 0.0684,
+          "variance": 0.006816,
+          "discrimination": 0.7917
+        },
+        {
+          "id": "char-gloss#95",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "char-gloss#96",
+          "difficulty": 0.0458,
+          "variance": 0.00849,
+          "discrimination": 0.3749
+        },
+        {
+          "id": "char-gloss#97",
+          "difficulty": 0.2236,
+          "variance": 0.004736,
+          "discrimination": -0.039
+        },
+        {
+          "id": "char-gloss#98",
+          "difficulty": 0.7825,
+          "variance": 0.006969,
+          "discrimination": 0.1149
+        },
+        {
+          "id": "char-gloss#99",
+          "difficulty": 0.1971,
+          "variance": 0.002399,
+          "discrimination": 0.4436
+        }
+      ]
+    },
+    "idiom-source": {
+      "n_items": 100,
+      "difficulty_mean": 0.591,
+      "discrimination_mean": 0.4244,
+      "dead": 36,
+      "ceiling": 23,
+      "floor": 13,
+      "negative_disc": 5,
+      "low_disc": 11,
+      "worst_negative": [
+        "idiom-source#52",
+        "idiom-source#14",
+        "idiom-source#38",
+        "idiom-source#77",
+        "idiom-source#64"
+      ],
+      "items": [
+        {
+          "id": "idiom-source#1",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.0936
+        },
+        {
+          "id": "idiom-source#10",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#100",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#11",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.4265
+        },
+        {
+          "id": "idiom-source#12",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.7319
+        },
+        {
+          "id": "idiom-source#13",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.6189
+        },
+        {
+          "id": "idiom-source#14",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": -0.096
+        },
+        {
+          "id": "idiom-source#15",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.4128
+        },
+        {
+          "id": "idiom-source#16",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.3679
+        },
+        {
+          "id": "idiom-source#17",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#18",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.0936
+        },
+        {
+          "id": "idiom-source#19",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#2",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#20",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.4394
+        },
+        {
+          "id": "idiom-source#21",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.4
+        },
+        {
+          "id": "idiom-source#22",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#23",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#24",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#25",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.4592
+        },
+        {
+          "id": "idiom-source#26",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7379
+        },
+        {
+          "id": "idiom-source#27",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.2339
+        },
+        {
+          "id": "idiom-source#28",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.4989
+        },
+        {
+          "id": "idiom-source#29",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.4265
+        },
+        {
+          "id": "idiom-source#3",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#30",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#31",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#32",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.1758
+        },
+        {
+          "id": "idiom-source#33",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#34",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#35",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#36",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.6792
+        },
+        {
+          "id": "idiom-source#37",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7569
+        },
+        {
+          "id": "idiom-source#38",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": -0.089
+        },
+        {
+          "id": "idiom-source#39",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#4",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.6308
+        },
+        {
+          "id": "idiom-source#40",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#41",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.5931
+        },
+        {
+          "id": "idiom-source#42",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.0936
+        },
+        {
+          "id": "idiom-source#43",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#44",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#45",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#46",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#47",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#48",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#49",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.6914
+        },
+        {
+          "id": "idiom-source#5",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#50",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#51",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#52",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": -0.1163
+        },
+        {
+          "id": "idiom-source#53",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.4128
+        },
+        {
+          "id": "idiom-source#54",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.0703
+        },
+        {
+          "id": "idiom-source#55",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.64
+        },
+        {
+          "id": "idiom-source#56",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.0936
+        },
+        {
+          "id": "idiom-source#57",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#58",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#59",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#6",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#60",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.4128
+        },
+        {
+          "id": "idiom-source#61",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#62",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#63",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.3016
+        },
+        {
+          "id": "idiom-source#64",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": -0.0458
+        },
+        {
+          "id": "idiom-source#65",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.3814
+        },
+        {
+          "id": "idiom-source#66",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.449
+        },
+        {
+          "id": "idiom-source#67",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.7319
+        },
+        {
+          "id": "idiom-source#68",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.3679
+        },
+        {
+          "id": "idiom-source#69",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#7",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#70",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.333
+        },
+        {
+          "id": "idiom-source#71",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.0879
+        },
+        {
+          "id": "idiom-source#72",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#73",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.6171
+        },
+        {
+          "id": "idiom-source#74",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#75",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.1229
+        },
+        {
+          "id": "idiom-source#76",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#77",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": -0.0535
+        },
+        {
+          "id": "idiom-source#78",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.4128
+        },
+        {
+          "id": "idiom-source#79",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#8",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#80",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.6309
+        },
+        {
+          "id": "idiom-source#81",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6846
+        },
+        {
+          "id": "idiom-source#82",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#83",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.0703
+        },
+        {
+          "id": "idiom-source#84",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.2019
+        },
+        {
+          "id": "idiom-source#85",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#86",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#87",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.2042
+        },
+        {
+          "id": "idiom-source#88",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.5302
+        },
+        {
+          "id": "idiom-source#89",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#9",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.7193
+        },
+        {
+          "id": "idiom-source#90",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.5012
+        },
+        {
+          "id": "idiom-source#91",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.1894
+        },
+        {
+          "id": "idiom-source#92",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.3016
+        },
+        {
+          "id": "idiom-source#93",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.1806
+        },
+        {
+          "id": "idiom-source#94",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.5943
+        },
+        {
+          "id": "idiom-source#95",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.5527
+        },
+        {
+          "id": "idiom-source#96",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#97",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#98",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "idiom-source#99",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.7318
+        }
+      ]
+    },
+    "fill-in": {
+      "n_items": 100,
+      "difficulty_mean": 0.587,
+      "discrimination_mean": 0.4521,
+      "dead": 20,
+      "ceiling": 14,
+      "floor": 6,
+      "negative_disc": 8,
+      "low_disc": 7,
+      "worst_negative": [
+        "fill-in#4",
+        "fill-in#19",
+        "fill-in#31",
+        "fill-in#34",
+        "fill-in#41",
+        "fill-in#60",
+        "fill-in#87",
+        "fill-in#24"
+      ],
+      "items": [
+        {
+          "id": "fill-in#1",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.3434
+        },
+        {
+          "id": "fill-in#10",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.4846
+        },
+        {
+          "id": "fill-in#100",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.5521
+        },
+        {
+          "id": "fill-in#11",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7463
+        },
+        {
+          "id": "fill-in#12",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.0672
+        },
+        {
+          "id": "fill-in#13",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6005
+        },
+        {
+          "id": "fill-in#14",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.3936
+        },
+        {
+          "id": "fill-in#15",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.3469
+        },
+        {
+          "id": "fill-in#16",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.7358
+        },
+        {
+          "id": "fill-in#17",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.4537
+        },
+        {
+          "id": "fill-in#18",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.3855
+        },
+        {
+          "id": "fill-in#19",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": -0.3969
+        },
+        {
+          "id": "fill-in#2",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#20",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.3787
+        },
+        {
+          "id": "fill-in#21",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7843
+        },
+        {
+          "id": "fill-in#22",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.3936
+        },
+        {
+          "id": "fill-in#23",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.8274
+        },
+        {
+          "id": "fill-in#24",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": -0.0237
+        },
+        {
+          "id": "fill-in#25",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.4859
+        },
+        {
+          "id": "fill-in#26",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#27",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.0356
+        },
+        {
+          "id": "fill-in#28",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.7844
+        },
+        {
+          "id": "fill-in#29",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.5521
+        },
+        {
+          "id": "fill-in#3",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#30",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.6276
+        },
+        {
+          "id": "fill-in#31",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": -0.3063
+        },
+        {
+          "id": "fill-in#32",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.7261
+        },
+        {
+          "id": "fill-in#33",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.0647
+        },
+        {
+          "id": "fill-in#34",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": -0.1948
+        },
+        {
+          "id": "fill-in#35",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.513
+        },
+        {
+          "id": "fill-in#36",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.3936
+        },
+        {
+          "id": "fill-in#37",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6883
+        },
+        {
+          "id": "fill-in#38",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6883
+        },
+        {
+          "id": "fill-in#39",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.1147
+        },
+        {
+          "id": "fill-in#4",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": -0.5125
+        },
+        {
+          "id": "fill-in#40",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7463
+        },
+        {
+          "id": "fill-in#41",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": -0.1025
+        },
+        {
+          "id": "fill-in#42",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#43",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.4831
+        },
+        {
+          "id": "fill-in#44",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.7261
+        },
+        {
+          "id": "fill-in#45",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#46",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6381
+        },
+        {
+          "id": "fill-in#47",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.2952
+        },
+        {
+          "id": "fill-in#48",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#49",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#5",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.335
+        },
+        {
+          "id": "fill-in#50",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#51",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.513
+        },
+        {
+          "id": "fill-in#52",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6883
+        },
+        {
+          "id": "fill-in#53",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.5879
+        },
+        {
+          "id": "fill-in#54",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#55",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.8303
+        },
+        {
+          "id": "fill-in#56",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.5295
+        },
+        {
+          "id": "fill-in#57",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.6276
+        },
+        {
+          "id": "fill-in#58",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.6446
+        },
+        {
+          "id": "fill-in#59",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#6",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#60",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": -0.1025
+        },
+        {
+          "id": "fill-in#61",
+          "difficulty": 0.1,
+          "variance": 0.09,
+          "discrimination": 0.5462
+        },
+        {
+          "id": "fill-in#62",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.6883
+        },
+        {
+          "id": "fill-in#63",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#64",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.5295
+        },
+        {
+          "id": "fill-in#65",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.6044
+        },
+        {
+          "id": "fill-in#66",
+          "difficulty": 0.3,
+          "variance": 0.21,
+          "discrimination": 0.6285
+        },
+        {
+          "id": "fill-in#67",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.3835
+        },
+        {
+          "id": "fill-in#68",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#69",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.6435
+        },
+        {
+          "id": "fill-in#7",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.5879
+        },
+        {
+          "id": "fill-in#70",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.0553
+        },
+        {
+          "id": "fill-in#71",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.6435
+        },
+        {
+          "id": "fill-in#72",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.5879
+        },
+        {
+          "id": "fill-in#73",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.7844
+        },
+        {
+          "id": "fill-in#74",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#75",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#76",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#77",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.752
+        },
+        {
+          "id": "fill-in#78",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.2386
+        },
+        {
+          "id": "fill-in#79",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.8274
+        },
+        {
+          "id": "fill-in#8",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#80",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.554
+        },
+        {
+          "id": "fill-in#81",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.4537
+        },
+        {
+          "id": "fill-in#82",
+          "difficulty": 0.4,
+          "variance": 0.24,
+          "discrimination": 0.7767
+        },
+        {
+          "id": "fill-in#83",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.2738
+        },
+        {
+          "id": "fill-in#84",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.5454
+        },
+        {
+          "id": "fill-in#85",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#86",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.3936
+        },
+        {
+          "id": "fill-in#87",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": -0.0326
+        },
+        {
+          "id": "fill-in#88",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.5173
+        },
+        {
+          "id": "fill-in#89",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.2502
+        },
+        {
+          "id": "fill-in#9",
+          "difficulty": 0.5,
+          "variance": 0.25,
+          "discrimination": 0.6769
+        },
+        {
+          "id": "fill-in#90",
+          "difficulty": 0.7,
+          "variance": 0.21,
+          "discrimination": 0.2211
+        },
+        {
+          "id": "fill-in#91",
+          "difficulty": 0.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#92",
+          "difficulty": 1.0,
+          "variance": 0.0,
+          "discrimination": null
+        },
+        {
+          "id": "fill-in#93",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.7843
+        },
+        {
+          "id": "fill-in#94",
+          "difficulty": 0.6,
+          "variance": 0.24,
+          "discrimination": 0.4583
+        },
+        {
+          "id": "fill-in#95",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.7844
+        },
+        {
+          "id": "fill-in#96",
+          "difficulty": 0.9,
+          "variance": 0.09,
+          "discrimination": 0.4537
+        },
+        {
+          "id": "fill-in#97",
+          "difficulty": 0.8,
+          "variance": 0.16,
+          "discrimination": 0.5521
+        },
+        {
+          "id": "fill-in#98",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.0445
+        },
+        {
+          "id": "fill-in#99",
+          "difficulty": 0.2,
+          "variance": 0.16,
+          "discrimination": 0.7844
+        }
+      ]
+    },
+    "compress": {
+      "n_items": 100,
+      "difficulty_mean": 0.1225,
+      "discrimination_mean": 0.3702,
+      "dead": 5,
+      "ceiling": 0,
+      "floor": 4,
+      "negative_disc": 15,
+      "low_disc": 12,
+      "worst_negative": [
+        "compress#9",
+        "compress#22",
+        "compress#14",
+        "compress#31",
+        "compress#77",
+        "compress#62",
+        "compress#67",
+        "compress#100"
+      ],
+      "items": [
+        {
+          "id": "compress#1",
+          "difficulty": 0.179,
+          "variance": 0.006772,
+          "discrimination": 0.4134
+        },
+        {
+          "id": "compress#10",
+          "difficulty": 0.0968,
+          "variance": 0.00367,
+          "discrimination": 0.447
+        },
+        {
+          "id": "compress#100",
+          "difficulty": 0.0836,
+          "variance": 0.001395,
+          "discrimination": -0.1138
+        },
+        {
+          "id": "compress#11",
+          "difficulty": 0.0967,
+          "variance": 0.00139,
+          "discrimination": 0.6727
+        },
+        {
+          "id": "compress#12",
+          "difficulty": 0.0834,
+          "variance": 0.004415,
+          "discrimination": 0.5302
+        },
+        {
+          "id": "compress#13",
+          "difficulty": 0.0927,
+          "variance": 0.011433,
+          "discrimination": 0.3547
+        },
+        {
+          "id": "compress#14",
+          "difficulty": 0.0585,
+          "variance": 0.000542,
+          "discrimination": -0.2652
+        },
+        {
+          "id": "compress#15",
+          "difficulty": 0.1184,
+          "variance": 0.00214,
+          "discrimination": 0.3876
+        },
+        {
+          "id": "compress#16",
+          "difficulty": 0.1922,
+          "variance": 0.020219,
+          "discrimination": 0.6886
+        },
+        {
+          "id": "compress#17",
+          "difficulty": 0.3085,
+          "variance": 0.033316,
+          "discrimination": 0.5791
+        },
+        {
+          "id": "compress#18",
+          "difficulty": 0.0682,
+          "variance": 0.002149,
+          "discrimination": 0.4103
+        },
+        {
+          "id": "compress#19",
+          "difficulty": 0.1255,
+          "variance": 0.005222,
+          "discrimination": 0.3068
+        },
+        {
+          "id": "compress#2",
+          "difficulty": 0.1132,
+          "variance": 0.000339,
+          "discrimination": 0.7148
+        },
+        {
+          "id": "compress#20",
+          "difficulty": 0.1285,
+          "variance": 0.013792,
+          "discrimination": 0.7441
+        },
+        {
+          "id": "compress#21",
+          "difficulty": 0.0676,
+          "variance": 0.000746,
+          "discrimination": 0.6365
+        },
+        {
+          "id": "compress#22",
+          "difficulty": 0.1094,
+          "variance": 0.019928,
+          "discrimination": -0.2862
+        },
+        {
+          "id": "compress#23",
+          "difficulty": 0.0687,
+          "variance": 0.002494,
+          "discrimination": 0.2681
+        },
+        {
+          "id": "compress#24",
+          "difficulty": 0.1372,
+          "variance": 0.002885,
+          "discrimination": 0.6351
+        },
+        {
+          "id": "compress#25",
+          "difficulty": 0.0807,
+          "variance": 0.001028,
+          "discrimination": -0.0212
+        },
+        {
+          "id": "compress#26",
+          "difficulty": 0.0247,
+          "variance": 8.1e-05,
+          "discrimination": 0.4513
+        },
+        {
+          "id": "compress#27",
+          "difficulty": 0.2003,
+          "variance": 0.007765,
+          "discrimination": 0.3446
+        },
+        {
+          "id": "compress#28",
+          "difficulty": 0.1194,
+          "variance": 0.002268,
+          "discrimination": 0.622
+        },
+        {
+          "id": "compress#29",
+          "difficulty": 0.1178,
+          "variance": 0.021021,
+          "discrimination": 0.3239
+        },
+        {
+          "id": "compress#3",
+          "difficulty": 0.1593,
+          "variance": 0.01478,
+          "discrimination": 0.6475
+        },
+        {
+          "id": "compress#30",
+          "difficulty": 0.1043,
+          "variance": 0.006631,
+          "discrimination": 0.6259
+        },
+        {
+          "id": "compress#31",
+          "difficulty": 0.2366,
+          "variance": 0.008901,
+          "discrimination": -0.2223
+        },
+        {
+          "id": "compress#32",
+          "difficulty": 0.2183,
+          "variance": 0.025423,
+          "discrimination": 0.7347
+        },
+        {
+          "id": "compress#33",
+          "difficulty": 0.0766,
+          "variance": 0.001791,
+          "discrimination": 0.2269
+        },
+        {
+          "id": "compress#34",
+          "difficulty": 0.1594,
+          "variance": 0.011294,
+          "discrimination": 0.1363
+        },
+        {
+          "id": "compress#35",
+          "difficulty": 0.2297,
+          "variance": 0.051094,
+          "discrimination": 0.3553
+        },
+        {
+          "id": "compress#36",
+          "difficulty": 0.1757,
+          "variance": 0.030785,
+          "discrimination": 0.6899
+        },
+        {
+          "id": "compress#37",
+          "difficulty": 0.1288,
+          "variance": 0.000593,
+          "discrimination": 0.3111
+        },
+        {
+          "id": "compress#38",
+          "difficulty": 0.0677,
+          "variance": 0.000287,
+          "discrimination": 0.6156
+        },
+        {
+          "id": "compress#39",
+          "difficulty": 0.1308,
+          "variance": 0.005339,
+          "discrimination": 0.1006
+        },
+        {
+          "id": "compress#4",
+          "difficulty": 0.1061,
+          "variance": 0.005584,
+          "discrimination": 0.6091
+        },
+        {
+          "id": "compress#40",
+          "difficulty": 0.0865,
+          "variance": 0.000282,
+          "discrimination": 0.4657
+        },
+        {
+          "id": "compress#41",
+          "difficulty": 0.0834,
+          "variance": 0.001368,
+          "discrimination": 0.0306
+        },
+        {
+          "id": "compress#42",
+          "difficulty": 0.0705,
+          "variance": 0.00037,
+          "discrimination": 0.7569
+        },
+        {
+          "id": "compress#43",
+          "difficulty": 0.0666,
+          "variance": 0.006671,
+          "discrimination": -0.074
+        },
+        {
+          "id": "compress#44",
+          "difficulty": 0.073,
+          "variance": 7.5e-05,
+          "discrimination": 0.3526
+        },
+        {
+          "id": "compress#45",
+          "difficulty": 0.0702,
+          "variance": 0.001918,
+          "discrimination": 0.4526
+        },
+        {
+          "id": "compress#46",
+          "difficulty": 0.0973,
+          "variance": 0.009169,
+          "discrimination": 0.5271
+        },
+        {
+          "id": "compress#47",
+          "difficulty": 0.0862,
+          "variance": 0.001081,
+          "discrimination": 0.4787
+        },
+        {
+          "id": "compress#48",
+          "difficulty": 0.2243,
+          "variance": 0.002146,
+          "discrimination": 0.647
+        },
+        {
+          "id": "compress#49",
+          "difficulty": 0.1031,
+          "variance": 0.002423,
+          "discrimination": 0.8142
+        },
+        {
+          "id": "compress#5",
+          "difficulty": 0.0807,
+          "variance": 0.001389,
+          "discrimination": 0.6259
+        },
+        {
+          "id": "compress#50",
+          "difficulty": 0.2343,
+          "variance": 0.048277,
+          "discrimination": 0.8035
+        },
+        {
+          "id": "compress#51",
+          "difficulty": 0.0836,
+          "variance": 0.001097,
+          "discrimination": 0.0789
+        },
+        {
+          "id": "compress#52",
+          "difficulty": 0.0975,
+          "variance": 0.000264,
+          "discrimination": 0.78
+        },
+        {
+          "id": "compress#53",
+          "difficulty": 0.1054,
+          "variance": 0.010264,
+          "discrimination": 0.4707
+        },
+        {
+          "id": "compress#54",
+          "difficulty": 0.1046,
+          "variance": 0.000789,
+          "discrimination": 0.4946
+        },
+        {
+          "id": "compress#55",
+          "difficulty": 0.1302,
+          "variance": 0.005518,
+          "discrimination": 0.1833
+        },
+        {
+          "id": "compress#56",
+          "difficulty": 0.2324,
+          "variance": 0.023059,
+          "discrimination": 0.5351
+        },
+        {
+          "id": "compress#57",
+          "difficulty": 0.2625,
+          "variance": 0.029625,
+          "discrimination": 0.6406
+        },
+        {
+          "id": "compress#58",
+          "difficulty": 0.2059,
+          "variance": 0.007354,
+          "discrimination": 0.6371
+        },
+        {
+          "id": "compress#59",
+          "difficulty": 0.1624,
+          "variance": 0.004776,
+          "discrimination": -0.1005
+        },
+        {
+          "id": "compress#6",
+          "difficulty": 0.1907,
+          "variance": 0.010393,
+          "discrimination": 0.8152
+        },
+        {
+          "id": "compress#60",
+          "difficulty": 0.2201,
+          "variance": 0.010684,
+          "discrimination": 0.434
+        },
+        {
+          "id": "compress#61",
+          "difficulty": 0.1236,
+          "variance": 0.004591,
+          "discrimination": 0.1157
+        },
+        {
+          "id": "compress#62",
+          "difficulty": 0.0705,
+          "variance": 0.001927,
+          "discrimination": -0.1306
+        },
+        {
+          "id": "compress#63",
+          "difficulty": 0.0457,
+          "variance": 4e-05,
+          "discrimination": 0.5562
+        },
+        {
+          "id": "compress#64",
+          "difficulty": 0.2145,
+          "variance": 0.001952,
+          "discrimination": 0.4944
+        },
+        {
+          "id": "compress#65",
+          "difficulty": 0.1049,
+          "variance": 0.011332,
+          "discrimination": 0.5373
+        },
+        {
+          "id": "compress#66",
+          "difficulty": 0.071,
+          "variance": 0.001115,
+          "discrimination": 0.6948
+        },
+        {
+          "id": "compress#67",
+          "difficulty": 0.0127,
+          "variance": 2.5e-05,
+          "discrimination": -0.1177
+        },
+        {
+          "id": "compress#68",
+          "difficulty": 0.1548,
+          "variance": 0.009761,
+          "discrimination": 0.2313
+        },
+        {
+          "id": "compress#69",
+          "difficulty": 0.1845,
+          "variance": 0.011709,
+          "discrimination": 0.2528
+        },
+        {
+          "id": "compress#7",
+          "difficulty": 0.2072,
+          "variance": 0.0163,
+          "discrimination": 0.7186
+        },
+        {
+          "id": "compress#70",
+          "difficulty": 0.1277,
+          "variance": 0.013118,
+          "discrimination": 0.4886
+        },
+        {
+          "id": "compress#71",
+          "difficulty": 0.1685,
+          "variance": 0.009309,
+          "discrimination": -0.0071
+        },
+        {
+          "id": "compress#72",
+          "difficulty": 0.0782,
+          "variance": 0.001872,
+          "discrimination": 0.1896
+        },
+        {
+          "id": "compress#73",
+          "difficulty": 0.1149,
+          "variance": 0.006303,
+          "discrimination": 0.6117
+        },
+        {
+          "id": "compress#74",
+          "difficulty": 0.1566,
+          "variance": 0.024612,
+          "discrimination": 0.7704
+        },
+        {
+          "id": "compress#75",
+          "difficulty": 0.0733,
+          "variance": 0.001833,
+          "discrimination": 0.2579
+        },
+        {
+          "id": "compress#76",
+          "difficulty": 0.0658,
+          "variance": 0.00014,
+          "discrimination": 0.4078
+        },
+        {
+          "id": "compress#77",
+          "difficulty": 0.0794,
+          "variance": 0.001397,
+          "discrimination": -0.1396
+        },
+        {
+          "id": "compress#78",
+          "difficulty": 0.1115,
+          "variance": 0.000603,
+          "discrimination": 0.2187
+        },
+        {
+          "id": "compress#79",
+          "difficulty": 0.1584,
+          "variance": 0.012111,
+          "discrimination": 0.1765
+        },
+        {
+          "id": "compress#8",
+          "difficulty": 0.0087,
+          "variance": 2.6e-05,
+          "discrimination": -0.0731
+        },
+        {
+          "id": "compress#80",
+          "difficulty": 0.1253,
+          "variance": 0.004672,
+          "discrimination": 0.0187
+        },
+        {
+          "id": "compress#81",
+          "difficulty": 0.0655,
+          "variance": 0.000632,
+          "discrimination": 0.593
+        },
+        {
+          "id": "compress#82",
+          "difficulty": 0.1274,
+          "variance": 0.000109,
+          "discrimination": 0.2118
+        },
+        {
+          "id": "compress#83",
+          "difficulty": 0.1263,
+          "variance": 0.003842,
+          "discrimination": 0.0927
+        },
+        {
+          "id": "compress#84",
+          "difficulty": 0.1091,
+          "variance": 0.003609,
+          "discrimination": 0.5996
+        },
+        {
+          "id": "compress#85",
+          "difficulty": 0.1489,
+          "variance": 0.013494,
+          "discrimination": 0.6437
+        },
+        {
+          "id": "compress#86",
+          "difficulty": 0.2874,
+          "variance": 0.031029,
+          "discrimination": 0.5765
+        },
+        {
+          "id": "compress#87",
+          "difficulty": 0.087,
+          "variance": 0.001145,
+          "discrimination": 0.3938
+        },
+        {
+          "id": "compress#88",
+          "difficulty": 0.1717,
+          "variance": 0.02061,
+          "discrimination": 0.735
+        },
+        {
+          "id": "compress#89",
+          "difficulty": 0.0891,
+          "variance": 0.001368,
+          "discrimination": 0.6998
+        },
+        {
+          "id": "compress#9",
+          "difficulty": 0.0953,
+          "variance": 0.001307,
+          "discrimination": -0.3344
+        },
+        {
+          "id": "compress#90",
+          "difficulty": 0.1182,
+          "variance": 0.002044,
+          "discrimination": 0.0173
+        },
+        {
+          "id": "compress#91",
+          "difficulty": 0.1378,
+          "variance": 0.000936,
+          "discrimination": 0.1347
+        },
+        {
+          "id": "compress#92",
+          "difficulty": 0.0184,
+          "variance": 0.000101,
+          "discrimination": 0.0785
+        },
+        {
+          "id": "compress#93",
+          "difficulty": 0.162,
+          "variance": 0.007008,
+          "discrimination": 0.4953
+        },
+        {
+          "id": "compress#94",
+          "difficulty": 0.0898,
+          "variance": 0.000133,
+          "discrimination": -0.0037
+        },
+        {
+          "id": "compress#95",
+          "difficulty": 0.0779,
+          "variance": 0.000913,
+          "discrimination": -0.0548
+        },
+        {
+          "id": "compress#96",
+          "difficulty": 0.0833,
+          "variance": 0.002257,
+          "discrimination": 0.1047
+        },
+        {
+          "id": "compress#97",
+          "difficulty": 0.1004,
+          "variance": 0.002325,
+          "discrimination": 0.547
+        },
+        {
+          "id": "compress#98",
+          "difficulty": 0.059,
+          "variance": 0.00053,
+          "discrimination": 0.5479
+        },
+        {
+          "id": "compress#99",
+          "difficulty": 0.1053,
+          "variance": 0.001766,
+          "discrimination": 0.1441
+        }
+      ]
+    }
+  },
+  "task_corr": {
+    "translate": {
+      "translate": 1.0,
+      "punctuate": 0.879,
+      "char-gloss": 0.6,
+      "idiom-source": 0.559,
+      "fill-in": 0.552,
+      "compress": 0.433
+    },
+    "punctuate": {
+      "translate": 0.879,
+      "punctuate": 1.0,
+      "char-gloss": 0.539,
+      "idiom-source": 0.255,
+      "fill-in": 0.321,
+      "compress": 0.35
+    },
+    "char-gloss": {
+      "translate": 0.6,
+      "punctuate": 0.539,
+      "char-gloss": 1.0,
+      "idiom-source": 0.401,
+      "fill-in": 0.491,
+      "compress": -0.017
+    },
+    "idiom-source": {
+      "translate": 0.559,
+      "punctuate": 0.255,
+      "char-gloss": 0.401,
+      "idiom-source": 1.0,
+      "fill-in": 0.407,
+      "compress": 0.619
+    },
+    "fill-in": {
+      "translate": 0.552,
+      "punctuate": 0.321,
+      "char-gloss": 0.491,
+      "idiom-source": 0.407,
+      "fill-in": 1.0,
+      "compress": 0.033
+    },
+    "compress": {
+      "translate": 0.433,
+      "punctuate": 0.35,
+      "char-gloss": -0.017,
+      "idiom-source": 0.619,
+      "fill-in": 0.033,
+      "compress": 1.0
+    }
+  }
+}
